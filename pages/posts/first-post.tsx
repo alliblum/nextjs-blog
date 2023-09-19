@@ -2,7 +2,10 @@ import {
   Box,
   Center,
   Text,
+  Image,
   Heading,
+  Divider,
+  Flex,
   HStack,
   Stack,
   UnorderedList,
@@ -12,9 +15,57 @@ import {
 
 import Link from 'next/link'
 
+type LogoProps = {
+  image: string
+  alt: string
+}
+
+export const Logo = (props: LogoProps) => {
+  return (
+    <Box maxW={10}>
+      <Image src={props.image} alt={props.alt} />
+    </Box>
+  )
+}
+
+export const Nav = () => {
+  return (
+    <Flex mx={10} my={10} justify="spacebetween" align="center">
+      <Logo image={'/media/alliblum.jpeg'} alt={'photo of alli'} />
+      <Spacer />
+      <Box>
+        <HStack fontSize="lg">
+          <Link href="/">Digital Garden</Link>
+          <Spacer />
+          <Link href="/consulting">Consulting</Link>
+          <Spacer />
+          <Link href="/about">About</Link>
+        </HStack>
+      </Box>
+    </Flex>
+  )
+}
+
+export const Footer = () => {
+  return (
+    <Center>
+      <Stack>
+        <Box>
+          <Divider orientation="horizontal" my={10} />
+        </Box>
+        <Box>
+          <Heading>Ze End of Ze Post</Heading>
+        </Box>
+      </Stack>
+    </Center>
+  )
+}
+
 export default function FirstPost() {
   return (
     <>
+      <Nav />
+
       <Center>
         <Box
           width={{
@@ -24,12 +75,8 @@ export default function FirstPost() {
             xl: '600px', // 80em+
           }}
         >
-          <HStack>
-            <Link href="/">Home</Link>
-            <Link href="/consulting">Consulting</Link>
-          </HStack>
           <Spacer />
-          <Stack spacing={5}>
+          <Stack mt={10} spacing={5}>
             <Heading as="h1">
               About this time I presented JTBD findings and nothing changed
             </Heading>
@@ -101,6 +148,7 @@ export default function FirstPost() {
           </Stack>
         </Box>
       </Center>
+      <Footer />
     </>
   )
 }
