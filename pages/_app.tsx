@@ -19,6 +19,7 @@ const theme = extendTheme({
       lineHeight: '110%',
       letterSpacing: '-1%',
     },
+    text: {},
   },
 })
 

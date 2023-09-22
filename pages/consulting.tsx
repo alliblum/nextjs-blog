@@ -6,7 +6,7 @@ export default function Consulting() {
   return (
     <Box>
       <Text>Consulting</Text>
-      <Link href="/home">Writing</Link>
+      <Link href="/writing">Writing</Link>
     </Box>
   )
 }
