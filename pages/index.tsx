@@ -1,44 +1,47 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
+import Layout, { siteTitle } from '../components/Layout'
+import { Heading, Text } from '@chakra-ui/react'
 
-// import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData } from '../lib/posts'
 
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData()
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   }
-// }
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData,
+    },
+  }
+}
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
-    <Layout>
-      <Head>
-        <title></title>
-      </Head>
-      <section>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https:nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      {/* //       <section> */}
-      {/* //         <h2>Blog</h2> */}
-      {/* //         <ul>
-//           {/* {/* {allPostsData.map(({ id, date, title }) => (
-//             <li key={id}>
-//               {title}
-//               <br />
-//               {id}
-//               <br />
-//               {date}
-//             </li> */}
-      {/* //           ))} */}
-      {/* //         </ul>
-//       </section> */}
-    </Layout>
+    <>
+      <Layout>
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
+
+        <section>
+          <Heading>Hi I'm Alli!</Heading>
+          <Text>
+            This is a sample website - you’ll be building a site like this on.
+          </Text>
+        </section>
+        <section>
+          <h2>Blog</h2>
+          <ul>
+            {allPostsData.map(({ id, date, title }) => (
+              <li key={id}>
+                {title}
+                <br />
+                {id}
+                <br />
+                {date}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Layout>
+    </>
   )
 }
