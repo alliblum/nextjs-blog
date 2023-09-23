@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
+
+// import Date from '../components/date';
 import { Heading, Text } from '@chakra-ui/react'
 
 import { getSortedPostsData } from '../lib/posts'
