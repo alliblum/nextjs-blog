@@ -11,13 +11,20 @@
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.5.2",
+    "date-fns": "^2.30.0",
     "framer-motion": "^10.16.4",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^15.0.1",
-    "remark-html": "^15.0.2"
+    "remark-html": "^15.0.2",
+    "remark-parse": "^11.0.0",
+    "remark-react": "^9.0.1",
+    "unified": "^11.0.3"
   },
   "engines": {
     "node": ">=18"

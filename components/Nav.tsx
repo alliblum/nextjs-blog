@@ -2,7 +2,7 @@ import { Box, Flex, HStack, Spacer } from '@chakra-ui/react'
 import Link from 'next/link'
 // import Logo from 'components/Logo';
 
-import { Logo } from '../components/Logo'
+import { Logo } from './Logo'
 
 export const Nav = () => {
   return (
