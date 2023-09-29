@@ -1,8 +1,22 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
+// import parse from 'fenceparser'
+// import { remark } from 'remark'
+// import remarkMdx from 'remark-mdx'
+// import { remarkTypescript } from 'remark-typescript'
+// import Head from 'next/head';
+// import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
+// import remarkRehype from 'remark-rehype'
+// import remarkHtml from 'remark-html'
+// import {unified} from 'unified'
+// import React from 'react'
+// import ReactMarkdown from 'react-markdown'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeStringify from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import { unified } from 'unified'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -55,16 +69,22 @@ export async function getPostData(id: string) {
   const matterResult = matter(fileContents)
 
   // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    //@ts-ignore
-    .use(html)
-    .process(matterResult.content)
+  // const processedContent = await remark()
+  //   .use(remarkHtml)
+  //   .process(matterResult.content)
 
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeSanitize)
+    .use(rehypeStringify)
+    .process(matterResult.content)
   const contentHtml = processedContent.toString()
 
   // Combine the data with the id and contentHtml
   return {
     id,
+    // ...matterResult.data
     contentHtml,
     ...(matterResult.data as { date: string; title: string }),
   }

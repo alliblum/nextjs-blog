@@ -1,7 +1,9 @@
 // import styles from './layout.module.css'
+import '../styles/global.css'
 import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
+import { useState, useEffect } from 'react'
 
 export const theme = extendTheme({
   textStyles: {
@@ -24,9 +26,14 @@ export const theme = extendTheme({
 
 // 3. Pass the `theme` prop to the `ChakraProvider`
 export default function App({ Component, pageProps }: AppProps) {
+  const [isClient, setIsClient] = useState(false)
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
+      <h1>{isClient ? 'This is never prerendered' : 'Prerendered'}</h1>
     </ChakraProvider>
   )
 }

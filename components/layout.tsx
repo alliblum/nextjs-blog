@@ -1,11 +1,12 @@
 import React from 'react'
-import { Nav } from './Nav'
+import { Nav } from './nav'
 import { Footer } from './footer'
 import Head from 'next/head'
 import styles from './layout.module.css'
+
 // import utilStyles from '../styles/utils.module.css'
 // import Link from 'next/link'
-import { Box, Center, Stack, Spacer, Heading } from '@chakra-ui/react'
+import { Box, Center, Stack, Spacer } from '@chakra-ui/react'
 
 // const name = 'Alli Blum'
 export const siteTitle = 'Alli Blum'
@@ -23,10 +24,9 @@ export default function Layout({
         <link rel="icon" href="favicon.ico" />
         <meta name="description" content="Get buy-in on your vision" />
       </Head>
-      <header>
+      <section>
         <Nav />
-      </header>
-
+      </section>
       <Center>
         <Box
           width={{
@@ -37,10 +37,7 @@ export default function Layout({
           }}
         >
           <Spacer />
-
           <Stack mt={10} spacing={5}>
-            <Heading>TEXT</Heading>
-
             <main>{children}</main>
           </Stack>
         </Box>
