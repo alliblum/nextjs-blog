@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Date from '../../components/date'
 // import utilStyles from '../../styles/utils.module.css';
 import { GetStaticProps, GetStaticPaths } from 'next'
-// import { Heading, Text } from '@chakra-ui/react'
+import { Heading } from '@chakra-ui/react'
 
 export default function Post({
   postData,
@@ -21,10 +21,12 @@ export default function Post({
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1>{postData.title}</h1>
+        <Heading>
+          <h1>{postData.title}</h1>
+        </Heading>
         <br />
         <Date dateString={postData.date} />
-        <br />{' '}
+        <br /> <br />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
