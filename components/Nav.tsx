@@ -1,4 +1,4 @@
-import { Logo } from './logo'
+import { Logo } from './Logo'
 import { Box, Flex, HStack, Spacer } from '@chakra-ui/react'
 import Link from 'next/link'
 
