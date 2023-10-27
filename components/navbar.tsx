@@ -1,11 +1,11 @@
-import { Logo } from './logo'
+import { Headshot } from './headshot'
 import { Box, Flex, HStack, Spacer } from '@chakra-ui/react'
 import Link from 'next/link'
 
-export const Nav = () => {
+export const NavBar = () => {
   return (
     <Flex mx={2} my={10} justify="spacebetween" align="center">
-      <Logo />
+      <Headshot />
       <Spacer />
       <Box>
         <HStack fontSize="lg">

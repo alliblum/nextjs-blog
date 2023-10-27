@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav } from './nav'
+import { NavBar } from './navbar'
 import { Footer } from './footer'
 import Head from 'next/head'
 import styles from './layout.module.css'
@@ -27,7 +27,7 @@ export default function Layout({
         <meta name="description" content="Get buy-in on your vision" />
       </Head>
       <section>
-        <Nav />
+        <NavBar />
       </section>
       <Center>
         <Box
