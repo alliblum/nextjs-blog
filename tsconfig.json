@@ -13,6 +13,14 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/mdx.mdx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/mdx.mdx",
+    "next.config.js",
+    "pages/my-mdx-page",
+    "pages/jtbd-practitioners.tsx"
+  ],
   "exclude": ["node_modules"]
 }

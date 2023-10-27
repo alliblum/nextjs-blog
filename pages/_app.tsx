@@ -4,6 +4,8 @@ import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
+// import { MDXProvider } from '@mdx-js/react'
+// import { MDXComponents } from 'mdx/types'
 
 export const theme = extendTheme({
   textStyles: {
@@ -37,3 +39,13 @@ export default function App({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
+
+// function MyApp({ Component, pageProps }) {
+//   return (
+//     <ChakraProvider>
+//       <Component {...pageProps} />
+//     </ChakraProvider>
+//   )
+// }
+
+// export default MyApp;
