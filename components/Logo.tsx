@@ -1,14 +1,17 @@
 import { Box, Image } from '@chakra-ui/react'
+import Link from 'next/link'
 // import Image from 'next/image'
 
 export const Logo = () => {
   return (
     <Box maxW={'100'}>
-      <Image
-        src={'/images/alliblum.jpeg'}
-        alt={'photo of alli'}
-        borderRadius={100}
-      />
+      <Link href="/">
+        <Image
+          src={'/images/alliblum.jpeg'}
+          alt={'photo of alli'}
+          borderRadius={100}
+        />
+      </Link>
     </Box>
   )
 }
