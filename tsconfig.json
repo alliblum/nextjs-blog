@@ -20,7 +20,7 @@
     "pages/mdx.mdx",
     "next.config.js",
     "pages/my-mdx-page",
-    "pages/jtbdpractitioners.tsx"
+    "pages/jtbd-practitioners.tsx"
   ],
   "exclude": ["node_modules"]
 }
