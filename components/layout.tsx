@@ -17,6 +17,8 @@ export default function Layout({
 {
   children: React.ReactNode
   home?: boolean
+  consulting?: boolean
+  about?: boolean
 }) {
   return (
     <div className={styles.container}>

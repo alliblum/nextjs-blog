@@ -4,16 +4,14 @@ import { Logo } from './logo'
 
 export const Nav = () => {
   return (
-    <Flex mx={10} my={10} justify="spacebetween" align="center">
+    <Flex mx={2} my={10} justify="spacebetween" align="center">
       <Logo />
       <Spacer />
       <Box>
         <HStack fontSize="lg">
-          <Link href="/">Digital Garden</Link>
+          <Link href="/founders-and-leaders">For Founders and Leaders</Link>
           <Spacer />
-          <Link href="/consulting">Consulting</Link>
-          <Spacer />
-          <Link href="/about">About</Link>
+          <Link href="/jtbd-practitioners">For JTBD Practitioners</Link>
         </HStack>
       </Box>
     </Flex>
