@@ -39,3 +39,13 @@ export default function App({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
+
+// function MyApp({ Component, pageProps }) {
+//   return (
+//     <ChakraProvider>
+//       <Component {...pageProps} />
+//     </ChakraProvider>
+//   )
+// }
+
+// export default MyApp;
