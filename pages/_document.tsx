@@ -13,6 +13,14 @@ export default function Document() {
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Main />
         <NextScript />
+        <script>
+          window.SavvyCal=window.SavvyCal||function()
+          {(SavvyCal.q = SavvyCal.q || []).push(arguments)};
+        </script>
+
+        <script async src="https://embed.savvycal.com/v1/embed.js"></script>
+
+        <script>SavvyCal('init')</script>
       </body>
     </Html>
   )
