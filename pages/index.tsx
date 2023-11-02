@@ -92,8 +92,10 @@ export default function Home({
           growth, getting buy-in, and building teams. Sign up for emails and
           I'll send you a note when I have new writing to share with you.
         </Text>
-        <Link as="b" color="purple.600" href="https://buttondown.email/alli">
-          Click this link to sign up for emails
+        <Link href="https://buttondown.email/alli">
+          <Text as="b" color="purple.600">
+            Click this link to sign up for emails
+          </Text>
         </Link>
 
         {/* <Input type="email" name="email" id="bd-email" />

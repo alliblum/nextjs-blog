@@ -267,12 +267,10 @@ export default function FoundersAndLeaders() {
         meet with people at these times and booking one is the fastest way to
         get booked, have a call, and know whether we’re a fit. If that time
         doesn’t work for you, email me at [email] and we’ll make it happen.
-        <Link
-          color="purple.600"
-          as="strong"
-          href="https://savvycal.com/alli/c0518466"
-        >
-          Click to schedule time with me
+        <Link href="https://savvycal.com/alli/c0518466">
+          <Text color="purple.600" as="strong">
+            Click to schedule time with me
+          </Text>
         </Link>
       </Stack>
     </Layout>

@@ -8,12 +8,10 @@ export default function JTBDPractitioners() {
         <Heading>About</Heading>
         <Text>i put a bio here</Text>
 
-        <Link
-          color="purple.700"
-          as="strong"
-          href="https://savvycal.com/alli/c0518466"
-        >
-          Schedule time with me
+        <Link href="https://savvycal.com/alli/c0518466">
+          <Text as="strong" color="purple.700">
+            Schedule time with me
+          </Text>
         </Link>
       </Box>
     </Layout>
