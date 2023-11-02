@@ -7,9 +7,7 @@ export const Footer = () => {
         <Box>
           <Divider orientation="horizontal" my={20} />
         </Box>
-        <Box mb={20}>
-          <Heading>Placeholder for email list here</Heading>
-        </Box>
+        <Box mb={15}></Box>
       </Stack>
     </Center>
   )

@@ -13,11 +13,11 @@ export default function FoundersAndLeaders() {
   return (
     <Layout home>
       <Stack spacing={5}>
-        <Heading size="md">
+        <Text as="i">
           Get your team out of your office and DMs, start shipping faster,
           increase your acquisition and activation metrics - without
           compromising from your vision{' '}
-        </Heading>
+        </Text>
         <Heading size="xl">
           Visionary leaders aren’t meant to spend their days responding to DMs.{' '}
         </Heading>
