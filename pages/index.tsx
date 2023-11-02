@@ -2,14 +2,14 @@ import Head from 'next/head'
 import {
   Heading,
   Stack,
-  FormControl,
-  FormLabel,
+  // FormControl,
+  // FormLabel,
   // FormErrorMessage,
   // FormHelperText,
-  Input,
-  Spacer,
-  Text,
-  Button,
+  // Input,
+  // Spacer,
+  // Text,
+  // Button,
 } from '@chakra-ui/react'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
@@ -83,7 +83,7 @@ export default function Home({
       </section>
       <Stack>
         <Heading>Sign up for emails</Heading>
-        <br />
+        {/* <br />
         <section>
           <form
             action="https://buttondown.email/api/emails/embed-subscribe/alli"
@@ -96,11 +96,10 @@ export default function Home({
               <Stack>
                 <Text>
                   {/* <FormLabel for="bd-email">Enter your email</FormLabel> */}
-                  The topics I'm most excited about these days are about
-                  outcomes-led growth, getting buy-in, and building teams. Sign
-                  up for emails and I'll send you a note when I have new writing
-                  to share with you.
-                </Text>
+        The topics I'm most excited about these days are about outcomes-led
+        growth, getting buy-in, and building teams. Sign up for emails and I'll
+        send you a note when I have new writing to share with you.
+        {/* </Text>
                 <Input type="email" name="email" id="bd-email" />
                 <Spacer />
                 <Button type="submit" value="Subscribe" colorScheme="purple">
@@ -109,7 +108,7 @@ export default function Home({
               </Stack>
             </FormControl>
           </form>
-        </section>
+        </section> */}
       </Stack>
     </Layout>
   )

@@ -2,6 +2,7 @@
   "extends": ["next/core-web-vitals", "eslint:recommended", "next", "prettier"],
   "rules": {
     "react/no-unescaped-entities": 0,
-    "no-undef": "off"
+    "no-undef": "off",
+    "no-unused-vars": "off"
   }
 }

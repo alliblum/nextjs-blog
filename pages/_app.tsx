@@ -37,15 +37,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <h1>{isClient ? 'This is never prerendered' : 'Prerendered'}</h1>
     </ChakraProvider>
-    <script>window.SavvyCal=window.SavvyCal||function(){(SavvyCal.q=SavvyCal.q||[]).push(arguments)};</script>
-
-    <script async src="https://embed.savvycal.com/v1/embed.js"></script>
-    
-    <script>
-    
-      SavvyCal('init')
-    
-    </script>
   )
 }
 

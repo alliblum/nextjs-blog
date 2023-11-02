@@ -2,6 +2,7 @@
 
 import { ColorModeScript } from '@chakra-ui/react'
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import { theme } from './_app'
 
 export default function Document() {
@@ -13,14 +14,8 @@ export default function Document() {
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Main />
         <NextScript />
-        <script>
-          window.SavvyCal=window.SavvyCal||function()
-          {(SavvyCal.q = SavvyCal.q || []).push(arguments)};
-        </script>
 
-        <script async src="https://embed.savvycal.com/v1/embed.js"></script>
-
-        <script>SavvyCal('init')</script>
+        <Script async src="https://embed.savvycal.com/v1/embed.js"></Script>
       </body>
     </Html>
   )
