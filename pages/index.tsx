@@ -2,14 +2,16 @@ import Head from 'next/head'
 import {
   Heading,
   Stack,
-  // FormControl,
-  // FormLabel,
-  // FormErrorMessage,
-  // FormHelperText,
-  // Input,
-  // Spacer,
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Input,
+  Spacer,
   Text,
-  // Button,
+  Link,
+  Button,
+  chakra,
 } from '@chakra-ui/react'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
@@ -84,34 +86,21 @@ export default function Home({
       </section> */}
 
         <Heading>Sign up for emails</Heading>
-        {/* <br />
-        <section>
-          <form
-            action="https://buttondown.email/api/emails/embed-subscribe/alli"
-            method="post"
-            target="popupwindow"
-            onsubmit="window.open('https://buttondown.email/alli', 'popupwindow')"
-            class="embeddable-buttondown-form"
-          >
-            <FormControl>
-              <Stack>
-                <Text>
-                  {/* <FormLabel for="bd-email">Enter your email</FormLabel> */}
+
         <Text>
           The topics I'm most excited about these days are about outcomes-led
           growth, getting buy-in, and building teams. Sign up for emails and
           I'll send you a note when I have new writing to share with you.
         </Text>
-        {/* </Text>
-                <Input type="email" name="email" id="bd-email" />
-                <Spacer />
-                <Button type="submit" value="Subscribe" colorScheme="purple">
-                  Subscribe
-                </Button>
-              </Stack>
-            </FormControl>
-          </form>
-        </section> */}
+        <Link as="b" color="purple.600" href="https://buttondown.email/alli">
+          Click this link to sign up for emails
+        </Link>
+
+        {/* <Input type="email" name="email" id="bd-email" />
+          <Spacer />
+          <Button type="submit" value="Subscribe" colorScheme="purple">
+            Subscribe
+          </Button> */}
       </Stack>
     </Layout>
   )
