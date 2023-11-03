@@ -7,6 +7,7 @@ import {
   Stack,
   UnorderedList,
   ListItem,
+  Center,
 } from '@chakra-ui/react'
 
 export default function FoundersAndLeaders() {
@@ -197,6 +198,33 @@ export default function FoundersAndLeaders() {
             kind of business you want to lead.{' '}
           </ListItem>
         </UnorderedList>
+        <Box bg="purple.100" p={4} borderRadius="md">
+          <Stack spacing={3}>
+            <Text as="i" fontWeight={700}>
+              "If you want to set your company up to succeed in the long term,
+              if you are having a hard time finding the balance between
+              long-term strategy and short-term tactical, as well as getting
+              your team to move that way to see that too, you work with Alli.
+            </Text>
+            <Text>
+              "If you want to create an environment where you can trust your
+              employees to make decisions that support the long term objective
+              and deliver the most value you possibly can for your customers,
+              you work with Alli.{' '}
+            </Text>
+            <Text>
+              "So if you want to figure out how to speak to your employees
+              better, if you want to understand what your employees are going
+              through, if you feel like you're having a hard time understanding,
+              if you feel like you keep saying the same thing over and over and
+              over again, and not being heard, and if you don't want to be
+              completely stressed going through through this phase of growth...{' '}
+            </Text>
+            <Text>"...You work with Alli." </Text>
+
+            <Text as="strong"> -Jordan, VP Product Engineering</Text>
+          </Stack>
+        </Box>
         <Heading size="lg">Why me crosshead: </Heading>
         <Text>Some of my greatest hits:</Text>
         <UnorderedList spacing={3}>
@@ -262,16 +290,29 @@ export default function FoundersAndLeaders() {
           <ListItem>Startups for the Rest of Us</ListItem>
           Forget the Funnel{' '}
         </UnorderedList>
-        Reach out today and in 6 months you could be done with too-many DMs,
-        slow shipping, and sad metrics Set up a discovery call with me here. I
-        meet with people at these times and booking one is the fastest way to
-        get booked, have a call, and know whether we’re a fit. If that time
-        doesn’t work for you, email me at [email] and we’ll make it happen.
-        <Link href="https://savvycal.com/alli/c0518466">
-          <Text color="purple.600" as="strong">
-            Click to schedule time with me
-          </Text>
-        </Link>
+        <Text>
+          Reach out today and in 6 months you could be done with too-many DMs,
+          slow shipping, and sad metrics Set up a discovery call with me here. I
+          meet with people at these times and booking one is the fastest way to
+          get booked, have a call, and know whether we’re a fit. If that time
+          doesn’t work for you, email me at [email] and we’ll make it happen.
+        </Text>
+        <Box py={5}>
+          <Link href="https://savvycal.com/alli/c0518466">
+            <Text color="purple.600" as="strong">
+              Click to schedule time with me
+            </Text>
+          </Link>
+        </Box>
+        <Box bg="purple.100" p={4} borderRadius="md">
+          <Stack>
+            <Text as="i">
+              "The experience of working with Alli is like collaborating with a
+              trusted friend."
+            </Text>
+            <Text as="strong"> -Claire Suellentrop, COO</Text>
+          </Stack>
+        </Box>
       </Stack>
     </Layout>
   )

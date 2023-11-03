@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {
   Heading,
+  Container,
   Stack,
   FormControl,
   FormLabel,
@@ -12,11 +13,13 @@ import {
   Link,
   Button,
   chakra,
+  Image,
 } from '@chakra-ui/react'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import NextLink from 'next/link'
+// import Image from 'next/image'
 
 import { GetStaticProps } from 'next'
 // import { Box, Heading, Text, Spacer } from '@chakra-ui/react'
@@ -60,7 +63,7 @@ export default function Home({
           learning engineering.{' '}
         </Text>
 
-        <Heading size="xl">Work:</Heading>
+        <Heading size="xl">Work</Heading>
 
         <Text>
           {' '}
@@ -69,6 +72,18 @@ export default function Home({
           help JTBD practitioners mobilize insights, and I help leaders and
           founders build teams and products.{' '}
         </Text>
+        <Text>
+          Over the last 10 years I've had the great privilege to work and learn
+          with a great many teams. I love joining companies who have just
+          started to discover the champagne problem of having so many
+          opportunities they don't know which one offers the best path forward.{' '}
+        </Text>
+
+        <Image
+          py={5}
+          src="/media/logobar.png"
+          alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
+        />
 
         {/* <Heading size="lg">Writing:</Heading>
         <br />
