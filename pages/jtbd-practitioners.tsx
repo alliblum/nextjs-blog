@@ -19,8 +19,9 @@ export default function JTBDPractitioners() {
         <Stack spacing={5}>
           <Text as="i">
             Get your client’s entire team so bought in on the JTBD research you
-            delivered - even the skeptics - that your work transforms their
-            company and they book you for more work than you can handle
+            delivered that your work transforms their company, they book you for
+            more work than you can handle, and even the skeptics are asking for
+            more
           </Text>{' '}
           <Heading size="xl">
             If an insight falls in a zoom meeting and there’s only one person
@@ -31,23 +32,28 @@ export default function JTBDPractitioners() {
             to start taking action before you even finish your presentation.{' '}
           </Text>
           <Text>
-            You do a, b, c. But after that presentation, what happens?{' '}
+            You know how to get your insigts and recommendations packaged up in
+            a way that will make them immediately actionable for anyone who
+            wants to start shipping projects.{' '}
           </Text>
           <Text>
-            Who helps your stakeholder’s work bestie understand and get excited
+            But after that presentation, after you ship those insights, what
+            happens?{' '}
+          </Text>
+          <Text>
+            Who helps your stakeholder'ss work bestie understand and get excited
             about the insights you’ve uncovered? What about that person’s
             biggest rival? Or their direct reports?{' '}
           </Text>
           <Text>
-            Or the direct reports of their biggest rival? Or the team over in
-            product/marketing that thinks their personas are Working Just Fine,
-            Thanks. Or the team that insists they’ve been doing research but
-            can’t share a single a single transcript. Or the group that insists
-            the know everything there is to know about their customers, except
-            for you know, when they start shopping, what outcomes they’re trying
-            to achieve, and [another one].{' '}
+            What about the team over in product/marketing that thinks their
+            personas are "Working just fine, thanks."? Or the team that insists
+            they’ve been doing research but can’t share a single a single
+            transcript? Or the group that insists they know everything there is
+            to know about their customers, except for you know, when they start
+            shopping, and what outcomes they’re trying to achieve?
           </Text>
-          <Text>
+          <Text as="i">
             What’s more, you’ve uncovered at least 5 more research projects you
             want to sell - but how on earth are you going to sell more research
             if your stakeholder can’t get anyone to do anything with the
@@ -55,24 +61,24 @@ export default function JTBDPractitioners() {
           </Text>
           <Heading size="lg">
             {' '}
-            You know that JTBD works best the entire organization believes in
-            your findings. But your firm isn’t set up for change management.{' '}
+            You know that JTBD works best when the entire organization believes
+            in your findings. But your firm isn’t set up for change management.{' '}
           </Heading>{' '}
           <Text>
-            But you know your stakeholder is going to face a long road of change
+            You know your stakeholder is going to face a long road of change
             management after your project is done. Even if your stakeholder
             faces no antagonistic threats, how will they get a whole team of
             people who has never worked with JTBD before to apply your insights
-            to copywriting, product strategy, ux, sales, even engineering?{' '}
+            to copywriting, product strategy, UX, sales, even engineering?{' '}
           </Text>
           <Text>
-            Sure, you can ask people to read listen to 10 hours of interviews.
-            But even your most strident supporters won’t do that. <Text></Text>
-            Unless - not until they see what’s in it for them.{' '}
+            Sure, you can ask people to listen to 10 hours of interviews. But
+            even your most strident supporters won’t do that.{' '}
           </Text>
+          <Text>Unless - not until they see what’s in it for them. </Text>
           <Heading size="lg">
-            Change management feels stiff and grumpy. I make it fun and
-            exciting.{' '}
+            Change management feels stiff and grumpy. But I like to make it fun
+            and exciting.{' '}
           </Heading>
           <Text>
             What a stodgy term, “change management.” Not when I do it!{' '}
@@ -81,7 +87,6 @@ export default function JTBDPractitioners() {
             I work directly with your client to mobilize the insights in a way
             that gets people excited and asking for more.
           </Text>
-          <Text> There are 3 main parts to how I do this: </Text>
           <Text>
             <Text as="strong">
               I’ll become an expert on the insights you uncovered.
@@ -91,6 +96,7 @@ export default function JTBDPractitioners() {
             all, you’ve uncovered treasure, all that’s left to do is show
             everyone how valuable it is.
           </Text>
+          <Text>We can work together in one of three ways.</Text>
           <Text>
             <Text as="strong">
               Partner with your stakeholder as a fellow strategist.
@@ -127,7 +133,7 @@ export default function JTBDPractitioners() {
             action.{' '}
           </Text>
           <Heading size="lg">
-            Get a whole company bought in on your insights - and wanting to hire
+            Get a whole company bought in on your insights and wanting to hire
             you for more - without the grumpies{' '}
           </Heading>
           <Text>
@@ -135,7 +141,7 @@ export default function JTBDPractitioners() {
               Align your client’s team around a shared understanding of your
               customers:
             </Text>{' '}
-            I’ll turn the work you and your stakeholder have worked on into a
+            I turn the work you and your stakeholder have worked on into a
             training that transmits customer knowledge and insights into the
             brains of the team so they can all be aligned.{' '}
           </Text>
@@ -143,8 +149,8 @@ export default function JTBDPractitioners() {
             <Text as="strong">
               Increase org-wide buy-in on customer led-growth and VOC:{' '}
             </Text>
-            The small groups that participate in training will be more equipped
-            to incorporate VOC into their own work and to share and discuss
+            The small groups that participate in training are more equipped to
+            incorporate VOC into their own work and to share and discuss
             insights with others across the organization.{' '}
           </Text>
           <Text>
@@ -153,7 +159,7 @@ export default function JTBDPractitioners() {
               supporters singing your praises:{' '}
             </Text>
             Mobilizing the insights you’ve uncovered beyond the small group of
-            people who hired you to find them will get the team you hired more
+            people who hired you to find them gets the team you hired more
             excited about your work and their decision to hire you and will
             spread your reach throughout an org, increase potential referrals
             when those team members go to a new company one day.{' '}
@@ -186,20 +192,23 @@ export default function JTBDPractitioners() {
           </Box>
           <Heading size="lg">Why me? </Heading>
           <UnorderedList spacing={3}>
-            <ListItem>Onboarding 100+ teams to enjoyhq</ListItem>
             <ListItem>
-              Set up qualitative research repositories and research ops function
-              at clients{' '}
+              Coaching 50+ teams to establish VOC programs and qualitative
+              research repositories{' '}
             </ListItem>
-            <ListItem>Build VOC programs </ListItem>
             <ListItem>
-              Worked in all the departments to get all the POVs likely to stop
+              Enabled multiple marketing and product clients to establish
+              evidence-based growth programs using VOC and JTBD
             </ListItem>
-            <ListItem> Trained this, trained the trainers </ListItem>
             <ListItem>
-              Learned the hard way how NOT to get buy-in and am familiar w/
-              common mistakes
+              Spent a tour in almost every department at SaaS companies to learn
+              the unique objections you're likely to encounter
             </ListItem>
+            <ListItem>
+              {' '}
+              Developed JTBD curriculum and trained others to ship it{' '}
+            </ListItem>
+            <ListItem>Learned the hard way how NOT to get buy-in</ListItem>
             <ListItem>Fellow JTBD practitioner</ListItem>{' '}
           </UnorderedList>
           <Heading size="lg">
@@ -207,9 +216,9 @@ export default function JTBDPractitioners() {
             book you for more work than you can handle{' '}
           </Heading>
           <Text>
-            The grumpies-free way to change a team’s (or company’s) culture from
-            “brainstorm and persona” to “data and JTBD”, If this sounds like
-            you.
+            Set up a discovery call with me here. If the times on my calendar
+            don’t work for you, email me at alli@hypothesisdepartment.com and
+            we’ll make it happen.
           </Text>
         </Stack>
         <Box pt={5}>

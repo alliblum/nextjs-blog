@@ -334,10 +334,9 @@ export default function FoundersAndLeaders() {
           slow shipping, and sad metrics
         </Heading>
         <Text>
-          Set up a discovery call with me here. I meet with people at these
-          times and booking one is the fastest way to get booked, have a call,
-          and know whether we’re a fit. If that time doesn’t work for you, email
-          me at alli@hypothesisdepartment.com and we’ll make it happen.
+          Set up a discovery call with me here. If the times on my calendar
+          don’t work for you, email me at alli@hypothesisdepartment.com and
+          we’ll make it happen.
         </Text>
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
