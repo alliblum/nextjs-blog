@@ -15,9 +15,8 @@ export default function FoundersAndLeaders() {
     <Layout home>
       <Stack spacing={5}>
         <Text as="i">
-          Get your team out of your office and DMs, start shipping faster,
-          increase your acquisition and activation metrics - without
-          compromising from your vision{' '}
+          Get your DMs under control, start shipping faster, juice your
+          acquisition and activation metrics - without compromising your vision{' '}
         </Text>
         <Heading size="xl">
           Visionary leaders aren’t meant to spend their days responding to DMs.{' '}
@@ -37,62 +36,88 @@ export default function FoundersAndLeaders() {
           Suffering the cognitive load of context switching throughout the day
           while you straddle your dual roles as CPO and CEO (or Team Lead and
           Lead IC) without having enough time to think and plan for how you’ll
-          navigate startup to scaleup.
+          navigate your transition from startup to scaleup.
         </Text>
-        <Heading size="lg">An uncomfortable truth: </Heading>
         <Heading size="lg">
-          Your team doesn’t see what you see. They don’t know what you know. And
-          no matter how many times you explain it, they will rarely embrace your
-          vision this way.
+          An uncomfortable truth about why it's hard to get off the hamster
+          wheel:{' '}
+        </Heading>
+        <Heading size="md">
+          Your team doesn’t see what you see. Your team doesn’t know what you
+          know. And no matter how many times you explain your vision, they'll
+          rarely embrace it like you do.
         </Heading>{' '}
-        <Heading size="lg">Why?</Heading>
-        <Text>
-          For one thing, you’ve spent years understanding the problem you’re
-          solving, there simply isn’t enough time in the day to transmute the
-          wholeness of your wisdom into the brain of another person with
-          conversation alone.{' '}
+        <Heading size="md">Why?</Heading>
+        <Text as="strong">
+          1. You’ve spent years understanding the problems you’re solving,
+          understanding the market you're serving, imagining the future you're
+          building - and adapting and evolving that vision as you build.
         </Text>
         <Text>
-          And even if you could share the entirety of what you’re asking people
-          to see, your team doesn’t need to know all of your vision, they need
-          to know what’s important now, this month, this quarter, this year. In
-          fact, sharing too much of your vision at the wrong time or in the
-          wrong way can make it harder for your team to know what’s important
-          right now.{' '}
+          {' '}
+          How many hours, days, weeks, months would anyone in your position need
+          to transmute the wholeness of your wisdom into the brain of another
+          person with conversation alone?{' '}
+        </Text>
+        <Text as="strong">
+          2. Sharing too much of your vision at the wrong time or in the wrong
+          way can make it harder for your team to know what’s important right
+          now.
         </Text>
         <Text>
-          For another, perhaps more important thing, we humans are prone to a
-          variety of biases that make it difficult to trust the word of someone
-          else over what we ourselves experience. Think of a time when someone
-          told you how hot it was outside with sweat dripping down their
-          forehead, what did you think? “Wow must be hot.” When you went
-          outside, what did you feel? “OMG they were right I’m in hell I need
-          lemonade in my veins.”
+          {' '}
+          Even if you could share the entirety of what you’re asking people to
+          see, your team doesn’t need to know all of your vision. They need to
+          know what’s important now, this month, this quarter, this year.{' '}
+        </Text>
+        <Text>
+          Especially as your company enters the "We have so many opportunities
+          it's hard to choose" stage.
+        </Text>
+        <Text as="strong">
+          3. We humans are prone to a variety of biases that make it difficult
+          to trust the word of someone else over what we ourselves experience.
+        </Text>
+        <Text>
+          {' '}
+          Think of a time when someone told you how hot it was outside with
+          sweat dripping down their forehead, what did you think? “Wow must be
+          hot.” When you went outside, what did you feel? “OMG they were right
+          I’m in hell I need lemonade in my veins.”
         </Text>{' '}
         <Text>
           The same phenomenon is true for visionary founders. As believers in
           visionaries, it’s one thing to hear the vision filtered through the
           experience of the visionary. It’s an entirely different thing to
           discover the same forces, problems, and opportunity. To really embrace
-          and understand how to act on a vision, team member “have to see it to
+          and understand how to act on a vision, team members “have to see it to
           believe it.”{' '}
         </Text>
+        <Text as="strong">
+          4. Understanding and operational readiness are not equivalent.{' '}
+        </Text>
         <Text>
-          And finally, you having a vision, your team believing in that vision,
-          and your team knowing what matters now, and being excited to execute
-          on that vision does not equate to your team being operationally ready
-          to execute on that vision.
+          You having a vision, your team believing in that vision, and your team
+          knowing what matters now, and being excited to execute on that vision
+          does not equate to your team being operationally ready to execute on
+          that vision.
         </Text>
         <Heading size="lg">
+          How can you overcome these truths to start shipping faster, growing
+          your metrics, and step into your role as a visonary leader?
+        </Heading>
+        {/* <Heading size="lg">
           Now you can ship faster, juice your metrics, and fully step into your
           role as a visionary leader - all while having even fewer meetings and
           DMs. Here’s how.
-        </Heading>{' '}
+        </Heading>{' '} */}
         <Text>
-          I take an outcomes-led approach. Something here about the outcomes
-          come first, then we study the problems, then we study the blah blah
-          but make if fun and peppy OR put this on the home page.
+          I help visionary founders get back to the business of leading and
+          thinking about the next five years by mobilizing your vision, getting
+          buy-in from your team, and establishing operational readiness for them
+          to ship high impact work
         </Text>
+        <Text>You can bring onto your team to help in two ways</Text>
         <Heading size="md">
           Option 1: Get Your Team to See Your Visions and Make Decisions as if
           They Were You
@@ -120,21 +145,31 @@ export default function FoundersAndLeaders() {
             into a custom, repeatable training for your team.{' '}
           </ListItem>
           <ListItem>
-            <Text as="strong"> Make essential data accessible:</Text> Give your
+            <Text as="strong"> Establish operational readiness:</Text> Give your
             team of product managers, UX designers, copywriters, and marketers
             the building blocks that allow them to prioritize and ship high
             quality work 2-3X faster than they do now.
           </ListItem>{' '}
         </UnorderedList>
         <Heading size="md">
-          Option 2: Fractional Head of Product // Growth // Change Management
+          Option 2: Fractional Head of Product, Growth, Strategy, and/or Change
+          Management
         </Heading>
         <Text>AKA, an advisor who does stuff. </Text>
-        <Text>I work with teams in 3 capacities:</Text>
+        <Text>
+          The title is only as important inasmuch as it helps the rest of your
+          team understand how I can help them do their best work.{' '}
+        </Text>
+        <Text>
+          This option is available as follow-on work to a project with me or
+          with another JTBD consultant. After we've established operational
+          readiness, I work with teams in 1 of 3 capacities:
+        </Text>
         <UnorderedList spacing={3}>
           <ListItem>
             <Text as="strong">Advisor: </Text>As a thought partner with you,
-            we’ll unpack and solve the gnarliest problems at your business.{' '}
+            we’ll unpack and solve the gnarliest problems at your business in
+            regular conversation.{' '}
           </ListItem>
           <ListItem>
             <Text as="strong">Coach & Consultant: </Text>As an embedded member
@@ -145,7 +180,7 @@ export default function FoundersAndLeaders() {
           </ListItem>
           <ListItem>
             <Text as="strong">Hybrid Leader - IC: </Text>As a Swiss-Army Knife
-            IC, I’ll do the above and/or take hands on approach to ship work
+            IC, I’ll do the above and/or take hands-on approach to ship work
             that increases your metrics, especially activation. In addition to
             product management I’ll bring my background of UX, Research,
             Conversion Copy to ship new onboarding UX, conversion-optimized
@@ -153,10 +188,8 @@ export default function FoundersAndLeaders() {
           </ListItem>
         </UnorderedList>
         <Text>
-          Ongoing engagement available in various units of Alli depending on
-          your team’s needs. Offer available to founders who have done option 1.
-          Reach out and we’ll find the best way to get you to where you want to
-          go.
+          This work is an ongoing engagement available in various units of Alli
+          depending on your team’s needs.
         </Text>
         <Heading size="lg">
           Put a permanent stop to work that keeps your focus in constant motion
@@ -166,10 +199,11 @@ export default function FoundersAndLeaders() {
         <UnorderedList spacing={3}>
           <ListItem>
             <Text as="strong">Get your team to see what you see:</Text> Go from
-            repeating yourself about what’s important 15 times without seeing
-            anyone do anything about it to fielding inbound requests from your
-            team saying, “I found this number that’s smaller than it should be,
-            I have a hypothesis about how to improve it, here’s what I propose.”{' '}
+            repeating yourself about what’s important 15 times a day without
+            seeing anyone do anything about it to fielding inbound requests from
+            your team saying, “I found this number that’s smaller than it should
+            be, I have a hypothesis about how to improve it, here’s what I
+            propose.”{' '}
           </ListItem>
           <ListItem>
             <Text as="strong">
@@ -178,11 +212,11 @@ export default function FoundersAndLeaders() {
             </Text>{' '}
             Go from wondering what’s taking everyone so long to having the
             champagne problem of seeing outcome-generating updates and
-            improvements ship faster than you can keep up with them{' '}
+            improvements ship faster than you can keep up with them.{' '}
           </ListItem>
           <ListItem>
             <Text as="strong">Spend less time answering DMs: </Text>Go from
-            swatting away one hundred DMs a week to so much confidence across
+            swatting away one million DMs a week to so much confidence across
             your team that you only hear from them when it’s time to rubber
             stamp their spot-on work or collaborate on truly gnarly problems{' '}
           </ListItem>
@@ -191,11 +225,13 @@ export default function FoundersAndLeaders() {
             time from leadership of your product to leadership of your business.{' '}
           </ListItem>
           <ListItem>
-            <Text as="strong">Stop wondering if you’re missing something:</Text>
-            Let go of that nagging feeling of whether you’re making the right
-            choice about what market to focus on first, which low hanging fruit
-            is the juiciests, and whether you’re making the right choice for the
-            kind of business you want to lead.{' '}
+            <Text as="strong">
+              Stop wondering if you’re missing something:{' '}
+            </Text>
+            Let go of that nagging feeling of wondering whether you’re making
+            the right choice about what market to focus on first, which low
+            hanging fruit is the juiciest, and whether you’re making the right
+            choice for the kind of business you want to lead.{' '}
           </ListItem>
         </UnorderedList>
         <Box bg="purple.100" p={4} borderRadius="md">
@@ -225,8 +261,11 @@ export default function FoundersAndLeaders() {
             <Text as="strong"> -Jordan, VP Product Engineering</Text>
           </Stack>
         </Box>
-        <Heading size="lg">Why me crosshead: </Heading>
-        <Text>Some of my greatest hits:</Text>
+        <Heading size="lg">
+          Get a cross-functional right-hand who has gotten reps inacross almost
+          every part of SaaS business{' '}
+        </Heading>
+        <Heading size="md">These are some of my greatest hits:</Heading>
         <UnorderedList spacing={3}>
           {' '}
           <ListItem>
@@ -264,7 +303,7 @@ export default function FoundersAndLeaders() {
             marketing initiatives and prepare teams for 10X growth
           </ListItem>
         </UnorderedList>
-        <Heading size="lg">I'm a SaaS Polymath with expertise in:</Heading>
+        <Heading size="md">I'm a SaaS Polymath with expertise in:</Heading>
         <UnorderedList>
           <ListItem>New user onboarding </ListItem>
           <ListItem>Leadership</ListItem>
@@ -281,7 +320,7 @@ export default function FoundersAndLeaders() {
             Enough React, CSS, and SQL to talk with your engineers
           </ListItem>
         </UnorderedList>
-        <Heading size="lg"> I'm a speaker or mentor with:</Heading>
+        <Heading size="md"> I'm a speaker or mentor with:</Heading>
         <UnorderedList>
           <ListItem>MicroConf</ListItem>{' '}
           <ListItem>TinySeed Accelerator</ListItem>
@@ -290,12 +329,15 @@ export default function FoundersAndLeaders() {
           <ListItem>Startups for the Rest of Us</ListItem>
           Forget the Funnel{' '}
         </UnorderedList>
-        <Text>
+        <Heading size="lg">
           Reach out today and in 6 months you could be done with too-many DMs,
-          slow shipping, and sad metrics Set up a discovery call with me here. I
-          meet with people at these times and booking one is the fastest way to
-          get booked, have a call, and know whether we’re a fit. If that time
-          doesn’t work for you, email me at [email] and we’ll make it happen.
+          slow shipping, and sad metrics
+        </Heading>
+        <Text>
+          Set up a discovery call with me here. I meet with people at these
+          times and booking one is the fastest way to get booked, have a call,
+          and know whether we’re a fit. If that time doesn’t work for you, email
+          me at alli@hypothesisdepartment.com and we’ll make it happen.
         </Text>
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
