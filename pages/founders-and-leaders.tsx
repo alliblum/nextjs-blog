@@ -206,6 +206,12 @@ export default function FoundersAndLeaders() {
             propose.”{' '}
           </ListItem>
           <ListItem>
+            <Text as="strong">Get more activated users:</Text>
+            Stop watching customers dropoff and never return after that first
+            time they log in with new and improved onboarding UX and
+            conversion-optimized onboarding emails.
+          </ListItem>
+          <ListItem>
             <Text as="strong">
               Ship outcome-generating work so fast you kind of want people to
               slow down and explain things to you:
