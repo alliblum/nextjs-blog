@@ -18,7 +18,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/mdx.mdx",
-    "next.config.js",
+    "next.config.cjs",
     "pages/jtbd-practitioners.mdx" // "pages/my-mdx-page",
     // "pages/jtbd-practitioners.tsx"
   ],

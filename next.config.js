@@ -1,3 +1,35 @@
+import * as NextMdx from '@next/mdx'
+
+const withMDX = NextMdx.default({
+  extension: /\.mdx?$/,
+
+  options: {
+    remarkPlugins: [],
+    reHypePlugins: [],
+  },
+})
+
+// const withMDX = require('@next/mdx')({
+//   options: {
+//     remarkPlugins: [],
+//     rehypePlugins: [],
+//   },
+// })
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Configure pageExtensions to include md and mdx
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  // experimental: {
+  //   appDir: true,
+  // },
+  // // Optionally, add any other Next.js config below
+  // reactStrictMode: true,
+}
+export default nextConfig
+
+// export default withMDX(nextConfig)
+
 // module.exports = {
 //   typescript: {
 //     // !! WARN !!
