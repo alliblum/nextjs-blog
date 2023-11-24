@@ -4,7 +4,7 @@ import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
-import { MDXComponents } from './mdxcomponents'
+// import  MDXComponents from './mdxcomponents'
 // import { MDXProvider } from '@mdx-js/react'
 // import { MDXComponents } from 'mdx/types'
 
