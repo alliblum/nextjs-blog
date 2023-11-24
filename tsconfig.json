@@ -18,9 +18,9 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/mdx.mdx",
-    "next.config.cjs",
-    "pages/jtbd-practitioners.mdx" // "pages/my-mdx-page",
-    // "pages/jtbd-practitioners.tsx"
+    "next.config.js",
+    "pages/jtbd-practitioners.mdx", // "pages/my-mdx-page",
+    "next.config.js" // "pages/jtbd-practitioners.tsx"
   ],
   "exclude": ["node_modules"]
 }

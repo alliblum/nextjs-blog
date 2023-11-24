@@ -6,11 +6,11 @@ import QuoteBlock from './components/mdx/quoteblock'
 // React component you want, including inline styles,
 // components from other libraries, and more.
 
-export function useMDXComponents(components: MDXComponents): MDXComponents {
+export function useMDXComponent(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
-    h1: ({ children }) => <h1 style={{ fontSize: '100px' }}>{children}</h1>,
-    QuoteBlock: ({ props }) => <QuoteBlock {...props} />,
+    // h1: ({ children }) => <h1 style={{ fontSize: '100px' }}>{children}</h1>,
+    // QuoteBlock: ({ props }) => <QuoteBlock {...props} />,
 
     ...components,
   }

@@ -5,7 +5,12 @@ import Head from 'next/head'
 // import utilStyles from '../../styles/utils.module.css';
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { Heading, Box } from '@chakra-ui/react'
-import { useMDXComponents } from '../../mdx-components'
+import { useMDXComponent } from '../../mdx-components'
+// import QuoteBlock from './components/mdx/quoteblock'
+
+// const mdxComponent = {
+//   QuoteBlock,
+// }
 
 export default function Post({
   postData,
@@ -16,6 +21,7 @@ export default function Post({
     contentHtml: string
   }
 }) {
+  const MDXContent = useMDXComponent(Post.body.code)
   return (
     <Box>
       <Head>
@@ -28,6 +34,7 @@ export default function Post({
           </Heading>
           <br />
           {/* <Date dateString={postData.date} /> */}
+          <MDXContent />
           <br /> <br />
           <text dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
