@@ -10,11 +10,17 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
     h1: ({ children }) => <h1 style={{ fontSize: '100px' }}>{children}</h1>,
-    QuoteBlock: (props) => <QuoteBlock {...props} />,
+    QuoteBlock: ({ props }) => <QuoteBlock {...props} />,
 
     ...components,
   }
 }
+
+// QuoteBlock: ({ ...props }) => import('./components/mdx/quoteblock'),
+
+//     ...components,
+//   }
+// }
 
 // This file is required to use @next/mdx in the `app` directory.
 // export function useMDXComponents(components) {

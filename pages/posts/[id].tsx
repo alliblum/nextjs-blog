@@ -5,6 +5,7 @@ import Head from 'next/head'
 // import utilStyles from '../../styles/utils.module.css';
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { Heading, Box } from '@chakra-ui/react'
+import { useMDXComponents } from '../../mdx-components'
 
 export default function Post({
   postData,
