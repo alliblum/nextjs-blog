@@ -1,4 +1,5 @@
 // import { React } from 'react';
+// import { GetStaticProps } from 'next'
 import Layout from './layout'
 // import { getAllPostIds, getPostData } from './posts'
 import Head from 'next/head'
@@ -12,12 +13,19 @@ import { Heading, Box, Stack, Text } from '@chakra-ui/react'
 import { MDXProvider } from '@mdx-js/react'
 import QuoteBlock from './mdx/quoteblock' // Adjust the path accordingly
 
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote } from 'next-mdx-remote'
+
 const MDXComponents = {
   QuoteBlock,
 }
 
 const Post = ({
   postData,
+  source,
 }: {
   postData: {
     title: string
@@ -29,6 +37,7 @@ const Post = ({
   // console.log('postData', postData)
   // console.log('postData.article', postData.article)
   console.log('contentHtml111:', postData)
+  console.log('🚀 ~ file: post.tsx:84 ~ source:', source)
 
   // if (!postData) {
   //   // You can decide how to handle this case, e.g., show an error message or redirect
@@ -54,8 +63,9 @@ const Post = ({
         )}
 
         <MDXProvider components={MDXComponents}>
-          {postData?.article}
-          {postData?.contentHtml}
+          <div className="markdown-body">
+            <MDXRemote {...source} components={MDXComponents} />
+          </div>
         </MDXProvider>
 
         {/* <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider> */}
