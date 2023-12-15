@@ -4,12 +4,30 @@ import Head from 'next/head'
 // import Date from '../../components/date'
 // import utilStyles from '../../styles/utils.module.css';
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Heading, Box } from '@chakra-ui/react'
-import { useMDXComponent } from '../../mdx-components'
+import { Heading, Box, Stack } from '@chakra-ui/react'
+import { useMDXComponents } from '../../mdx-components'
+import MDXComponents from '../../components/mdxcomponents'
+import { MDXProvider } from '@mdx-js/react'
+
+// import { MDXProvider } from '@next/mdx'
 // import QuoteBlock from './components/mdx/quoteblock'
 
 // const mdxComponent = {
 //   QuoteBlock,
+// }
+
+// export const components = {
+// QuoteBlock: dynamic (() => import ("../components/mdx/quoteblock"), {
+//   ssr: false,
+// }),
+
+// export const components = {
+//   QuoteBlock: dynamic (() => import("../components/mdx/QuoteBlock"),
+// ),
+// }
+
+// export const components = {
+//   QuoteBlock: props,
 // }
 
 export default function Post({
@@ -19,9 +37,20 @@ export default function Post({
     title: string
     // date: string
     contentHtml: string
+    article: object
   }
 }) {
-  const MDXContent = useMDXComponent(Post.body.code)
+  // const MDXPage = Post
+  // const MDXContent = useMDXComponents(Post)
+  // const MDXContent = useMDXComponents(Post.article)
+  // const MDXContent = Post.article
+  // const MDXContent = Post
+
+  const MDXPage = ({ MDXContent }) => (
+    <MDXProvider>
+      <MDXContent />
+    </MDXProvider>
+  )
   return (
     <Box>
       <Head>
@@ -34,7 +63,8 @@ export default function Post({
           </Heading>
           <br />
           {/* <Date dateString={postData.date} /> */}
-          <MDXContent />
+          {/* <MDXContent {...MDXComponents} /> */}
+          {/* <MDXContent {...MDXComponents} /> */}
           <br /> <br />
           <text dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>

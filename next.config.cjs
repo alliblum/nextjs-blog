@@ -16,8 +16,20 @@ const withMDX = NextMdx.default({
 //   },
 // })
 
+module.exports = {
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // Add a rule to handle TypeScript declaration files
+    config.module.rules.push({
+      test: /\.d\.ts$/,
+      use: 'ignore-loader', // You can use other loaders if needed
+    })
+
+    return config
+  },
+}
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withMDX({
   // Configure pageExtensions to include md and mdx
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   // experimental: {
@@ -25,7 +37,7 @@ const nextConfig = {
   // },
   // // Optionally, add any other Next.js config below
   // reactStrictMode: true,
-}
+})
 export default nextConfig
 
 // export default withMDX(nextConfig)
