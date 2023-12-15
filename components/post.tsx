@@ -38,7 +38,9 @@ const Post = ({
         {/* Render MDX content */}
         <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider>
         {/* You can still render other HTML content if needed */}
-        <text>{postData.contentHtml}</text>
+        <Box dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+        {/* <text>{postData.contentHtml}</text> */}
         {/* <text>{postData.contentHtml}</text> */}
         {/* </article> */}
       </Layout>

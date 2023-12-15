@@ -1,5 +1,6 @@
 // import * as mdxComponents from '@/components/mdx'
 import type { MDXComponents } from 'mdx/types'
+import React from 'react'
 import QuoteBlock from './components/mdx/quoteblock'
 
 // // This file allows you to provide custom React components
