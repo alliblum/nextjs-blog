@@ -50,3 +50,5 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ...components,
   }
 }
+
+export default MDXComponents

@@ -4,8 +4,8 @@ import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
-// import  MDXComponents from './mdxcomponents'
-// import { MDXProvider } from '@mdx-js/react'
+// import  MDXComponents from './mdx-components'
+import { MDXProvider } from '@mdx-js/react'
 // import { MDXComponents } from 'mdx/types'
 
 export const theme = extendTheme({
@@ -35,8 +35,12 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
   return (
     <ChakraProvider theme={theme}>
+      {/* <MDXProvider component={Component}> */}
       <Component {...pageProps} />
-      <h1>{isClient ? '' : 'Prerendered'}</h1>
+      {isClient && <h1>Prerendered</h1>}
+      {/* </MDXProvider> */}
+
+      {/* <h1>{isClient ? '' : 'Prerendered'}</h1> */}
       {/* <h1>{isClient ? 'This is never prerendered' : 'Prerendered'}</h1> */}
     </ChakraProvider>
   )

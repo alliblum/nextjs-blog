@@ -16,7 +16,7 @@ import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
-import { unified } from 'unified'
+import { unified, Processor } from 'unified'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
