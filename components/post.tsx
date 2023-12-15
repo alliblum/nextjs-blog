@@ -22,23 +22,48 @@ const Post = ({
   postData: {
     title: string
     // date: string
-    contentHtml: string
-    article: React.ReactNode
+    contentHtml?: string
+    article?: React.ReactNode
   }
 }) => {
+  // console.log('postData', postData)
+  // console.log('postData.article', postData.article)
+  console.log('contentHtml111:', postData)
+
+  // if (!postData) {
+  //   // You can decide how to handle this case, e.g., show an error message or redirect
+  //   return <div>Error: Post data not available</div>
+  // }
+
+  // // Destructure postData to extract title, contentHtml, and article
+  // const { title, contentHtml, article } = postData
+
   return (
     <Box>
-      <Head>{postData.title}</Head>
+      <Head>{postData?.title}</Head>
       <Layout>
         {/* <article>
           <h1> */}
-        <Heading>{postData.title}</Heading>
+        <Heading>{postData?.title}</Heading>
         {/* </h1> */}
-
         {/* Render MDX content */}
-        <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider>
+        {postData?.article && (
+          <MDXProvider components={MDXComponents}>
+            {postData?.article}
+          </MDXProvider>
+        )}
+
+        <MDXProvider components={MDXComponents}>
+          {postData?.article}
+          {postData?.contentHtml}
+        </MDXProvider>
+
+        {/* <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider> */}
         {/* You can still render other HTML content if needed */}
-        <Box dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+        <div className="markdown-body">
+          <Box dangerouslySetInnerHTML={{ __html: postData?.contentHtml }} />
+        </div>
 
         {/* <text>{postData.contentHtml}</text> */}
         {/* <text>{postData.contentHtml}</text> */}

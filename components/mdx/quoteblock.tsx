@@ -21,6 +21,7 @@ export interface QuoteBlockProps {
 const QuoteBlock: React.FC<QuoteBlockProps> = (props) => {
   return (
     <Box bg="purple.100" p={4} borderRadius="md">
+      this is quoteblock
       <Stack>
         <Text as="i">"{props.quote}"</Text>
         <Text as="strong">{props.author}"</Text>

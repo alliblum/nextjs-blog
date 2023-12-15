@@ -62,11 +62,15 @@ export function getAllPostIds() {
 }
 
 export async function getPostData(id: string) {
+  console.log('id-------:', id)
   const fullPath = path.join(postsDirectory, `${id}.mdx`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
+  console.log('matterResult:', matterResult)
+
+  const article = matterResult.data?.article || null
 
   // Use remark to convert markdown into HTML string
   // const processedContent = await remark()
@@ -79,13 +83,20 @@ export async function getPostData(id: string) {
     .use(rehypeSanitize)
     .use(rehypeStringify)
     .process(matterResult.content)
+
   const contentHtml = processedContent.toString()
 
   // Combine the data with the id and contentHtml
-  return {
+  const postData = {
     id,
     // ...matterResult.data
     contentHtml,
+    // title,
+    article,
+    // article: matterResult.data.article,
     ...(matterResult.data as { date: string; title: string }),
   }
+  console.log('postData:', postData)
+
+  return postData
 }
