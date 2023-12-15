@@ -25,6 +25,15 @@ import { GetStaticProps } from 'next'
 // import { Box, Heading, Text, Spacer } from '@chakra-ui/react'
 // import theme from './_app'
 
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData,
+    },
+  }
+}
+
 export default function Home({
   allPostsData,
 }: {
@@ -85,20 +94,20 @@ export default function Home({
           alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
         />
 
-        {/* <Heading size="lg">Writing:</Heading>
+        <Heading size="lg">Writing</Heading>
         <br />
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <NextLink href={`/posts/${id}`}>{title}</NextLink>
-              <br />
-              <small className={utilStyles.lightText}></small>
-            </li>
-          ))}
-        </ul>
-      </section> */}
+
+        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <NextLink href={`/posts/${id}`}>{title}</NextLink>
+                <br />
+                <small className={utilStyles.lightText}></small>
+              </li>
+            ))}
+          </ul>
+        </section>
 
         <Heading>Sign up for emails</Heading>
 
@@ -154,11 +163,11 @@ export default function Home({
 //   )
 // }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData,
-    },
-  }
-}
+// export const getStaticProps: GetStaticProps = async () => {
+//   const allPostsData = getSortedPostsData()
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   }
+// }

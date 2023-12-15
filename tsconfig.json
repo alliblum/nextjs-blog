@@ -7,20 +7,28 @@
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
+    // "module": "CommonJS",
     "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    // "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "components/mdx/*": ["./src/components/mdx/*"]
+    }
   },
   "include": [
+    "src/**/*",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "pages/mdx.mdx",
     "next.config.js",
-    "pages/jtbd-practitioners.mdx" // "pages/my-mdx-page",
-    // "pages/jtbd-practitioners.tsx"
+    "pages/jtbd-practitioners.mdx", // "pages/my-mdx-page",
+    "next.config.js" // "pages/jtbd-practitioners.tsx"
   ],
   "exclude": ["node_modules"]
 }
