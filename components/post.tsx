@@ -62,7 +62,8 @@ const Post = ({
         {/* You can still render other HTML content if needed */}
 
         <div className="markdown-body">
-          <Box dangerouslySetInnerHTML={{ __html: postData?.contentHtml }} />
+        <Box { postData?.contentHtml } />
+          {/* <Box dangerouslySetInnerHTML={{ __html: postData?.contentHtml }} /> */}
         </div>
 
         {/* <text>{postData.contentHtml}</text> */}
