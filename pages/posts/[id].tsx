@@ -8,7 +8,6 @@ import { Heading, Box, Stack, Text } from '@chakra-ui/react'
 import { useMDXComponents } from '../../mdx-components'
 
 import { MDXProvider } from '@mdx-js/react'
-import Post from '../../components/post'
 
 import path from 'path'
 import matter from 'gray-matter'
@@ -16,17 +15,20 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 // import QuoteBlock from '../../components/mdx/quoteblock' // Adjust the path accordingly
 
+import React from 'react'
+import Post from '../../components/post'
+
 const PostPage = ({
   postData,
   source,
 }: {
   postData: {
     title: string
-    source: string
-    // date: string
     contentHtml: string
     article: React.ReactNode
+    source: string
   }
+  source: string
 }) => {
   return <Post postData={postData} source={source} />
 }
@@ -48,9 +50,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { content, data } = matter(source)
 
   const mdxSource = await serialize(content)
+
   return {
     props: {
-      source: mdxSource,
+      mdx: source.toString(),
     },
   }
 }
