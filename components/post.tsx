@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import Layout from './layout'
 // import { getAllPostIds, getPostData } from './posts'
 import Head from 'next/head'
@@ -28,76 +28,34 @@ const Post = ({
 }: {
   postData: {
     title: string
-    // date: string
-    contentHtml?: string
     article?: React.ReactNode
-    // source: mdxSource
   }
+  source: { [key: string]: React.ReactNode }
 }) => {
-  // console.log('postData', postData)
-  // console.log('postData.article', postData.article)
-  // console.log('contentHtml111:', postData)
-
-  // if (!postData) {
-  //   // You can decide how to handle this case, e.g., show an error message or redirect
-  //   return <div>Error: Post data not available</div>
-  // }
-
-  // // Destructure postData to extract title, contentHtml, and article
-  // const { title, contentHtml, article } = postData
-
   return (
     <Box>
       <Head>{postData?.title}</Head>
       <Layout>
-        {/* <article>
-          <h1> */}
         <Heading>{postData?.title}</Heading>
-        {/* </h1> */}
-        {/* Render MDX content */}
         {postData?.article && (
           <MDXProvider components={MDXComponents}>
             {postData?.article}
           </MDXProvider>
         )}
-
         <MDXProvider components={MDXComponents}>
-          {/* {postData?.article}
-          {postData?.contentHtml} */}
-
-          {/* <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider> */}
-          {/* You can still render other HTML content if needed */}
-
           <div className="markdown-body">
-            <MDXRemote {...source} components={MDXComponents} />
-            {/* <Box { postData?.contentHtml } /> */}
-            {/* <Box dangerouslySetInnerHTML={{ __html: postData?.contentHtml }} /> */}
+            <MDXRemote
+              compiledSource={''}
+              scope={undefined}
+              frontmatter={undefined}
+              {...source}
+              components={MDXComponents}
+            />
           </div>
         </MDXProvider>
-
-        {/* <text>{postData.contentHtml}</text> */}
-        {/* <text>{postData.contentHtml}</text> */}
-        {/* </article> */}
       </Layout>
     </Box>
   )
 }
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const paths = getAllPostIds()
-//   return {
-//     paths,
-//     fallback: false,
-//   }
-// }
-
-// export const getStaticProps: GetStaticProps = async ({ params }) => {
-//   const postData = await getPostData(params?.id as string)
-//   return {
-//     props: {
-//       postData,
-//     },
-//   }
-// }
 
 export default Post

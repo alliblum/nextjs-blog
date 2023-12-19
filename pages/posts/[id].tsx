@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
@@ -7,7 +7,7 @@ import Head from 'next/head'
 import fs from 'fs'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { Heading, Box, Stack, Text } from '@chakra-ui/react'
-import { useMDXComponents } from '../../mdx-components'
+// import { useMDXComponents } from '../../mdx-components'
 // import { useRouter } from 'next/router'
 // import MDXComponents from '../../components/mdxcomponents'
 import { MDXProvider } from '@mdx-js/react'
@@ -26,17 +26,18 @@ import { MDXRemote } from 'next-mdx-remote'
 
 const PostPage = ({
   postData,
-  source,
-}: {
+}: // source,
+{
   postData: {
     title: string
     // date: string
     // contentHtml: string
     article: React.ReactNode
-    // source: string
+    source: string
   }
 }) => {
-  return <Post postData={postData} source={source} />
+  return <Post postData={postData} source={{}} />
+  // return <Post postData={postData} source={source} />
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
