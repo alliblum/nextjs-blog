@@ -11,7 +11,7 @@ import { Heading, Box, Stack, Text } from '@chakra-ui/react'
 // import { useRouter } from 'next/router'
 // import MDXComponents from '../../components/mdxcomponents'
 import { MDXProvider } from '@mdx-js/react'
-import QuoteBlock from './mdx/quoteblock' // Adjust the path accordingly
+import QuoteBlock from './mdx/quoteblock'
 
 import fs from 'fs'
 import path from 'path'
@@ -32,21 +32,9 @@ const Post = ({
     // date: string
     contentHtml?: string
     article?: React.ReactNode
+    source: string
   }
 }) => {
-  // console.log('postData', postData)
-  // console.log('postData.article', postData.article)
-  console.log('contentHtml111:', postData)
-  console.log('🚀 ~ file: post.tsx:84 ~ source:', source)
-
-  // if (!postData) {
-  //   // You can decide how to handle this case, e.g., show an error message or redirect
-  //   return <div>Error: Post data not available</div>
-  // }
-
-  // // Destructure postData to extract title, contentHtml, and article
-  // const { title, contentHtml, article } = postData
-
   return (
     <Box>
       <Head>{postData?.title}</Head>
@@ -68,36 +56,12 @@ const Post = ({
           </div>
         </MDXProvider>
 
-        {/* <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider> */}
-        {/* You can still render other HTML content if needed */}
-
         <div className="markdown-body">
           <Box dangerouslySetInnerHTML={{ __html: postData?.contentHtml }} />
         </div>
-
-        {/* <text>{postData.contentHtml}</text> */}
-        {/* <text>{postData.contentHtml}</text> */}
-        {/* </article> */}
       </Layout>
     </Box>
   )
 }
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const paths = getAllPostIds()
-//   return {
-//     paths,
-//     fallback: false,
-//   }
-// }
-
-// export const getStaticProps: GetStaticProps = async ({ params }) => {
-//   const postData = await getPostData(params?.id as string)
-//   return {
-//     props: {
-//       postData,
-//     },
-//   }
-// }
 
 export default Post
