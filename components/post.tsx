@@ -13,11 +13,12 @@ interface PostData {
   title: string
   contentHtml?: string
   article?: React.ReactNode
+  compiledSource: string
 }
 
 interface PostProps {
   postData: PostData
-  source?: string
+  source: string
 }
 
 const Post = ({ postData, source }: PostProps) => {
