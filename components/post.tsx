@@ -32,6 +32,7 @@ const Post = ({ postData, source }: PostProps) => {
           </MDXProvider>
         )}
 
+
         {source && (
           <MDXProvider components={MDXComponents}>
             <div className="markdown-body">
@@ -44,6 +45,7 @@ const Post = ({ postData, source }: PostProps) => {
             </div>
           </MDXProvider>
         )}
+
       </Layout>
     </Box>
   )
