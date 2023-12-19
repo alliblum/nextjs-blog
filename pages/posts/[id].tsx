@@ -22,7 +22,6 @@ const PostPage = ({
 }: {
   postData: {
     title: string
-    source: string
     // date: string
     contentHtml: string
     article: React.ReactNode
@@ -39,6 +38,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
+// export const getStaticProps: GetStaticProps = async ({ params }) => {
+//   const postData = await getPostData(params?.id as string)
+//   return {
+//     props: {
+//       postData: {
+//         ...postData,
+//         article: postData.article || null,
+//       },
+//     },
+//   }
+// }
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const id = params?.id
   const postsDirectory = path.join(process.cwd(), 'posts')
@@ -48,10 +58,59 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { content, data } = matter(source)
 
   const mdxSource = await serialize(content)
+  console.log(
+    '🚀 ~ file: [id].tsx:75 ~ constgetStaticProps:GetStaticProps= ~ mdxSource:',
+    mdxSource
+  )
+
   return {
     props: {
       source: mdxSource,
     },
   }
 }
+
 export default PostPage
+
+// const MDXPage = Post
+// const MDXContent = useMDXComponents(Post)
+// const MDXContent = useMDXComponents(Post.article)
+// const MDXContent = Post.article
+// const MDXContent = Post
+
+// const MDXPage = ({ MDXContent }) => (
+//   <MDXProvider components={MDXComponents}>
+//     <MDXContent />
+//   </MDXProvider>
+// )
+
+// import { MDXProvider } from '@next/mdx'
+// import { QuoteBlock } from './components/mdx/quoteblock'
+
+// const mdxComponent = {
+//   QuoteBlock,
+// }
+
+// export const components = {
+// QuoteBlock: dynamic (() => import ("../components/mdx/quoteblock"), {
+//   ssr: false,
+// }),
+
+// export const components = {
+//   QuoteBlock: dynamic (() => import("../components/mdx/QuoteBlock"),
+// ),
+// }
+
+// export const components = {
+//   QuoteBlock: props,
+// }
+
+// <Stack>
+// {/* Render MDX content */}
+// <MDXProvider components={MDXComponents}>
+//   {postData.article}
+// </MDXProvider>
+// {/* Render HTML content */}
+// <Text dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+// </Stack>
+// </div>
