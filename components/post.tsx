@@ -15,7 +15,7 @@ import QuoteBlock from './mdx/quoteblock' // Adjust the path accordingly
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-// import { serialize } from 'next-mdx-remote/serialize'
+import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 
 const MDXComponents = {

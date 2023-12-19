@@ -1,4 +1,4 @@
-import { MDXProvider } from '@mdx-js/react'
+import MDXProvider from '@mdx-js/react'
 import QuoteBlock from './components/mdx/quoteblock' // Adjust the path accordingly
 // import MDXComponents from 'components/mdxcomponents'
 import {} from './components/mdx'

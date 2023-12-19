@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import fs from 'fs'
 import Head from 'next/head'
 // import Date from '../../components/date'
 // import utilStyles from '../../styles/utils.module.css';
@@ -12,6 +13,11 @@ import { useMDXComponents } from '../../mdx-components'
 import { MDXProvider } from '@mdx-js/react'
 import Post from '../../components/post'
 
+import path from 'path'
+import matter from 'gray-matter'
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote } from 'next-mdx-remote'
+
 // import QuoteBlock from '../../components/mdx/quoteblock' // Adjust the path accordingly
 
 // const MDXComponents = {
@@ -20,6 +26,7 @@ import Post from '../../components/post'
 
 const PostPage = ({
   postData,
+  source,
 }: {
   postData: {
     title: string
@@ -28,7 +35,7 @@ const PostPage = ({
     article: React.ReactNode
   }
 }) => {
-  return <Post postData={postData} />
+  return <Post postData={postData} source={source} />
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -42,12 +49,20 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params?.id as string)
   console.log('postData:', postData)
+  const id = params?.id as string
+  const postsDirectory = path.join(process.cwd(), 'posts')
+  const fullPath = path.join(postsDirectory, `${id}.mdx`)
+  const mdxFilePath = path.join(postsDirectory, `${id}.mdx`)
+  const source = fs.readFileSync(mdxFilePath)
+  const { content, data } = matter(source)
+  const mdxSource = await serialize(content)
   return {
     props: {
-      postData: {
-        ...postData,
-        article: postData.article || null,
-      },
+      // postData: {
+      //   ...postData,
+      //   article: postData.article || null,
+      // },
+      source: mdxSource,
     },
   }
 }
