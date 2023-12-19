@@ -35,7 +35,7 @@ const Post = ({
 }) => {
   // console.log('postData', postData)
   // console.log('postData.article', postData.article)
-  console.log('contentHtml111:', postData)
+  // console.log('contentHtml111:', postData)
 
   // if (!postData) {
   //   // You can decide how to handle this case, e.g., show an error message or redirect

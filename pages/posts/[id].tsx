@@ -31,8 +31,9 @@ const PostPage = ({
   postData: {
     title: string
     // date: string
-    contentHtml: string
+    // contentHtml: string
     article: React.ReactNode
+    // source: string
   }
 }) => {
   return <Post postData={postData} source={source} />
