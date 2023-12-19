@@ -59,11 +59,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { content, data } = matter(source)
 
   const mdxSource = await serialize(content)
-  console.log(
-    '🚀 ~ file: [id].tsx:75 ~ constgetStaticProps:GetStaticProps= ~ mdxSource:',
-    mdxSource
-  )
-
   return {
     props: {
       source: mdxSource,

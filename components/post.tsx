@@ -35,19 +35,6 @@ const Post = ({
   }
   source: MDXRemoteSerializeResult
 }) => {
-  // console.log('postData', postData)
-  // console.log('postData.article', postData.article)
-  console.log('contentHtml111:', postData)
-  console.log('🚀 ~ file: post.tsx:84 ~ source:', source)
-
-  // if (!postData) {
-  //   // You can decide how to handle this case, e.g., show an error message or redirect
-  //   return <div>Error: Post data not available</div>
-  // }
-
-  // // Destructure postData to extract title, contentHtml, and article
-  // const { title, contentHtml, article } = postData
-
   return (
     <Box>
       <Head>{postData?.title}</Head>
