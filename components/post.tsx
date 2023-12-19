@@ -17,7 +17,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote } from 'next-mdx-remote'
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 const MDXComponents = {
   QuoteBlock,
@@ -33,6 +33,7 @@ const Post = ({
     contentHtml?: string
     article?: React.ReactNode
   }
+  source: MDXRemoteSerializeResult
 }) => {
   // console.log('postData', postData)
   // console.log('postData.article', postData.article)

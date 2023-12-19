@@ -13,7 +13,7 @@ import Post from '../../components/post'
 import path from 'path'
 import matter from 'gray-matter'
 import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote } from 'next-mdx-remote'
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 // import QuoteBlock from '../../components/mdx/quoteblock' // Adjust the path accordingly
 
 const PostPage = ({
@@ -26,6 +26,7 @@ const PostPage = ({
     contentHtml: string
     article: React.ReactNode
   }
+  source: MDXRemoteSerializeResult
 }) => {
   return <Post postData={postData} source={source} />
 }
