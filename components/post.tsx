@@ -24,8 +24,8 @@ const MDXComponents = {
 
 const Post = ({
   postData,
-}: // source,
-{
+  source,
+}: {
   postData: {
     title: string
     // date: string
