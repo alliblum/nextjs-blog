@@ -93,9 +93,9 @@ export default function Home({
           src="/media/logobar.png"
           alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
         />
-        {/* 
-        <Heading size="lg">Writing</Heading>
-        <br /> */}
+
+        {/* <Heading size="lg">Writing</Heading>
+        <br />
 
         {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <ul className={utilStyles.list}>
