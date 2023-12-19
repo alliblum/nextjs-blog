@@ -1,4 +1,5 @@
 // import styles from './layout.module.css'
+import React from 'react'
 import '../styles/global.css'
 import '../styles/markdown.css'
 import { AppProps } from 'next/app'

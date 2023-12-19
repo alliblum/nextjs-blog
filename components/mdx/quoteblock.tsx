@@ -1,27 +1,22 @@
-// import React from 'react'
-
-// import {
-//   Box,
-//   Text,
-//   Heading,
-//   Link,
-//   Stack,
-//   UnorderedList,
-//   ListItem,
-// } from '@chakra-ui/react'
-
 import React from 'react'
 import { Box, Text, Stack } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
 
 export interface QuoteBlockProps {
   quote: string
   author: string
 }
 
+export const theme = extendTheme({
+  textStyles: {
+    text: {},
+  },
+})
+
 const QuoteBlock: React.FC<QuoteBlockProps> = (props) => {
   return (
     <Box bg="purple.100" p={4} borderRadius="md">
-      this is quoteblock
       <Stack>
         <Text as="i">"{props.quote}"</Text>
         <Text as="strong">{props.author}"</Text>

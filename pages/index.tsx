@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import {
   Heading,
@@ -15,6 +16,7 @@ import {
   chakra,
   Image,
 } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
@@ -22,7 +24,6 @@ import NextLink from 'next/link'
 // import Image from 'next/image'
 
 import { GetStaticProps } from 'next'
-// import { Box, Heading, Text, Spacer } from '@chakra-ui/react'
 // import theme from './_app'
 
 export async function getStaticProps() {

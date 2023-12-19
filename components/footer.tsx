@@ -1,3 +1,4 @@
+import React from 'react'
 import { Box, Center, Stack, Divider, Heading } from '@chakra-ui/react'
 
 export const Footer = () => {

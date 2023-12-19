@@ -1,4 +1,4 @@
-// import { React } from 'react';
+import React from 'react'
 import Layout from './layout'
 // import { getAllPostIds, getPostData } from './posts'
 import Head from 'next/head'
@@ -91,4 +91,4 @@ const Post = ({
 //   }
 // }
 
-export default Post
+export default function Post
