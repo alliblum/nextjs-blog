@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <>
         <Component {...pageProps} />
-        {isClient && <h1>Prerendered</h1>}
+        {/* {isClient && <h1>Prerendered</h1>} */}
       </>
     </ChakraProvider>
   )
