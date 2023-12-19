@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Layout from './layout'
 // import { getAllPostIds, getPostData } from './posts'
 import Head from 'next/head'
@@ -24,13 +24,14 @@ const MDXComponents = {
 
 const Post = ({
   postData,
-  source,
-}: {
+}: // source,
+{
   postData: {
     title: string
     // date: string
     contentHtml?: string
     article?: React.ReactNode
+    // source: mdxSource
   }
 }) => {
   // console.log('postData', postData)

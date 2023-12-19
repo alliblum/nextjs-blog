@@ -1,10 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import fs from 'fs'
 import Head from 'next/head'
 // import Date from '../../components/date'
 // import utilStyles from '../../styles/utils.module.css';
+import fs from 'fs'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { Heading, Box, Stack, Text } from '@chakra-ui/react'
 import { useMDXComponents } from '../../mdx-components'
@@ -48,22 +48,23 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params?.id as string)
-  console.log('postData:', postData)
-  const id = params?.id as string
+  // const postData = await getPostData(params?.id as string)
+  // console.log('postData:', postData)
+  const id = params?.id
   const postsDirectory = path.join(process.cwd(), 'posts')
   const fullPath = path.join(postsDirectory, `${id}.mdx`)
   const mdxFilePath = path.join(postsDirectory, `${id}.mdx`)
-  const source = fs.readFileSync(mdxFilePath)
+  const source = fs.readFileSync(mdxFilePath, 'utf8')
   const { content, data } = matter(source)
+
   const mdxSource = await serialize(content)
   return {
     props: {
-      // postData: {
-      //   ...postData,
-      //   article: postData.article || null,
-      // },
-      source: mdxSource,
+      postData: {
+        // ...postData,
+        // article: postData.article || null,
+        source: mdxSource,
+      },
     },
   }
 }
