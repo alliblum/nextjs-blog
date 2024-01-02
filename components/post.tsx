@@ -1,4 +1,5 @@
 // import { React } from 'react';
+// import { GetStaticProps } from 'next'
 import Layout from './layout'
 // import { getAllPostIds, getPostData } from './posts'
 import Head from 'next/head'
@@ -12,12 +13,19 @@ import { Heading, Box, Stack, Text } from '@chakra-ui/react'
 import { MDXProvider } from '@mdx-js/react'
 import QuoteBlock from './mdx/quoteblock' // Adjust the path accordingly
 
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
+
 const MDXComponents = {
   QuoteBlock,
 }
 
 const Post = ({
   postData,
+  source,
 }: {
   postData: {
     title: string
@@ -25,19 +33,8 @@ const Post = ({
     contentHtml?: string
     article?: React.ReactNode
   }
+  source: MDXRemoteSerializeResult
 }) => {
-  // console.log('postData', postData)
-  // console.log('postData.article', postData.article)
-  console.log('contentHtml111:', postData)
-
-  // if (!postData) {
-  //   // You can decide how to handle this case, e.g., show an error message or redirect
-  //   return <div>Error: Post data not available</div>
-  // }
-
-  // // Destructure postData to extract title, contentHtml, and article
-  // const { title, contentHtml, article } = postData
-
   return (
     <Box>
       <Head>{postData?.title}</Head>
@@ -54,8 +51,9 @@ const Post = ({
         )}
 
         <MDXProvider components={MDXComponents}>
-          {postData?.article}
-          {postData?.contentHtml}
+          <div className="markdown-body">
+            <MDXRemote {...source} components={MDXComponents} />
+          </div>
         </MDXProvider>
 
         {/* <MDXProvider components={MDXComponents}>{postData.article}</MDXProvider> */}

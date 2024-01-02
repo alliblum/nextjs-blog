@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react'
 // import  MDXComponents from './mdx-components'
 import { MDXProvider } from '@mdx-js/react'
 // import { MDXComponents } from 'mdx/types'
-
 export const theme = extendTheme({
   textStyles: {
     // h1: {
@@ -27,7 +26,6 @@ export const theme = extendTheme({
     text: {},
   },
 })
-
 // 3. Pass the `theme` prop to the `ChakraProvider`
 export default function App({ Component, pageProps }: AppProps) {
   const [isClient, setIsClient] = useState(false)
@@ -36,13 +34,13 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
   return (
     <ChakraProvider theme={theme}>
-      {/* <MDXProvider component={Component}> */}
-      <Component {...pageProps} />
-      {isClient && <h1>Prerendered</h1>}
-      {/* </MDXProvider> */}
-
-      {/* <h1>{isClient ? '' : 'Prerendered'}</h1> */}
-      {/* <h1>{isClient ? 'This is never prerendered' : 'Prerendered'}</h1> */}
+      <>
+        <Component {...pageProps} />
+        {isClient && <h1>Prerendered</h1>}
+        {/* </MDXProvider> */}
+        {/* <h1>{isClient ? '' : 'Prerendered'}</h1> */}
+        {/* <h1>{isClient ? 'This is never prerendered' : 'Prerendered'}</h1> */}
+      </>
     </ChakraProvider>
   )
 }
@@ -54,5 +52,4 @@ export default function App({ Component, pageProps }: AppProps) {
 //     </ChakraProvider>
 //   )
 // }
-
 // export default MyApp;
