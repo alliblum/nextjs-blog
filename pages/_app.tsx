@@ -36,23 +36,10 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
   return (
     <ChakraProvider theme={theme}>
-      {/* <MDXProvider component={Component}> */}
-      <Component {...pageProps} />
-      {isClient && <h1>Prerendered</h1>}
-      {/* </MDXProvider> */}
-
-      {/* <h1>{isClient ? '' : 'Prerendered'}</h1> */}
-      {/* <h1>{isClient ? 'This is never prerendered' : 'Prerendered'}</h1> */}
+      <>
+        <Component {...pageProps} />
+        {/* {isClient && <h1>Prerendered</h1>} */}
+      </>
     </ChakraProvider>
   )
 }
-
-// function MyApp({ Component, pageProps }) {
-//   return (
-//     <ChakraProvider>
-//       <Component {...pageProps} />
-//     </ChakraProvider>
-//   )
-// }
-
-// export default MyApp;

@@ -97,7 +97,7 @@ export default function Home({
         {/* <Heading size="lg">Writing</Heading>
         <br />
 
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, title }) => (
               <li className={utilStyles.listItem} key={id}>
