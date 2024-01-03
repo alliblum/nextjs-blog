@@ -94,7 +94,7 @@ export default function Home({
           alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
         />
 
-        {/* <Heading size="lg">Writing</Heading>
+        <Heading size="lg">Writing</Heading>
         <br />
 
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -107,7 +107,7 @@ export default function Home({
               </li>
             ))}
           </ul>
-        </section> */}
+        </section>
 
         <Heading>Sign up for emails</Heading>
 
