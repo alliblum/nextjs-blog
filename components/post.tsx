@@ -27,9 +27,13 @@ const Post = ({
     <Box>
       <Head>{postData?.title}</Head>
       <Layout>
-        <Heading>{postData?.title}</Heading>
-        <p>{postData?.date}</p>
-        <p>{postData?.color}</p>
+        <Stack pb={4} mb={10} borderBottom="2px" borderColor="gray.300">
+          <Heading>{postData?.title}</Heading>
+          {/* <p>{postData?.date}</p> */}
+          <Text color="gray.700" as="i">
+            {postData?.description}
+          </Text>
+        </Stack>
         {/* Render MDX content */}
         <MDXProvider components={MDXComponents}>
           <div className="markdown-body">
