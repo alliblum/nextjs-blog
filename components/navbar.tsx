@@ -8,11 +8,11 @@ export const NavBar = () => {
       <Headshot />
       <Spacer />
       <Box>
-        <HStack fontSize="sm">
+        {/* <HStack fontSize="sm">
           <Link href="/founders-and-leaders">For Founders and Leaders</Link>
           <Spacer />
           <Link href="/jtbd-practitioners">For JTBD Practitioners</Link>
-        </HStack>
+        </HStack> */}
       </Box>
     </Flex>
   )
