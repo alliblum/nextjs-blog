@@ -43,24 +43,22 @@ export default function WorkWithMe() {
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
           description="We'll distill the full body of your long-term vision into a single,
-           clear, actionable vision that your team can start executing on. Go from
-          repeating yourself about what’s important 15 times a day without
-          seeing anyone do anything about it to fielding inbound requests that our out of
-           alignment with what will move the needle for your company from
-          your team saying, “I found this number that’s smaller than it should
+           clear, actionable shorthand that your team can start executing on. Go from
+          repeating yourself about what’s important 15 times a day or saying no to projects that are out of
+           alignment with what will move the needle for your company to hearing your team say, “I found this number that’s smaller than it should
           be, I have a hypothesis about how to improve it, here’s what I
           propose."
         />
         <Spacer />
         <Offer
           title="OKR Workshop"
-          subtitle="Group workshop for leadership teams"
-          description="There comes a point past so-called product-market fit but before maturity 
+          subtitle="Strategic planning workshop for leadership teams"
+          description="There comes a point past reaching so-called product-market fit but before reaching maturity 
           or hyper-growth where businesses are at risk of being pulled in different directions. 
           Product teams have one POV, marketing teams see other opportunities, CEOs encounter the 
           pain of only being able to execute one small part of their vision at a time. We'll cut
            out all the winding paths and shiny objects to get your team rowing in the same 
-           direction toward a clear and desirable goal."
+           direction toward a set of clear and desirable goals for the next quarter, half-year, or year."
         />
         <Spacer />
         <Offer
@@ -79,19 +77,18 @@ export default function WorkWithMe() {
         <Offer
           title="VUCA Workshop"
           subtitle="Team coaching to give your team the skills to navigate rapid change"
-          description="Startup to scale-up environments are prone to generating VUCA: Volatility,
+          description="Startup to scale-up environments are prone to VUCA: Volatility,
            Uncertainty, Complexity, and Ambiguity. Teams that find themselves in a VUCA
-            environment without having the context or skills to navigate it are prone to burnout 
-            and the grumpies. This workshop give your team a new set of tools to navigate the 
-            unique environment they find themselves in to keep morale high and decisions sound."
+            environment without having the context to know what it is or the skills to navigate it are prone to grumpies, burnout, and sub-optimal decision-making. This workshop gives your team a new set of tools to navigate the 
+            environment they find themselves in to keep morale high and decisions sound."
         />
         <Spacer />
         <Offer
           title="Outcomes-Led Team Coaching"
-          subtitle="Operations coaching for product teams"
+          subtitle="Operational excellence coaching for product teams"
           description="Taking an Outcomes-Led Approach is about centering your projects around 
           the outcome you're planning to achieve with any given project. This team coaching 
-          engagement is about giving cultivating an outcomes-first and data-informed approach 
+          engagement is about cultivating an outcomes-first and data-informed approach 
           to decision-making and co-creating SOPs to stay aligned with outcomes, even as new 
           opportunities arise."
         />
