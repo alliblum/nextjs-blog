@@ -30,13 +30,30 @@ export const theme = extendTheme({
 const Offer: React.FC<OfferProps> = (props) => {
   return (
     // <ChakraProvider theme={theme}>
-    <Box bg="purple.100" p={4} borderRadius="md">
-      <Stack>
-        <Heading>{props.title}</Heading>
+    <Box>
+      <Box
+        bg="purple.100"
+        p={5}
+        borderTopLeftRadius="md"
+        borderTopRightRadius="md"
+        //   borderWidth={3}
+        //   borderColor="purple.600"
+      >
+        <Heading size="lg">{props.title}</Heading>
         <Text as="i">{props.subtitle}</Text>
-        <Text as="strong">{props?.description}</Text>
-      </Stack>
+      </Box>
+      <Box
+        bg="white"
+        p={5}
+        borderBottomLeftRadius="md"
+        borderBottomRightRadius="md"
+        borderWidth={2}
+        borderColor="purple.100"
+      >
+        <Text>{props?.description}</Text>
+      </Box>
     </Box>
+
     // </ChakraProvider>
   )
 }

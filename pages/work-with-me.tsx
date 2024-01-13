@@ -30,28 +30,39 @@ export default function WorkWithMe() {
         <Offer
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
-          description="How will you distill your grand vision for the future into a single
-            clear directive."
-        ></Offer>
+          description="Go from
+          repeating yourself about what’s important 15 times a day without
+          seeing anyone do anything about it to fielding inbound requests from
+          your team saying, “I found this number that’s smaller than it should
+          be, I have a hypothesis about how to improve it, here’s what I
+          propose."
+        />
+        <Offer
+          title="OKR Facilitation"
+          subtitle="Group coaching for leadership teams"
+          description="Get aligned around a shared vision and build habits for staying aligned as new opportunities arise."
+        />
 
-        <Stack>
-          <Heading size="lg">Commander's Intent</Heading>
-          <Text as="i">One-on-one coaching for visionary founders</Text>
-          <Text>
-            How will you distill your grand vision for the future into a single
-            clear directive.
-          </Text>
-        </Stack>
-        <Text></Text>
-        <Heading size="lg">OKR Facilitation</Heading>
-        <Text as="i">Group coaching for leadership teams</Text>
-        <Text></Text>
-        <Heading size="lg">JTBD Study and Mobilization</Heading>
-        <Text></Text>
-        <Heading size="lg">VUCA Workshops</Heading>
-        <Text></Text>
-        <Heading size="lg">Product Team Coaching</Heading>
-        <Text></Text>
+        <Offer
+          title="JTBD Discovery and Mobilization"
+          subtitle="Learn your customer jtbd for innovation and mobilize insights across your organization"
+          description="Get aligned around a shared vision and build habits for staying aligned as new opportunities arise."
+        />
+        <Offer
+          title="VUCA Workshops"
+          subtitle="Team coaching to give your team the skills to navigate rapid change"
+          description="somethin'"
+        />
+        <Offer
+          title="Product Team Coaching"
+          subtitle="Build habits and SOPs for staying aligned as new opportunities arise."
+          description="somethin'"
+        />
+        <Offer
+          title="Fractional Head of Product, Growth, Strategy, and/or Operations"
+          subtitle="AKA, an advisor who does stuff."
+          description="somethin'"
+        ></Offer>
       </Stack>
     </Layout>
   )
