@@ -45,8 +45,8 @@ export default function WorkWithMe() {
 
         <Offer
           title="JTBD Discovery and Mobilization"
-          subtitle="Learn your customer jtbd for innovation and mobilize insights across your organization"
-          description="Get aligned around a shared vision and build habits for staying aligned as new opportunities arise."
+          subtitle="Get a clear understanding of your customers and re-align your organization's decision-making around a shared understanding of your best-fit customers."
+          description="What outcomes do your customers want from your product? When do they start shopping for a solution like yours? We'll uncover your customers core jobs to be done. Then we'll mobilize those insights across your organization to apply insights to decision-making around executive priorities, product development, marketing strategies, company organization, and more."
         />
         <Offer
           title="VUCA Workshops"
