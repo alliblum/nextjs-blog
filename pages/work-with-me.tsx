@@ -127,6 +127,15 @@ export default function WorkWithMe() {
         />
         <Spacer />
         <QuoteBlock
+          quote="I was crafting the strategy and plan for my client to achieve their growth goals, but as a strategist, I could tell that something was missing or off. It was like there was a missing puzzle piece that I couldn't quite identify or articulate. I was also having a hard time extracting the information I needed from the CEO and founder to help us fit the pieces together to chart our best path forward. 
+
+</br></br>Our session with Alli was the breakthrough I was looking for. Not only did she pull out so much more insight around what we needed to be successful, but she revealed some assumptions and requirements that weren't as clear or completely unknown before the session. The first big a-ha moment was that we had an opportunity to realign the client's efforts with the founder's vision. 
+
+</br></br>And the second a-ha moment is that without Alli's thorough questioning and unpacking process, we wouldn't have arrived at our conclusions about what to do next (and I would have still been left scratching my head wondering what I was missing)."
+          author="-Asia Orangio, Founder, DemandMaven"
+        />
+        <Spacer />
+        <QuoteBlock
           quote="The experience of working with Alli is like collaborating with a
               trusted friend."
           author="-Claire Suellentrop, COO, Elevate"
