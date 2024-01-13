@@ -18,15 +18,25 @@ export default function WorkWithMe() {
       <Stack spacing={5}>
         <Heading size="xl">
           Get aligned and stay aligned as your company goes from startup to
-          scale-up - without compromising your vision{' '}
+          scale-up - Without compromising your vision{' '}
         </Heading>
 
         <Text>
-          Over the last 10 years I've had the great privilege to work and learn
-          with a great many teams. I love joining companies who have just
-          started to discover the champagne problem of having so many
-          opportunities they don't know which one offers the best path forward.{' '}
+          The business of alignment and change management is cross-functional,
+          multi-leveled, messy, complex, and loads of fun. We can start from
+          many jumping off points, though I have observed the projects and
+          frameworks outlined below to be among the most effective starting
+          lines for our work together. I'd love to hear what's going on in your
+          business to find the right framework to begin our work.
         </Text>
+
+        <Box py={5}>
+          <Link href="https://savvycal.com/alli/c0518466">
+            <Text color="purple.600" as="strong">
+              Click to schedule time with me for a 60 minute meet-and-greet call
+            </Text>
+          </Link>
+        </Box>
 
         <Offer
           title="Commander's Intent"
