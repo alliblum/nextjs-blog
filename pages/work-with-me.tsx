@@ -108,22 +108,28 @@ export default function WorkWithMe() {
         ></Offer>
         <Spacer />
         <QuoteBlock
-          quote1="If you want to set your company up to succeed in the long term,
+          quote="If you want to set your company up to succeed in the long term,
               if you are having a hard time finding the balance between
               long-term strategy and short-term tactical, as well as getting
-              your team to move that way to see that too, you work with Alli."
-          quote2="If you want to create an environment where you can trust your
+              your team to move that way to see that too, you work with Alli.</br></br>
+          If you want to create an environment where you can trust your
               employees to make decisions that support the long term objective
               and deliver the most value you possibly can for your customers,
-              you work with Alli."
-          quote3="So if you want to figure out how to speak to your employees
+              you work with Alli. </br></br>
+          So if you want to figure out how to speak to your employees
               better, if you want to understand what your employees are going
               through, if you feel like you're having a hard time understanding,
               if you feel like you keep saying the same thing over and over and
               over again, and not being heard, and if you don't want to be
-              completely stressed going through through this phase of growth..."
-          quote4="...You work with Alli."
+              completely stressed going through through this phase of growth... </br></br>
+          ...You work with Alli.</br></br>"
           author="-Jordan Skole, VP Product Engineering at Autobooks"
+        />
+        <Spacer />
+        <QuoteBlock
+          quote="The experience of working with Alli is like collaborating with a
+              trusted friend."
+          author="-Claire Suellentrop, COO, Elevate"
         />
       </Stack>
     </Layout>
