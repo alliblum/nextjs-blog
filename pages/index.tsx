@@ -73,24 +73,11 @@ export default function Home({
         </Text>
 
         <Text>
-          My background is cross-functional. My vocation is getting and
-          maintaining cross-functional alignment.
-        </Text>
-
-        <Text>
           {' '}
-          I love working with conscious, empathetic leaders and founders who are
-          rigorous in their pursuit of the root causes of problems and focused
-          on building solutions in the future of work and calm technology.{' '}
-        </Text>
-
-        <Heading size="xl">Work</Heading>
-
-        <Text>
-          Over the last 10 years I've had the great privilege to work and learn
-          with a great many teams. I love joining companies who have just
-          started to discover the champagne problem of having so many
-          opportunities they don't know which one offers the best path forward.{' '}
+          I especially love working with conscious, empathetic leaders and
+          founders who are rigorous in their pursuit of the root causes of
+          problems and focused on building solutions in the future of work and
+          calm technology.{' '}
         </Text>
 
         <Image
