@@ -53,39 +53,31 @@ export default function Home({
         <Heading size="xl">Hi, I’m Alli. </Heading>
 
         <Text>
-          I love working with conscious, empathetic leaders and founders who are
-          rigorous in their pursuit of the root causes of problems and focused
-          on building solutions in the future of work and calm technology.{' '}
+          I help SaaS leaders and teams get and stay aligned while you navigate
+          the transition from startup to scaleup.
         </Text>
 
         <Text>
           I’ve spent the last 10+ years working with 50+ companies figuring out
           how software companies launch and scale by winding my way through the
-          many functions and departments that drive growth.{' '}
+          many functions and departments that drive growth at mega-hits like
+          MURAL, EnjoyHQ, Atlassian and indie companies like Stunning, Userlist,
+          and TinySeed companies.{' '}
         </Text>
 
         <Text>
-          That list of departments includes product, growth, and marketing. The
-          list of skills and functions includes UX, research, marketing,
-          conversion copywriting, GTM planning, leadership, operations, customer
-          support, positioning, public relations, change management - now I’m
-          learning engineering.{' '}
+          I've worked across functions including leadership, product, growth,
+          UX, user research, marketing, conversion copywriting, GTM planning,
+          leadership, operations, customer support, positioning, public
+          relations, change management, and engineering.{' '}
         </Text>
-
-        <Heading size="xl">Work</Heading>
 
         <Text>
           {' '}
-          I work with SaaS companies through my consulting arm, Hypothesis
-          Department. I help founders and leaders build teams and products, I
-          help JTBD practitioners mobilize insights, and I help leaders and
-          founders build teams and products.{' '}
-        </Text>
-        <Text>
-          Over the last 10 years I've had the great privilege to work and learn
-          with a great many teams. I love joining companies who have just
-          started to discover the champagne problem of having so many
-          opportunities they don't know which one offers the best path forward.{' '}
+          I especially love working with conscious, empathetic leaders and
+          founders who are rigorous in their pursuit of the root causes of
+          problems and focused on building solutions in the future of work and
+          calm technology.{' '}
         </Text>
 
         <Image

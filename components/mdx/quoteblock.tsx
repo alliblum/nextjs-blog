@@ -29,9 +29,10 @@ export const theme = extendTheme({
 const QuoteBlock: React.FC<QuoteBlockProps> = (props) => {
   return (
     // <ChakraProvider theme={theme}>
-    <Box bg="purple.100" p={4} borderRadius="md">
+    <Box bg="purple.100" p={5} borderRadius="md">
       <Stack>
-        <Text as="i">{props.quote}</Text>
+        <Text as="i" dangerouslySetInnerHTML={{ __html: props.quote }} />
+
         <Text as="strong">{props?.author}</Text>
       </Stack>
     </Box>
