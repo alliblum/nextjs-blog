@@ -14,13 +14,9 @@ export default function FoundersAndLeaders() {
   return (
     <Layout home>
       <Stack spacing={5}>
-        <Text as="i">
-          Get aligned and stay aligned as your company goes from startup to
-          saGet your DMs under control, start shipping faster, juice your
-          acquisition and activation metrics - without compromising your vision{' '}
-        </Text>
         <Heading size="xl">
-          Visionary leaders aren’t meant to spend their days responding to DMs.{' '}
+          Get aligned and stay aligned as your company goes from startup to
+          scale-up - without compromising your vision{' '}
         </Heading>
         <Text>
           <Text>
