@@ -1,3 +1,4 @@
+import { QuoteBlock } from 'components/mdx'
 import Layout from '../components/layout'
 import Offer from '../components/mdx/offer'
 import {
@@ -41,9 +42,11 @@ export default function WorkWithMe() {
         <Offer
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
-          description="Go from
+          description="We'll distill the full body of your long-term vision into a single,
+           clear, actionable vision that your team can start executing on. Go from
           repeating yourself about what’s important 15 times a day without
-          seeing anyone do anything about it to fielding inbound requests from
+          seeing anyone do anything about it to fielding inbound requests that our out of
+           alignment with what will move the needle for your company from
           your team saying, “I found this number that’s smaller than it should
           be, I have a hypothesis about how to improve it, here’s what I
           propose."
@@ -52,33 +55,76 @@ export default function WorkWithMe() {
         <Offer
           title="OKR Workshop"
           subtitle="Group workshop for leadership teams"
-          description="There comes a point past so-called product-market fit but before hypergrowth where businesses are at risk of being pulled in different directions. Product teams have one POV, marketing teams see other opportunities, CEOs encounter the pain of only being able to execute one small part of their vision at a time. I'll work with you and your leadership team to cut out all the coulds and shoulds to get your team rowing in the same aligned direction."
+          description="There comes a point past so-called product-market fit but before maturity 
+          or hyper-growth where businesses are at risk of being pulled in different directions. 
+          Product teams have one POV, marketing teams see other opportunities, CEOs encounter the 
+          pain of only being able to execute one small part of their vision at a time. We'll cut
+           out all the winding paths and shiny objects to get your team rowing in the same 
+           direction toward a clear and desirable goal."
         />
         <Spacer />
         <Offer
           title="JTBD Discovery and Mobilization"
           subtitle="Innovation & Change Management Engagement for organizations"
-          description="What outcomes do your customers want from your product? When do they start shopping for a solution like yours? We'll uncover core customer jobs-to-be-done and then mobilize those insights across your organization. You'll get a clear understanding of your customers and re-align your organization's decision-making around a shared understanding of your best-fit customers so you can apply your insights to decision-making around executive priorities, product development, marketing strategies, company organization, and more.
+          description="What outcomes do your customers want from your product? When do they start
+           shopping for a solution like yours? We'll uncover core customer jobs-to-be-done and 
+           then mobilize those insights across your organization. You'll get a clear 
+           understanding of your customers and re-align your organization's decision-making 
+           around a shared understanding of your best-fit customers so you can apply your 
+           insights to decision-making around executive priorities, product development, 
+           marketing strategies, company organization, and more.
          "
         />
         <Spacer />
         <Offer
           title="VUCA Workshop"
           subtitle="Team coaching to give your team the skills to navigate rapid change"
-          description="Startup to scale-up environments are prone to generating VUCA: Volatility, Uncertainty, Complexity, and Ambiguity. Teams that find themselves in a VUCA environment without having the context or skills to navigate it are prone to burnout and the grumpies. This workshop give your team a new set of tools to navigate the unique environment they find themselves in to keep morale high and decisions sound."
+          description="Startup to scale-up environments are prone to generating VUCA: Volatility,
+           Uncertainty, Complexity, and Ambiguity. Teams that find themselves in a VUCA
+            environment without having the context or skills to navigate it are prone to burnout 
+            and the grumpies. This workshop give your team a new set of tools to navigate the 
+            unique environment they find themselves in to keep morale high and decisions sound."
         />
         <Spacer />
         <Offer
           title="Outcomes-Led Team Coaching"
           subtitle="Operations coaching for product teams"
-          description="Taking an Outcomes-Led Approach is about centering your projects around the outcome you're planning to acheive with any given project. This team coaching engagement is about giving cultivating an outcomse-first and data-informed approach to decision-making and co-creating SOPs to stay aligned with outcomes, even as new opportunities arise."
+          description="Taking an Outcomes-Led Approach is about centering your projects around 
+          the outcome you're planning to achieve with any given project. This team coaching 
+          engagement is about giving cultivating an outcomes-first and data-informed approach 
+          to decision-making and co-creating SOPs to stay aligned with outcomes, even as new 
+          opportunities arise."
         />
         <Spacer />
         <Offer
           title="Fractional Head of Product, Growth, Strategy, and/or Operations"
           subtitle="AKA, an advisor who does stuff."
-          description="I'll join you as an embedded member of your leadership team to find and mobilize the growth & innovation opportunities and then work with your team to execute them and increase your acquisition, activation, and retention metrics. We'll build the systems and processes to stay aligned as you grow and scale. I work with one company at a time and am currently booked."
+          description="I'll join you as an embedded member of your leadership team to find 
+          and mobilize the growth & innovation opportunities and then work with your team 
+          to execute them and increase your acquisition, activation, and retention metrics.
+          We'll build the systems and processes to stay aligned as you grow and scale. 
+          I work with a very limited number of teams in this capacity, typically no
+           more than one at a time."
         ></Offer>
+        <Spacer />
+        <QuoteBlock
+          quote1="If you want to set your company up to succeed in the long term,
+              if you are having a hard time finding the balance between
+              long-term strategy and short-term tactical, as well as getting
+              your team to move that way to see that too, you work with Alli."
+          quote2="If you want to create an environment where you can trust your
+              employees to make decisions that support the long term objective
+              and deliver the most value you possibly can for your customers,
+              you work with Alli."
+          quote3="So if you want to figure out how to speak to your employees
+              better, if you want to understand what your employees are going
+              through, if you feel like you're having a hard time understanding,
+              if you feel like you keep saying the same thing over and over and
+              over again, and not being heard, and if you don't want to be
+              completely stressed going through through this phase of growth..."
+          quote4="...You work with Alli."
+          author="-Jordan Skole, VP Product Engineering at Autobooks"
+        />
       </Stack>
     </Layout>
   )

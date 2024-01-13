@@ -3,7 +3,10 @@ import { Box, Text, Stack } from '@chakra-ui/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 export interface QuoteBlockProps {
-  quote: string
+  quote1: string
+  quote2: string
+  quote3: string
+  quote4: string
   author: string
 }
 
@@ -29,9 +32,14 @@ export const theme = extendTheme({
 const QuoteBlock: React.FC<QuoteBlockProps> = (props) => {
   return (
     // <ChakraProvider theme={theme}>
-    <Box bg="purple.100" p={4} borderRadius="md">
+    <Box bg="purple.100" p={5} borderRadius="md">
       <Stack>
-        <Text as="i">{props.quote}</Text>
+        <Text as="i">{props?.quote1}</Text>
+        <Text as="i">{props?.quote2}</Text>
+        <Text as="i">{props?.quote3}</Text>
+        <Text as="i" as="strong">
+          {props?.quote4}
+        </Text>
         <Text as="strong">{props?.author}</Text>
       </Stack>
     </Box>
