@@ -18,17 +18,31 @@ export default function WorkWithMe() {
     <Layout home>
       <Stack spacing={5}>
         <Heading size="xl">
-          Get aligned and stay aligned as your company goes from startup to
-          scale-up - Without compromising your vision{' '}
+          Growth and Innovation Strategy for Scale-ups
         </Heading>
+        <Text>
+          I've noticed a common pattern among teams that have found
+          product-market fit but haven't yet reached breakaway growth. At this
+          stage, possibilities for what to pursue next seem limitless.
+          Still-scrappy teams pursue several paths simultaneously.
+        </Text>
+        <Text>
+          {' '}
+          While there's an illusion of progress and fast action, the ships
+          aren't rowing in the same direction so growth often slows during this
+          period.
+        </Text>
+        <Text>
+          {' '}
+          The way I've seen companies break out of this phase is to get aligned
+          around a shared POV, whether that's having a shared understanding of
+          what customers hire a product to do or hearing a clear and consistent
+          message from a senior leader.
+        </Text>
 
         <Text>
-          The business of alignment and change management is cross-functional,
-          multi-leveled, messy, complex, and loads of fun. We can start from
-          many jumping off points, though I have observed the projects and
-          frameworks outlined below to be among the most effective starting
-          lines for our work together. I'd love to hear what's going on in your
-          business to find the right framework to begin our work.
+          If that sounds like you, I'd love to hear what's going on in your
+          business.
         </Text>
 
         <Box py={5}>
@@ -38,6 +52,21 @@ export default function WorkWithMe() {
             </Text>
           </Link>
         </Box>
+
+        <Heading>
+          Get aligned and stay aligned as your company goes from startup to
+          scale-up -- without compromising your vision
+        </Heading>
+        <Text>
+          I work with companies as a solo consultant under the umbrella of my
+          consulting brand, Hypothesis Department.
+        </Text>
+        <Text>
+          I've observed the projects and frameworks outlined below to be among
+          the most effective starting lines for our work together. I'd love to
+          hear what's going on in your business to find the right place to begin
+          our work.
+        </Text>
 
         <Offer
           title="Commander's Intent"
@@ -100,9 +129,14 @@ export default function WorkWithMe() {
           and mobilize the growth & innovation opportunities and then work with your team 
           to execute them and increase your acquisition, activation, and retention metrics.
           We'll build the systems and processes to stay aligned as you grow and scale. 
-          I work with a very limited number of teams in this capacity, typically no
-           more than one at a time."
+          I work with a very limited number of teams in this capacity."
         ></Offer>
+        <Spacer />
+        <Offer
+          title="Diagnostic Assessment"
+          subtitle="Two Hour Working Session to uncover the possible root causes of your growth challenges"
+          description="If you're not share where to start, start here. We'll meet for a diagnostic session to talk about what's going on in your business, review data, and weigh tradeoffs."
+        />
         <Spacer />
         <QuoteBlock
           quote="If you want to set your company up to succeed in the long term,

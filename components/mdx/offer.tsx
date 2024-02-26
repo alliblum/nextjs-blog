@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Stack, Heading } from '@chakra-ui/react'
+import { Box, Text, Stack, Heading, Link } from '@chakra-ui/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 export interface OfferProps {
@@ -51,6 +51,7 @@ const Offer: React.FC<OfferProps> = (props) => {
         borderColor="purple.100"
       >
         <Text>{props?.description}</Text>
+        <Link>{}</Link>
       </Box>
     </Box>
 
