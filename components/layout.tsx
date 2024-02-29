@@ -24,7 +24,10 @@ export default function Layout({
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="favicon.ico" />
-        <meta name="description" content="Get buy-in on your vision" />
+        <meta
+          name="description"
+          content="Leadership, Growth, & Innovation for Scale-ups"
+        />
       </Head>
       <section>
         <NavBar />
