@@ -18,7 +18,7 @@ export default function WorkWithMe() {
     <Layout home>
       <Stack spacing={5}>
         <Heading size="xl">
-          Growth and Innovation Strategy for Scale-ups
+          Leadership, Growth, and Innovation Strategy for Scale-ups
         </Heading>
         <Text>
           I've noticed a common pattern among teams that have found
