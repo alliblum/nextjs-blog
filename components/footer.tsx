@@ -9,7 +9,10 @@ export const Footer = () => {
           <Divider orientation="horizontal" my={20} />
         </Box>
         <Box mb={15}>
-          <Link href="/pages/terms-and-conditions">Terms and Conditions</Link>
+          <Stack direction="row">
+            <Link href="/terms-and-conditions">Terms and Conditions</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </Stack>
         </Box>
       </Stack>
     </Center>

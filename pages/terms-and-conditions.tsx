@@ -30,61 +30,61 @@ export default function TermsAndConditions() {
         >
           Welcome to Hypothesis Department, located at PO Box 9354, 680 US 130,
           Trenton, NJ 08650-9998 ("Hypothesis Department," "we," or "our"). By
-          using the website located at hypothesisdepartment.com and the related
-          mobile website (collectively, the “Websites”), you agree to be bound
-          by these Terms of Use (this “Terms of Use” or “Agreement”). If you
-          wish to make use of the service (the “Service”), please read this
-          Agreement. If you object to anything in this Agreement or the
-          Hypothesis Department Privacy Policy, do not use the Service. PLEASE
-          READ THIS AGREEMENT CAREFULLY AS IT CONTAINS IMPORTANT INFORMATION
-          REGARDING YOUR LEGAL RIGHTS, REMEDIES AND OBLIGATIONS, INCLUDING
-          VARIOUS LIMITATIONS AND EXCLUSIONS, AND A DISPUTE RESOLUTION AND CLASS
-          ACTION WAIVER CLAUSE THAT GOVERNS HOW DISPUTES WILL BE RESOLVED.
-          **Electronic Agreement.** This Terms of Use is an electronic contract
-          that sets out the legally binding terms of your use of the Service.
-          This Terms of Use is subject to change by Hypothesis Department at any
-          time, effective upon posting on the Websites. By accessing and/or
-          using the Service, you accept this Terms of Use and agree to the
-          terms, conditions and notices contained or referenced herein. Your
-          continued use of the Service following Hypothesis Department’s posting
-          of revised terms of any section of the Terms of Use will constitute
-          your express and binding acceptance of and consent to the revised
-          Terms of Use. **Access and Retention.** In order to access and retain
-          this electronic Agreement, you must have access to the World Wide Web,
-          either directly or through devices that access web-based content, and
-          pay any service fees associated with such access. In addition, you
-          must use all equipment necessary to make such connection to the World
-          Wide Web, including a computer and modem or other access device.
-          Please print a copy of this document for your records. To retain an
-          electronic copy of this Agreement, you may save it into any word
-          processing program. **Eligibility.** You must be at least eighteen
-          (18) years of age to use the Service. By using the Service, you
-          represent and warrant that you have the right, authority and capacity
-          to enter into this Agreement and to abide by all of the terms and
-          conditions of this Agreement. The Service is also not available to any
-          users who have been previously removed or suspended from the Service.
-          By using the Service, you represent and warrant that you have the
-          right, authority and capacity to enter into this Terms of Use and to
-          abide by all of the terms and conditions of this Terms of Use. 1.
-          Commercial Use of Service. If you are using and/or accessing the
-          Service on behalf of a company, entity, or organization (collectively,
-          a “Subscribing Entity”), you represent and warrant that: a. You are an
-          authorized representative of the Subscribing Entity, and that you have
-          the authority to bind the Subscribing Entity to this Terms of Use; b.
-          You have read and understand this Terms of Use; and c. You agree to
-          this Terms of Use on behalf of the Subscribing Entity. Illegal and/or
-          unauthorized uses of the Service include, but are not limited to,
-          collecting usernames and/or email addresses of Hypothesis Department
-          users by electronic or other means for the purpose of sending
-          unsolicited email, unauthorized framing of or linking to the Websites,
-          sharing or disclosing your username or password to any third party or
-          permitting any third party to access the Service on your behalf,
-          attempting to impersonate another user or person, use of the Service
-          in any fraudulent or misleading manner, any automated use of the
-          system, such as scraping the Websites, automated scripts, spiders,
-          robots, crawlers, harvesting or data mining tools or the like,
-          interfering with, disrupting, or creating an undue burden on the
-          Service or the networks or services connected to the Service, and
+          using the website located at alliblum.com and hypothesisdepartment.com
+          and the related mobile website (collectively, the “Websites”), you
+          agree to be bound by these Terms of Use (this “Terms of Use” or
+          “Agreement”). If you wish to make use of the service (the “Service”),
+          please read this Agreement. If you object to anything in this
+          Agreement or the Hypothesis Department Privacy Policy, do not use the
+          Service. PLEASE READ THIS AGREEMENT CAREFULLY AS IT CONTAINS IMPORTANT
+          INFORMATION REGARDING YOUR LEGAL RIGHTS, REMEDIES AND OBLIGATIONS,
+          INCLUDING VARIOUS LIMITATIONS AND EXCLUSIONS, AND A DISPUTE RESOLUTION
+          AND CLASS ACTION WAIVER CLAUSE THAT GOVERNS HOW DISPUTES WILL BE
+          RESOLVED. **Electronic Agreement.** This Terms of Use is an electronic
+          contract that sets out the legally binding terms of your use of the
+          Service. This Terms of Use is subject to change by Hypothesis
+          Department at any time, effective upon posting on the Websites. By
+          accessing and/or using the Service, you accept this Terms of Use and
+          agree to the terms, conditions and notices contained or referenced
+          herein. Your continued use of the Service following Hypothesis
+          Department’s posting of revised terms of any section of the Terms of
+          Use will constitute your express and binding acceptance of and consent
+          to the revised Terms of Use. **Access and Retention.** In order to
+          access and retain this electronic Agreement, you must have access to
+          the World Wide Web, either directly or through devices that access
+          web-based content, and pay any service fees associated with such
+          access. In addition, you must use all equipment necessary to make such
+          connection to the World Wide Web, including a computer and modem or
+          other access device. Please print a copy of this document for your
+          records. To retain an electronic copy of this Agreement, you may save
+          it into any word processing program. **Eligibility.** You must be at
+          least eighteen (18) years of age to use the Service. By using the
+          Service, you represent and warrant that you have the right, authority
+          and capacity to enter into this Agreement and to abide by all of the
+          terms and conditions of this Agreement. The Service is also not
+          available to any users who have been previously removed or suspended
+          from the Service. By using the Service, you represent and warrant that
+          you have the right, authority and capacity to enter into this Terms of
+          Use and to abide by all of the terms and conditions of this Terms of
+          Use. 1. Commercial Use of Service. If you are using and/or accessing
+          the Service on behalf of a company, entity, or organization
+          (collectively, a “Subscribing Entity”), you represent and warrant
+          that: a. You are an authorized representative of the Subscribing
+          Entity, and that you have the authority to bind the Subscribing Entity
+          to this Terms of Use; b. You have read and understand this Terms of
+          Use; and c. You agree to this Terms of Use on behalf of the
+          Subscribing Entity. Illegal and/or unauthorized uses of the Service
+          include, but are not limited to, collecting usernames and/or email
+          addresses of Hypothesis Department users by electronic or other means
+          for the purpose of sending unsolicited email, unauthorized framing of
+          or linking to the Websites, sharing or disclosing your username or
+          password to any third party or permitting any third party to access
+          the Service on your behalf, attempting to impersonate another user or
+          person, use of the Service in any fraudulent or misleading manner, any
+          automated use of the system, such as scraping the Websites, automated
+          scripts, spiders, robots, crawlers, harvesting or data mining tools or
+          the like, interfering with, disrupting, or creating an undue burden on
+          the Service or the networks or services connected to the Service, and
           using the Service in a manner inconsistent with any and all applicable
           laws and regulations. Illegal and/or unauthorized use of the Service
           may be investigated, and appropriate legal action may be taken,
