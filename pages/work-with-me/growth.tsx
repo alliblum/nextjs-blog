@@ -13,11 +13,11 @@ import {
   Center,
 } from '@chakra-ui/react'
 
-export default function Innovation() {
+export default function Growth() {
   return (
     <Layout home>
       <Stack spacing={5}>
-        <Heading size="xl">Innovation Strategy</Heading>
+        <Heading size="xl">Growth Plateaus</Heading>
         <Heading size="lg">What does world look like today?</Heading>
         <Text>ABOUT THE PROBLEM</Text>
         <Text>
@@ -54,13 +54,11 @@ export default function Innovation() {
           positioning, messaging, product strategy, hypotheses and experiments
           for long-term growth
         </Text>
-        <Text>How i help: track 1: research track 2 development </Text>
-        <Text>Research: jtbd, internal, competitive analysis</Text>
-        <Text>
-          Development: positioning, hypothesis, project, workshop, prototype
-          (depending on amount of time)
-        </Text>
+        <Text>How i help: jtbd research, commander's intent </Text>
         <Text>Overview stages of the process</Text>
+        <Text>
+          JTBD insights workshop, Hypothesis workshop, plan experiments workshop
+        </Text>
       </Stack>
     </Layout>
   )

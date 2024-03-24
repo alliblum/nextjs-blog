@@ -18,7 +18,7 @@ export default function WorkWithMe() {
     <Layout home>
       <Stack spacing={5}>
         <Heading size="xl">
-          Leadership, Growth, and Innovation Strategy for Scale-ups
+          Innovation, Growth, and Leadership Strategy for Scale-ups
         </Heading>
         <Text>
           I've noticed a common pattern among teams that have found
@@ -45,6 +45,11 @@ export default function WorkWithMe() {
           business.
         </Text>
 
+        <Text>
+          I work with companies as a solo consultant under the umbrella of my
+          consulting brand, Hypothesis Department.
+        </Text>
+
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
             <Text color="purple.600" as="strong">
@@ -53,20 +58,17 @@ export default function WorkWithMe() {
           </Link>
         </Box>
 
-        <Heading>
+        {/* <Heading>
           Get aligned and stay aligned as your company goes from startup to
           scale-up -- without compromising your vision
-        </Heading>
-        <Text>
-          I work with companies as a solo consultant under the umbrella of my
-          consulting brand, Hypothesis Department.
-        </Text>
-        <Text>
+        </Heading> */}
+
+        {/* <Text>
           I've observed the projects and frameworks outlined below to be among
           the most effective starting lines for our work together. I'd love to
           hear what's going on in your business to find the right place to begin
           our work.
-        </Text>
+        </Text> */}
 
         <Offer
           title="Innovation Strategy & Prototyping"
@@ -77,6 +79,14 @@ export default function WorkWithMe() {
         />
 
         <Offer
+          title="Break through growth plateaus"
+          subtitle="DESCRIBE IT"
+          description=""
+          path="/work-with-me/growth"
+          linkText='Learn more about "Break through growth plateaus"'
+        />
+
+        {/* <Offer
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
           description="We'll distill the full body of your long-term vision into a single,
@@ -129,15 +139,15 @@ export default function WorkWithMe() {
           to decision-making and co-creating SOPs to stay aligned with outcomes, even as new 
           opportunities arise."
         />
-        <Spacer />
+        <Spacer /> */}
         <Offer
-          title="Fractional Head of Product, Growth, Strategy, and/or Operations"
+          title="Fractional Head of Product, Growth, Strategy, Innovation, and/or Operations"
           subtitle="AKA, an advisor who does stuff."
           description="I'll join you as an embedded member of your leadership team to find 
           and mobilize the growth & innovation opportunities and then work with your team 
           to execute them and increase your acquisition, activation, and retention metrics.
           We'll build the systems and processes to stay aligned as you grow and scale. 
-          I work with a very limited number of teams in this capacity."
+          I work with a very limited number of teams in this capacity. I am a multidisciplinary cross functional person - the title will give us a way to position me to your team but the work will be the same regardless."
         ></Offer>
         <Spacer />
         <Offer
