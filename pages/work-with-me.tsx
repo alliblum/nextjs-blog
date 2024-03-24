@@ -69,6 +69,14 @@ export default function WorkWithMe() {
         </Text>
 
         <Offer
+          title="Innovation Strategy & Prototyping"
+          subtitle="DESCRIBE IT"
+          description="Two tracks of research + prototyping to uncover and validate new growth opportunities. We'll start with a research sprint to uncover the best opportunities for growth and then move into a prototyping sprint to validate those opportunities. You'll get a clear understanding of the best opportunities for growth and a prototype to test those opportunities with your customers."
+          path="/work-with-me/innovation"
+          linkText="Learn more about Innovation Strategy & Prototyping"
+        />
+
+        <Offer
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
           description="We'll distill the full body of your long-term vision into a single,
