@@ -53,7 +53,7 @@ export default function WorkWithMe() {
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
             <Text color="purple.600" as="strong">
-              Click to schedule time with me for a 60 minute meet-and-greet call
+              Click to schedule time with me for a meet-and-greet call
             </Text>
           </Link>
         </Box>
