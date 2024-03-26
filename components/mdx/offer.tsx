@@ -1,12 +1,15 @@
 import React from 'react'
-import { Box, Text, Stack, Heading, Link } from '@chakra-ui/react'
+import { Box, Text, Stack, Heading, Button, Link } from '@chakra-ui/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 export interface OfferProps {
   title: string
   subtitle: string
   description: string
+  path?: string
+  linkText?: string
 }
+import NextLink from 'next/link'
 
 export const theme = extendTheme({
   textStyles: {
@@ -50,8 +53,12 @@ const Offer: React.FC<OfferProps> = (props) => {
         borderWidth={2}
         borderColor="purple.100"
       >
-        <Text>{props?.description}</Text>
-        <Link>{}</Link>
+        <Text pb={5}>{props?.description}</Text>
+        <Box>
+          <Link href={props.path}>
+            <Text as="strong">{props?.linkText}</Text>
+          </Link>
+        </Box>
       </Box>
     </Box>
 

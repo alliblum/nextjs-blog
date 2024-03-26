@@ -18,7 +18,7 @@ export default function WorkWithMe() {
     <Layout home>
       <Stack spacing={5}>
         <Heading size="xl">
-          Leadership, Growth, and Innovation Strategy for Scale-ups
+          Innovation, Growth, and Leadership Strategy for Scale-ups
         </Heading>
         <Text>
           I've noticed a common pattern among teams that have found
@@ -45,30 +45,48 @@ export default function WorkWithMe() {
           business.
         </Text>
 
-        <Box py={5}>
-          <Link href="https://savvycal.com/alli/c0518466">
-            <Text color="purple.600" as="strong">
-              Click to schedule time with me for a 60 minute meet-and-greet call
-            </Text>
-          </Link>
-        </Box>
-
-        <Heading>
-          Get aligned and stay aligned as your company goes from startup to
-          scale-up -- without compromising your vision
-        </Heading>
         <Text>
           I work with companies as a solo consultant under the umbrella of my
           consulting brand, Hypothesis Department.
         </Text>
-        <Text>
+
+        <Box py={5}>
+          <Link href="https://savvycal.com/alli/c0518466">
+            <Text color="purple.600" as="strong">
+              Click to schedule time with me to talk about your business
+            </Text>
+          </Link>
+        </Box>
+
+        {/* <Heading>
+          Get aligned and stay aligned as your company goes from startup to
+          scale-up -- without compromising your vision
+        </Heading> */}
+
+        {/* <Text>
           I've observed the projects and frameworks outlined below to be among
           the most effective starting lines for our work together. I'd love to
           hear what's going on in your business to find the right place to begin
           our work.
-        </Text>
+        </Text> */}
+
+        {/* <Offer
+          title="Innovation Strategy & Prototyping"
+          subtitle="DESCRIBE IT"
+          description="Two tracks of research + prototyping to uncover and validate new growth opportunities. We'll start with a research sprint to uncover the best opportunities for growth and then move into a prototyping sprint to validate those opportunities. You'll get a clear understanding of the best opportunities for growth and a prototype to test those opportunities with your customers."
+          path="/work-with-me/innovation"
+          linkText="Learn more about Innovation Strategy & Prototyping"
+        /> */}
 
         <Offer
+          title="Break through growth plateaus"
+          subtitle="Jobs To Be Done + Change Management for Scale-Ups"
+          description="Let's find the root cause of your growth plateau, get the insights to break through it, and decide what projects set you up for long term scaleable, predictable growth."
+          path="/work-with-me/growth"
+          linkText="Click to learn more"
+        />
+
+        {/* <Offer
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
           description="We'll distill the full body of your long-term vision into a single,
@@ -121,21 +139,23 @@ export default function WorkWithMe() {
           to decision-making and co-creating SOPs to stay aligned with outcomes, even as new 
           opportunities arise."
         />
-        <Spacer />
+        <Spacer /> */}
         <Offer
-          title="Fractional Head of Product, Growth, Strategy, and/or Operations"
+          title="Fractional Head of Product, Growth, Strategy, Innovation, and/or Operations"
           subtitle="AKA, an advisor who does stuff."
           description="I'll join you as an embedded member of your leadership team to find 
           and mobilize the growth & innovation opportunities and then work with your team 
           to execute them and increase your acquisition, activation, and retention metrics.
           We'll build the systems and processes to stay aligned as you grow and scale. 
-          I work with a very limited number of teams in this capacity."
+          I work with a very limited number of teams in this capacity. I am a multidisciplinary cross functional Jack of All Trades - the title will give us a way to position me to your team but the work will be the same regardless."
         ></Offer>
         <Spacer />
         <Offer
           title="Diagnostic Assessment"
           subtitle="Two Hour Working Session to uncover the possible root causes of your growth challenges"
           description="If you're not share where to start, start here. We'll meet for a diagnostic session to talk about what's going on in your business, review data, and weigh tradeoffs."
+          path="https://savvycal.com/alli/diagnostic"
+          linkText="Click to book a working session"
         />
         <Spacer />
         <QuoteBlock
