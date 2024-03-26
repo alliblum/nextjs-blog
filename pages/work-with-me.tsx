@@ -53,7 +53,7 @@ export default function WorkWithMe() {
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
             <Text color="purple.600" as="strong">
-              Click to schedule time with me for a meet-and-greet call
+              Click to schedule time with me to talk about your business
             </Text>
           </Link>
         </Box>
@@ -70,20 +70,20 @@ export default function WorkWithMe() {
           our work.
         </Text> */}
 
-        <Offer
+        {/* <Offer
           title="Innovation Strategy & Prototyping"
           subtitle="DESCRIBE IT"
           description="Two tracks of research + prototyping to uncover and validate new growth opportunities. We'll start with a research sprint to uncover the best opportunities for growth and then move into a prototyping sprint to validate those opportunities. You'll get a clear understanding of the best opportunities for growth and a prototype to test those opportunities with your customers."
           path="/work-with-me/innovation"
           linkText="Learn more about Innovation Strategy & Prototyping"
-        />
+        /> */}
 
         <Offer
           title="Break through growth plateaus"
-          subtitle="DESCRIBE IT"
-          description=""
+          subtitle="Jobs To Be Done + Change Management for Scale-Ups"
+          description="Let's find the root cause of your growth plateau, get the insights to break through it, and decide what projects set you up for long term scaleable, predictable growth."
           path="/work-with-me/growth"
-          linkText='Learn more about "Break through growth plateaus"'
+          linkText="Click to learn more"
         />
 
         {/* <Offer
@@ -147,13 +147,15 @@ export default function WorkWithMe() {
           and mobilize the growth & innovation opportunities and then work with your team 
           to execute them and increase your acquisition, activation, and retention metrics.
           We'll build the systems and processes to stay aligned as you grow and scale. 
-          I work with a very limited number of teams in this capacity. I am a multidisciplinary cross functional person - the title will give us a way to position me to your team but the work will be the same regardless."
+          I work with a very limited number of teams in this capacity. I am a multidisciplinary cross functional Jack of All Trades - the title will give us a way to position me to your team but the work will be the same regardless."
         ></Offer>
         <Spacer />
         <Offer
           title="Diagnostic Assessment"
           subtitle="Two Hour Working Session to uncover the possible root causes of your growth challenges"
           description="If you're not share where to start, start here. We'll meet for a diagnostic session to talk about what's going on in your business, review data, and weigh tradeoffs."
+          path="https://savvycal.com/alli/diagnostic"
+          linkText="Click to book a working session"
         />
         <Spacer />
         <QuoteBlock

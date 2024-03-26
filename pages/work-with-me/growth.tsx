@@ -51,7 +51,8 @@ export default function Growth() {
         </Text>
         <Text>
           And in between the myriad projects you’re shipping, investigating the
-          root causes of revenue-related problems becomes a “someday project”.
+          root causes of growth- and revenue-related problems becomes a “someday
+          project”.
         </Text>
         <Text>
           <>
@@ -62,63 +63,72 @@ export default function Growth() {
             <br />
             <Text as="i">Someday </Text> you’ll sync with another team to see if
             they can support a user research project.
+            <br />
           </>
         </Text>
-        <Text>
-          What if you could get off that "someday" timeline and start figuring
-          out how to break through that growth plateau today?
-        </Text>
-        <Heading>
-          Let's find the root cause of your growth plateau, get the insights
-          that will help you break through it, and figure out what projects will
-          get you there fastest
+        <Heading size="lg">
+          Building that long-term scaleable predictable growth foundation will
+          have to wait for someday because today you need to worry about right
+          now.{' '}
         </Heading>
-        <Text>Describe JTBD and what it is</Text>
+        <Heading size="lg">Or do you?</Heading>
         <Text>
-          JTBD: If you know, you know. If you don't, JTBD is the way to find out
-          these things about your customers{' '}
+          You have a to-do list a mile long. There are PLG motions to implement
+          and partnership programs to build. Product refreshes to ship and
+          features your customers have been asking for. Content to write. Ads to
+          tweak. Onboarding experiences to re-tool.
         </Text>
-        <UnorderedList>
-          <ListItem>When they buy</ListItem>
-          <ListItem>How they buy</ListItem>
-          <ListItem>What makes them more/less likely to buy</ListItem>
-          <ListItem>What's going on in their world</ListItem>
-          <ListItem>What they're trying to do</ListItem>
-          <ListItem>What they're trying to avoid</ListItem>
-          <ListItem>social/emotional/functional</ListItem>
-        </UnorderedList>
-        <Heading>What you get out of it</Heading>
-        <UnorderedList>
-          <ListItem>
-            Building blocks for your campaigns and product features (VOC)
-          </ListItem>
-          <ListItem>Insight to help you prioritize</ListItem>
-          <ListItem>Insight to help you build</ListItem>
-          <ListItem>Insight to help you grow</ListItem>
-        </UnorderedList>
-        <Heading>Do others like me care?</Heading>
-        <Text>Testimonial</Text>
-        <Text>Cite a fact about qualitative research</Text>
-        <Text>Overview stages of the process</Text>
-        <Heading>Timeline</Heading>
         <Text>
-          Project timeline: Here is an estimate of our work schedule. It may
-          change due to factors including time zones, unforeseen events,
-          research participant recruitability, and data availability. During the
-          project you can expect weekly touchpoints via email and/or 30-minute
-          callls depending on preference/availability. Expect more active
-          collaboration time in phase 1 & 3.
+          You've been operating like a scrappy startup, shipping fast and
+          getting fast results (or at least fast feedback) for a long time, but
+          results are starting to take longer to realize. The projects
+          themselves are starting to seem bigger.
+        </Text>
+        <Text>
+          This phase is common for many fast-growing and innovative companies.
+          Prioritize "quick wins" and "low hanging fruit" long enough and pretty
+          soon it's inevitable that your to-do list will only contain fruit high
+          up in the tree that takes more time, people, and resources to get.
+        </Text>{' '}
+        <Text>
+          Some leaders in this stage double down on their brute force approach,
+          keep chasing quick wins, keep getting disappointed that the progress
+          doesn't come as fast as it used to, keep getting stuck in the muck.
+        </Text>
+        <Text>Others say, "The game has changed, and we must change too."</Text>
+        <Text>
+          {' '}
+          These companies look at what's working, what isn't, and what they need
+          to do differently if they want to achieve their goals -- even if what
+          they have to do is make big uncomfortable changes.
+        </Text>
+        <Text>
+          Both teams move at about the same pace and both have slow growth for a
+          quarter or two. But the second group will have spent the time building
+          a foundation for scaleable, sustainable growth.{' '}
+        </Text>
+        <Text>
+          They'll stop guessing and start knowing. The second group will see
+          growth accelerate again.{' '}
+        </Text>
+        <Text>The first group very likely won't.</Text>
+        <Heading size="lg">
+          Let's find the root cause of your growth plateau, get the insights to
+          break through it, and decide what projects set you up for long term
+          scaleable, predictable growth.
+        </Heading>
+        <Text>
+          Here's how we'll lay your foundation for a growth engine that doesn't
+          keep you up at night.
         </Text>
         <QuoteBlock
-          author="Phase 1: Get your team onboard with your new approach"
-          quote=""
+          quote="Phase 1:"
+          author="Collect intel on where you're at and where you want to go"
         />
         <Text>
-          How do you build a strategy that works? Start by gathering as much
-          intelligence as you can. We'll begin our work with rigorous analysis
-          of the factors contributing to your growth plateau. We'll collect
-          intel from your data platforms, from your teammates, and from your
-          customers.{' '}
+          We'll begin our work with rigorous analysis of the factors
+          contributing to your growth plateau. We'll collect intel from your
+          data platforms, from your teammates, and from your customers.{' '}
         </Text>
         <UnorderedList>
           <ListItem>
@@ -145,8 +155,10 @@ export default function Growth() {
             activation, retention, referral, revenue)
           </ListItem>
         </UnorderedList>
-        <QuoteBlock author="Phase 2: Find your customers' JTBD" quote="" />
-
+        <QuoteBlock
+          quote="Phase 2:"
+          author="Find your customers' JTBD and assess what's happening at core lifecycle moments"
+        />
         <Text>
           Next we'll execute our investigation into your customers' core JTBD.
           We'll start assessing what could be happening during the moments when
@@ -170,10 +182,9 @@ export default function Growth() {
           </ListItem>{' '}
           <ListItem>Execute customer journey moment study plans</ListItem>
         </UnorderedList>
-
         <QuoteBlock
-          author="Phase 3: Co-create a plan to ship projects based on your work"
-          quote=""
+          quote="Phase 3:"
+          author="Co-create a plan to ship work that builds your growth foundation"
         />
         <Text>
           We'll mobilize our findings, consider the options we might pursue, and
@@ -182,18 +193,16 @@ export default function Growth() {
         <UnorderedList>
           <ListItem>
             Complete analysis of core JTBD interviews to identify core customer
-            job stories Facilitate a workshop to review findings, listen to
-            voice of customer data, and discuss job story artifacts and findings{' '}
+            job stories
           </ListItem>
 
-          <ListItem>Complete analysis of customer lifecycle moment</ListItem>
+          <ListItem>Complete analysis of customer lifecycle breakdown</ListItem>
           <ListItem>
             Insights workshop: Facilitate a follow-up workshop to prioritize the
             findings from our investigation and align on next steps
           </ListItem>
           <ListItem>
             Hypothesis workshop: Co-create a list of experiments to test
-            hypotheses
           </ListItem>
 
           <ListItem>
@@ -201,25 +210,7 @@ export default function Growth() {
             projects we identified to come up with an actionable plan
           </ListItem>
         </UnorderedList>
-
-        <Heading>How will my life improve?</Heading>
-        <Text></Text>
-
-        <UnorderedList>
-          <ListItem>Teams that do this see 10X growth after</ListItem>
-          <ListItem>Stop guessing and know</ListItem>
-          <ListItem>
-            Get your team shipping based on same customer viewpoint
-          </ListItem>
-        </UnorderedList>
-        <Text>Compared to if you did nothing</Text>
-        <UnorderedList>
-          <ListItem>Keep guessing</ListItem>
-          <ListItem>Keep shipping</ListItem>
-          <ListItem>Keep wondering</ListItem>
-          <ListItem>Keep throwing money away</ListItem>
-        </UnorderedList>
-        <Heading>
+        <Heading size="lg">
           How this approach helped MURAL find their core JTBD and crank their
           growth engine
         </Heading>
@@ -245,25 +236,56 @@ export default function Growth() {
           for new initiatives with hard numbers AND use it to inform a new
           onboarding projects that drove increased conversion rates of 300%.
         </Text>
-        <Text></Text>
+        <Heading size="lg">A bit more about me and JTBD:</Heading>
         <UnorderedList>
           <ListItem>
-            This is the standard of innovation major companies
-          </ListItem>
-          <ListItem>I have been doing it for a decade</ListItem>
-          <ListItem>
-            I have worked in every department at a saas and can tell you how it
-            applies and how to mobilize
+            Jobs to Be Done (JTBD) is the standard of innovation major companies
+            and quickly becoming the standard of growth and innvoation across
+            the board for SaaS companies.
           </ListItem>
           <ListItem>
-            The absolute worst outcome of this project is that you learn a ton
-            of things about your customer
+            The chance that your competitors are using JTBD to figure out how
+            they can help your customers switch to their tool is high and
+            growing higher.
+          </ListItem>
+          <ListItem>
+            I have been investigating customer progress and applying it to
+            product, marketing, UX, copy, sales, PR, and engineering for a
+            decade.
+          </ListItem>
+
+          <ListItem>
+            The absolute worst outcome of this project is that you keep doing
+            all the things that you know are working AND you learn a ton of
+            things about your customer that you didn't know and can use to sell
+            them more software.
           </ListItem>
         </UnorderedList>
+        <Heading size="lg">
+          Do you want to know why prospects who *should* become your customers
+          actually become your customers?
+        </Heading>
+        <Text>
+          When your best prospects look for a solution to the problem your
+          product solves, why don’t they choose you?
+        </Text>
+        <Text>
+          {' '}
+          When new users sign up for a trial, what makes them disappear after
+          one or two sessions?
+        </Text>
+        <Text>
+          {' '}
+          When trialists choose not to upgrade (or paying customers churn after
+          a few months), why do they leave? Where do they go? What could you
+          have done differently to make them stay?{' '}
+        </Text>
+        <Text>You might have a hunch about where the breakdown happens.</Text>
+        <Text>Do you want to *know?*</Text>
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
             <Text color="purple.600" as="strong">
-              Click to schedule time with me for a meet-and-greet call
+              Click to schedule time with me to see how we can find out
             </Text>
           </Link>
         </Box>
