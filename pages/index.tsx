@@ -53,8 +53,8 @@ export default function Home({
         <Heading size="xl">Hi, I’m Alli. </Heading>
 
         <Text>
-          I help SaaS leaders and teams get and stay aligned while you navigate
-          the transition from startup to scaleup.
+          I help SaaS companies break through growth plateaus and launch new
+          innovations.
         </Text>
 
         <Text>
@@ -66,10 +66,10 @@ export default function Home({
         </Text>
 
         <Text>
-          I've worked across functions including leadership, product, growth,
-          UX, user research, marketing, conversion copywriting, GTM planning,
-          leadership, operations, customer support, positioning, public
-          relations, change management, and engineering.{' '}
+          I'm a jack of all trades with tours across functions including
+          leadership, product, growth, UX, user research, marketing, conversion
+          copywriting, GTM planning, leadership, operations, customer support,
+          positioning, public relations, change management, and engineering.{' '}
         </Text>
 
         <Text>
