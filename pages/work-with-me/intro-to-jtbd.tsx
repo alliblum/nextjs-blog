@@ -1,0 +1,204 @@
+import { QuoteBlock } from 'components/mdx'
+import Layout from 'components/layout'
+
+import {
+  Box,
+  Text,
+  Heading,
+  Spacer,
+  Link,
+  Stack,
+  UnorderedList,
+  ListItem,
+  Center,
+  List,
+} from '@chakra-ui/react'
+
+export default function IntroToJTBD() {
+  return (
+    <Layout home>
+      <Stack spacing={5}>
+        <Heading size="xl">Is JTBD right for your team?</Heading>
+        <Text>You've heard a lot about Jobs To Be Done.</Text>
+        <Text>But you're still not sure it's right for you. </Text>
+        <Text>You're wondering:</Text>
+        <UnorderedList>
+          <ListItem>What is JTBD?</ListItem>
+          <ListItem>How will we apply it?</ListItem>
+          <ListItem>How will we apply it?</ListItem>
+          <ListItem>
+            How is it different from other projects to understand our customers,
+            like ICP or user persona?
+          </ListItem>
+          <ListItem>
+            How is it different from other types of customer research?
+          </ListItem>
+          <ListItem>
+            Is it really as powerful as JTBD people say it is?
+          </ListItem>
+          <ListItem>
+            Even if I did believe in it, how would I get my team onboard?
+          </ListItem>
+        </UnorderedList>
+        <Heading size="xl">
+          Intro to JTBD is an abbreviated workshop to give you and your team a
+          taste of JTBD with real data...{' '}
+        </Heading>
+        <Heading size="lg">
+          ...so you can make a decision about whether investing in JTBD is the
+          right choice for you and your team
+        </Heading>
+        <QuoteBlock
+          quote="I'd read 'Competing Against Luck' and watched some videos on the Rewired
+        Group website. I knew it was a framework to understand people's
+        struggles and create a product + product experience that helped resolve
+        their struggle. A lot more! I sort of understood the theory conceptually
+        before but now I can tell you how to apply it - how interviews are
+        conducted, how jobs are determined (tracking themes in push, pull,
+        habits, anxieties), and how to use those jobs to address people's
+        concerns and help them solve their problems."
+          author="Heidi Kreis, Research and
+        Strategic Lead, Forget the Funnel"
+        />
+        <Heading>How it works:</Heading>
+        <Text>
+          {' '}
+          First you and I will meet to talk about your business. You'll tell me
+          what you know about your most successful customers and we'll come up
+          with a list of folks we can reach out to for an interview. I'll run a
+          JTBD interview with one of the customers who meets our criteria.{' '}
+        </Text>
+        <Text>Then on the day of our workshop we'll cover 4 parts:</Text>
+        <Text>
+          Intro to JTBD: What it is, how it works, how it's different from other
+          theories of growth and innovation and other ways of mapping your
+          customers{' '}
+        </Text>
+        <Text>
+          Your first JTBD interview: We'll listen to the interview that I
+          conducted in advance of the training independently.{' '}
+        </Text>
+        <Text>
+          Cluster to discover your first Job Story: We'll rejoin to talk about
+          what we heard, share our findings around the four forces, social,
+          emotional, and functional components, and the "Pixar" story.{' '}
+        </Text>
+        <Text>
+          {' '}
+          JTBD Application Lightning round: We'll talk about how we might apply
+          our findings from this one interview to differnet areas of the
+          business, such as product, marketing, product marketing, customer
+          success, positioning, messaging.{' '}
+        </Text>
+        <QuoteBlock
+          quote="Before this training, I had heard the term Jobs to Be Done mentioned by
+        Product Teams but not much more than that. Now I understand how to use
+        VOC to drive our go-to-market strategy. My favorite part was when we
+        were able to interact within the group to go over interviews. It is
+        always fun to hear different perceptions based on the roles they have
+        done in the past/current. It was one of the best 'virtual' trainings I
+        have been through. Even though I definitely prefer an in person
+        environment but this kept me engaged through out the week. The energy
+        and passion made it easy to participate!"
+          author="TJ McGinnity, VP Customer
+        Success Operations, MoveDocs"
+        />
+        <Text> You'll go from wondering if JTBD is right for you to</Text>
+        <UnorderedList>
+          <ListItem>
+            Getting your entire team aligned around what JTBD is
+          </ListItem>
+          <ListItem>
+            Hearing a JTBD interview with a real customer with your own ears
+          </ListItem>
+          <ListItem>
+            Getting to really "feel" the difference between JTBD
+          </ListItem>
+          <ListItem>
+            {' '}
+            Have an understanding of the core tenets of JTBD, including the 4
+            forces, the "Pixar" story, and social/functional/emotional
+            components{' '}
+          </ListItem>
+          <ListItem>
+            Having easier conversations with your team around allocating budget
+            for and applying insights because everyone will have seen how it
+            applies to their discipline{' '}
+          </ListItem>
+          <ListItem>
+            Have an easier time booking a proper project to understand all of
+            your jobs
+          </ListItem>{' '}
+        </UnorderedList>
+        <Text>What you won't get</Text>
+        <UnorderedList>
+          {' '}
+          <ListItem>
+            {' '}
+            A full understanding of your customers JTBD - you'll need *at least*
+            10 interviews{' '}
+          </ListItem>
+          <ListItem>
+            A fully transformed organization (I have a quarter long growth
+            project we can dot){' '}
+          </ListItem>
+          <ListItem>
+            Expert-level dexterity to collect and apply your own JTBD findings
+            (we won't train how to do interviews and you'll want to hear at
+            least 10 or so before you get a feel for how they run, you'll want
+            to use them for a few months before you can see how to apply them to
+            your business context)
+          </ListItem>
+        </UnorderedList>{' '}
+        <QuoteBlock
+          quote="I had heard the term 'Job' thrown around but I never really knew
+        exactly what that meant. I had watched a new hire video on Jobs and had
+        several conversations with people that brought it up. This training
+        helped my understanding TREMENDOUSLY! It makes so much sense now. Also,
+        learning about the 4 quadrants of a Job (push, pull, habit, anxiety) was
+        great. The training gives us insight and understanding into who are
+        customers are and why they need us."
+          author="Jeff Nessler, Hubspot Platform
+        Lead, Humana"
+        />
+        <QuoteBlock
+          quote="Alli was also super good at encouraging and helping me
+        feel successful learning and applying something new. She asked really
+        great questions that forced me to think about why I was responding the
+        way I did - that inductive reasoning piece. She was really great at
+        listening and then following up with further questions. She was really
+        good at encouraging questions, taking them seriously, responding to
+        them, and making sure we understood."
+          author="Heidi Kreis, Research and
+        Strategic Lead, Forget the Funnel"
+        />
+        <QuoteBlock
+          quote="Alli never lets a comment go by
+        unquestioned. Sometimes we use filler words to just get to the end of
+        our own comment. Alli wont let it happen. She will say wait what do you
+        mean by that last part? People would always say, well I guess not that.
+        What I really meant was this. She keeps people from autopiloting through
+        the training, keeps us all thoughtful and engaged throughout the
+        training."
+          author="Levi Yeck, Director of Sales, Autobooks"
+        />{' '}
+        <Text>
+          {' '}
+          Book an intro call to tell me more about your business and get the
+          process started{' '}
+        </Text>
+        {/* <QuoteBlock
+          quote="During the training I learned that JTBD is a lot more
+        objective than I thought. I learned how the interviews are conducted and
+        the process it takes to turn those interviews into copy and other
+        marketing resources. I was able to learn about some of the more common
+        challenges that businesses run into. What I learned here helps me better
+        understand our mission and who we serve. It gave me a ton of insights
+        and improved confidence into how we deliver our messaging."
+          author="Levi Yeck,
+        Director of Sales, Autobooks"
+        /> */}
+      </Stack>
+    </Layout>
+  )
+}
