@@ -79,9 +79,9 @@ export default function WorkWithMe() {
         /> */}
 
         <Offer
-          title="Is JTBD right for me"
+          title="Workshop: Is JTBD right for me?"
           subtitle="A half-day workshop to give you and your team a taste of Jobs To Be Done"
-          description=""
+          description="If you've heard about JTBD and aren't sure if it's right for you or you ARE sure that you want to bring JTBD to your organization but you need help building a cast for it, this workshop will help you build a foundational understanding with your team."
           path="/work-with-me/intro-to-jtbd"
           linkText="Click to learn more"
         />

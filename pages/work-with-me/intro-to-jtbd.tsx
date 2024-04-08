@@ -70,25 +70,27 @@ export default function IntroToJTBD() {
         </Text>
         <Text>Then on the day of our workshop we'll cover 4 parts:</Text>
         <Text>
-          Intro to JTBD: What it is, how it works, how it's different from other
-          theories of growth and innovation and other ways of mapping your
-          customers{' '}
+          <Text as="strong">Intro to JTBD:</Text> What it is, how it works, how
+          it's different from other theories of growth and innovation and other
+          ways of mapping your customers{' '}
         </Text>
         <Text>
-          Your first JTBD interview: We'll listen to the interview that I
-          conducted in advance of the training independently.{' '}
+          <Text as="strong">List to Your first JTBD interview: </Text>We'll
+          listen to the interview that I conducted in advance of the training
+          independently.{' '}
         </Text>
         <Text>
-          Cluster to discover your first Job Story: We'll rejoin to talk about
-          what we heard, share our findings around the four forces, social,
-          emotional, and functional components, and the "Pixar" story.{' '}
+          <Text as="strong">Cluster to discover your first Job Story:</Text>{' '}
+          We'll rejoin to talk about what we heard, share our findings around
+          the four forces, social, emotional, and functional components, and the
+          "Pixar" story.{' '}
         </Text>
         <Text>
           {' '}
-          JTBD Application Lightning round: We'll talk about how we might apply
-          our findings from this one interview to differnet areas of the
-          business, such as product, marketing, product marketing, customer
-          success, positioning, messaging.{' '}
+          <Text as="strong">IJTBD Application Lightning Round:</Text>We'll talk
+          about how we might apply our findings from this one interview to
+          differnet areas of the business, such as product, marketing, product
+          marketing, customer success, positioning, messaging.{' '}
         </Text>
         <QuoteBlock
           quote="Before this training, I had heard the term Jobs to Be Done mentioned by
