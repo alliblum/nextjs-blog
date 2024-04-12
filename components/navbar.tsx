@@ -1,5 +1,5 @@
 import { Headshot } from './headshot'
-import { Box, Flex, HStack, Spacer } from '@chakra-ui/react'
+import { Box, Flex, HStack, Spacer, Stack } from '@chakra-ui/react'
 import Link from 'next/link'
 
 export const NavBar = () => {
@@ -8,13 +8,10 @@ export const NavBar = () => {
       <Headshot />
       <Spacer />
       <Box>
-        <Link href="/work-with-me">Work With Me</Link>
-        <Link href="/about">About</Link>
-        {/* <HStack fontSize="sm">
-          <Link href="/founders-and-leaders">For Founders and Leaders</Link>
-          <Spacer />
-          <Link href="/jtbd-practitioners">For JTBD Practitioners</Link>
-        </HStack> */}
+        <Stack direction="row" spacing={4}>
+          <Link href="/work-with-me">Work With Me</Link>
+          <Link href="/about">About</Link>
+        </Stack>
       </Box>
     </Flex>
   )
