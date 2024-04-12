@@ -79,6 +79,14 @@ export default function WorkWithMe() {
         /> */}
 
         <Offer
+          title="Workshop: Is JTBD right for me?"
+          subtitle="A half-day workshop to give you and your team a taste of Jobs To Be Done"
+          description="If you've heard about JTBD and aren't sure if it's right for you or you ARE sure that you want to bring JTBD to your organization but you need help building a cast for it, this workshop will help you build a foundational understanding with your team."
+          path="/work-with-me/intro-to-jtbd"
+          linkText="Click to learn more"
+        />
+
+        <Offer
           title="Break through growth plateaus"
           subtitle="Jobs To Be Done + Change Management for Scale-Ups"
           description="Let's find the root cause of your growth plateau, get the insights to break through it, and decide what projects set you up for long term scaleable, predictable growth."
@@ -150,13 +158,13 @@ export default function WorkWithMe() {
           I work with a very limited number of teams in this capacity. I am a multidisciplinary cross functional Jack of All Trades - the title will give us a way to position me to your team but the work will be the same regardless."
         ></Offer>
         <Spacer />
-        <Offer
+        {/* <Offer
           title="Diagnostic Assessment"
           subtitle="Two Hour Working Session to uncover the possible root causes of your growth challenges"
           description="If you're not share where to start, start here. We'll meet for a diagnostic session to talk about what's going on in your business, review data, and weigh tradeoffs."
           path="https://savvycal.com/alli/diagnostic"
           linkText="Click to book a working session"
-        />
+        /> */}
         <Spacer />
         <QuoteBlock
           quote="If you want to set your company up to succeed in the long term,

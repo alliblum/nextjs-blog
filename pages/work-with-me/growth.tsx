@@ -288,6 +288,10 @@ export default function Growth() {
               Click to schedule time with me to see how we can find out
             </Text>
           </Link>
+          <QuoteBlock
+            quote="We’re able to really cut to the bottom of arguments and have much more productive discussions where the foundation of the decision is not based on the personalities or titles of the people making those decisions. We're able to design experiences that are really for the customer, that delight the customer, enabling us to get the actual numbers that we want."
+            author="Jordan Skole, VP Product Engineering, Autobooks"
+          />
         </Box>
       </Stack>
     </Layout>
