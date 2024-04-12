@@ -9,6 +9,7 @@ export const NavBar = () => {
       <Spacer />
       <Box>
         <Link href="/work-with-me">Work With Me</Link>
+        <Link href="/about">About</Link>
         {/* <HStack fontSize="sm">
           <Link href="/founders-and-leaders">For Founders and Leaders</Link>
           <Spacer />

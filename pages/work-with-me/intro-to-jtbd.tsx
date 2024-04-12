@@ -18,37 +18,67 @@ export default function IntroToJTBD() {
   return (
     <Layout home>
       <Stack spacing={5}>
-        <Heading size="xl">Is JTBD right for your team?</Heading>
-        <Text>You've heard a lot about Jobs To Be Done.</Text>
-        <Text>But you're still not sure it's right for you. </Text>
-        <Text>You're wondering:</Text>
+        <Heading size="xl">Workshop: Is JTBD right for your team?</Heading>
+        <Text>
+          So you've heard a lot about Jobs To Be Done. You saw a great
+          conference talk or read "Competing Against Luck". Maybe you've even
+          tried your hand at a few customer interviews.
+        </Text>
+        <Text>
+          Or you've seen JTBD's impact at another organization, even if you
+          weren't the main person to run the project. You saw how it transformed
+          a scattered set of decisions into a clear strategy, how it turned a
+          team of grumpy product people and sour-faced marketers into a united
+          front of energized outcome-generating operators. You even got to see
+          those growth numbers go up soon after.
+        </Text>
+        <Text>
+          Either way: when you look at the challenges your organization is
+          facing -- misalignment of who your customer is, scattered priorities
+          on what's important to build now, a stubborn growth plateau with
+          multi-functional origins -- it sure seems like JTBD will give you the
+          insights you need to break the logjam.
+        </Text>
+        <Text>And yet.</Text>
+        <Heading size="sm">If you're new to JTBD, you may wonder:</Heading>
         <UnorderedList>
-          <ListItem>What is JTBD?</ListItem>
-          <ListItem>How will we apply it?</ListItem>
-          <ListItem>How will we apply it?</ListItem>
+          <ListItem>What exactly IS JTBD?</ListItem>
+          <ListItem>How will your team apply your findings?</ListItem>
           <ListItem>
             How is it different from other projects to understand our customers,
-            like ICP or user persona?
+            like user personas?
           </ListItem>
+          <ListItem>What does an interview look and sound like?</ListItem>
           <ListItem>
-            How is it different from other types of customer research?
+            What kind of deliverables can you expect at the end of a JTBD
+            project?
           </ListItem>
+          <ListItem>How do the insights translate into action? </ListItem>
           <ListItem>
             Is it really as powerful as JTBD people say it is?
           </ListItem>
+        </UnorderedList>
+        <Heading size="sm">
+          If you've already seen JTBD work well, you may wonder:
+        </Heading>
+        <UnorderedList>
           <ListItem>
-            Even if I did believe in it, how would I get my team onboard?
+            How on earth am I going to get my peers bought into a concept
+            they've never heard of before?
+          </ListItem>
+          <ListItem>How will I win over skeptics and build allies?</ListItem>
+          <ListItem>
+            How am I going to get folks to actually be excited about doing a
+            JTBD project?
           </ListItem>
         </UnorderedList>
         <Heading size="xl">
-          Intro to JTBD is an abbreviated workshop to give you and your team a
-          taste of JTBD with real data...{' '}
+          This workshop gives your team a taste of JTBD so you can decide if
+          investing in a full JTBD Growth & Change project is the right choice
+          to break through your growth plateau{' '}
         </Heading>
-        <Heading size="lg">
-          ...so you can make a decision about whether investing in JTBD is the
-          right choice for you and your team
-        </Heading>
-        <QuoteBlock
+        <Heading size="md"></Heading>
+        {/* <QuoteBlock
           quote="I'd read 'Competing Against Luck' and watched some videos on the Rewired
         Group website. I knew it was a framework to understand people's
         struggles and create a product + product experience that helped resolve
@@ -59,8 +89,8 @@ export default function IntroToJTBD() {
         concerns and help them solve their problems."
           author="Heidi Kreis, Research and
         Strategic Lead, Forget the Funnel"
-        />
-        <Heading>How it works:</Heading>
+        /> */}
+        <Heading size="lg">How it works:</Heading>
         <Text>
           {' '}
           First you and I will meet to talk about your business. You'll tell me
@@ -72,25 +102,25 @@ export default function IntroToJTBD() {
         <Text>
           <Text as="strong">Intro to JTBD:</Text> What it is, how it works, how
           it's different from other theories of growth and innovation and other
-          ways of mapping your customers{' '}
+          ways of mapping your customers' journey.{' '}
         </Text>
         <Text>
-          <Text as="strong">List to Your first JTBD interview: </Text>We'll
+          <Text as="strong">Listen to your first JTBD interview: </Text>We'll
           listen to the interview that I conducted in advance of the training
           independently.{' '}
         </Text>
         <Text>
-          <Text as="strong">Cluster to discover your first Job Story:</Text>{' '}
-          We'll rejoin to talk about what we heard, share our findings around
-          the four forces, social, emotional, and functional components, and the
-          "Pixar" story.{' '}
+          <Text as="strong">Discover your first Job Story:</Text> We'll rejoin
+          to talk about what we heard, share our findings around the four
+          forces, social, emotional, and functional components, and the "Pixar"
+          story.{' '}
         </Text>
         <Text>
           {' '}
-          <Text as="strong">IJTBD Application Lightning Round:</Text>We'll talk
-          about how we might apply our findings from this one interview to
-          differnet areas of the business, such as product, marketing, product
-          marketing, customer success, positioning, messaging.{' '}
+          <Text as="strong">JTBD Application Lightning Round:</Text> We'll talk
+          about how we might apply our findings from this interview to different
+          areas of your business, including product, marketing, product
+          marketing, customer success, positioning, messaging, and more.{' '}
         </Text>
         <QuoteBlock
           quote="Before this training, I had heard the term Jobs to Be Done mentioned by
@@ -105,7 +135,10 @@ export default function IntroToJTBD() {
           author="TJ McGinnity, VP Customer
         Success Operations, MoveDocs"
         />
-        <Text> You'll go from wondering if JTBD is right for you to</Text>
+        <Heading size="md">
+          {' '}
+          You'll go from wondering if JTBD is right for you to:
+        </Heading>
         <UnorderedList>
           <ListItem>
             Getting your entire team aligned around what JTBD is
@@ -114,11 +147,12 @@ export default function IntroToJTBD() {
             Hearing a JTBD interview with a real customer with your own ears
           </ListItem>
           <ListItem>
-            Getting to really "feel" the difference between JTBD
+            Getting to really "feel" how you might apply JTBD findings at your
+            org
           </ListItem>
           <ListItem>
             {' '}
-            Have an understanding of the core tenets of JTBD, including the 4
+            Having an understanding of the core tenets of JTBD, including the 4
             forces, the "Pixar" story, and social/functional/emotional
             components{' '}
           </ListItem>
@@ -128,11 +162,11 @@ export default function IntroToJTBD() {
             applies to their discipline{' '}
           </ListItem>
           <ListItem>
-            Have an easier time booking a proper project to understand all of
+            Having an easier time booking a proper project to understand all of
             your jobs
           </ListItem>{' '}
         </UnorderedList>
-        <Text>What you won't get</Text>
+        <Heading size="md"> What you won't get:</Heading>
         <UnorderedList>
           {' '}
           <ListItem>
@@ -140,19 +174,13 @@ export default function IntroToJTBD() {
             A full understanding of your customers JTBD - you'll need *at least*
             10 interviews{' '}
           </ListItem>
-          <ListItem>
-            A fully transformed organization (I have a quarter long growth
-            project we can dot){' '}
-          </ListItem>
+          <ListItem>A fully transformed organization</ListItem>
           <ListItem>
             Expert-level dexterity to collect and apply your own JTBD findings
-            (we won't train how to do interviews and you'll want to hear at
-            least 10 or so before you get a feel for how they run, you'll want
-            to use them for a few months before you can see how to apply them to
-            your business context)
+            (but you'll be well on your way to becoming one)
           </ListItem>
         </UnorderedList>{' '}
-        <QuoteBlock
+        {/* <QuoteBlock
           quote="I had heard the term 'Job' thrown around but I never really knew
         exactly what that meant. I had watched a new hire video on Jobs and had
         several conversations with people that brought it up. This training
@@ -179,16 +207,34 @@ export default function IntroToJTBD() {
         unquestioned. Sometimes we use filler words to just get to the end of
         our own comment. Alli wont let it happen. She will say wait what do you
         mean by that last part? People would always say, well I guess not that.
-        What I really meant was this. She keeps people from autopiloting through
+        What I really meant was this. She keeps people from autopiloting through
         the training, keeps us all thoughtful and engaged throughout the
         training."
           author="Levi Yeck, Director of Sales, Autobooks"
-        />{' '}
-        <Text>
-          {' '}
-          Book an intro call to tell me more about your business and get the
-          process started{' '}
-        </Text>
+        />{' '} */}
+        <Heading size="md">So if you are:</Heading>
+        <UnorderedList>
+          <ListItem>
+            Thinking about JTBD but not ready to commit to a full project
+          </ListItem>
+          <ListItem>
+            Needing a way to get your team to see and feel for themselves how
+            impactful a JTBD project could be{' '}
+          </ListItem>
+          <ListItem>
+            Wanting to see what all the fuss is about with some real live
+            customer data
+          </ListItem>
+        </UnorderedList>
+        <Link href="https://savvycal.com/alli/c0518466">
+          <Text color="purple.600" as="strong">
+            Book an intro call with me here to get started
+          </Text>
+        </Link>
+        <QuoteBlock
+          quote="We created a culture where citations really matter where having the raw voice of customer data really matters. We've created agents who care very much about really truly understanding the customer's position and representing the customer. And that's been huge for us. It's the best we can do, perhaps even better than having the customer actually in the room with us."
+          author="Jordan Skole, VP Product Engineering, Autobooks"
+        />
         {/* <QuoteBlock
           quote="During the training I learned that JTBD is a lot more
         objective than I thought. I learned how the interviews are conducted and
