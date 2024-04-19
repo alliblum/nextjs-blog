@@ -53,6 +53,10 @@ export default function About() {
           src="/media/logobar.png"
           alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
         />
+        <Heading size="lg">
+          How I approach consulting and fractional work
+        </Heading>
+        <Text>Co-creative</Text>
       </Stack>
     </Layout>
   )

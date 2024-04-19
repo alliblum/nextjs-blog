@@ -10,6 +10,7 @@ import {
   Input,
   Spacer,
   Text,
+  Icon,
   Link,
   Button,
   chakra,
@@ -20,6 +21,8 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import NextLink from 'next/link'
 // import Image from 'next/image'
+
+import { TbBulb } from 'react-icons/tb'
 
 import { GetStaticProps } from 'next'
 // import { Box, Heading, Text, Spacer } from '@chakra-ui/react'

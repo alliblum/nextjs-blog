@@ -78,18 +78,6 @@ export default function IntroToJTBD() {
           to break through your growth plateau{' '}
         </Heading>
         <Heading size="md"></Heading>
-        {/* <QuoteBlock
-          quote="I'd read 'Competing Against Luck' and watched some videos on the Rewired
-        Group website. I knew it was a framework to understand people's
-        struggles and create a product + product experience that helped resolve
-        their struggle. A lot more! I sort of understood the theory conceptually
-        before but now I can tell you how to apply it - how interviews are
-        conducted, how jobs are determined (tracking themes in push, pull,
-        habits, anxieties), and how to use those jobs to address people's
-        concerns and help them solve their problems."
-          author="Heidi Kreis, Research and
-        Strategic Lead, Forget the Funnel"
-        /> */}
         <Heading size="lg">How it works:</Heading>
         <Text>
           {' '}
@@ -122,6 +110,18 @@ export default function IntroToJTBD() {
           areas of your business, including product, marketing, product
           marketing, customer success, positioning, messaging, and more.{' '}
         </Text>
+        <QuoteBlock
+          quote="I'd read 'Competing Against Luck' and watched some videos on the Rewired
+        Group website. I knew it was a framework to understand people's
+        struggles and create a product + product experience that helped resolve
+        their struggle. A lot more! I sort of understood the theory conceptually
+        before but now I can tell you how to apply it - how interviews are
+        conducted, how jobs are determined (tracking themes in push, pull,
+        habits, anxieties), and how to use those jobs to address people's
+        concerns and help them solve their problems."
+          author="Heidi Kreis, Research and
+        Strategic Lead, Forget the Funnel"
+        />
         <QuoteBlock
           quote="Before this training, I had heard the term Jobs to Be Done mentioned by
         Product Teams but not much more than that. Now I understand how to use
@@ -191,17 +191,7 @@ export default function IntroToJTBD() {
           author="Jeff Nessler, Hubspot Platform
         Lead, Humana"
         />
-        <QuoteBlock
-          quote="Alli was also super good at encouraging and helping me
-        feel successful learning and applying something new. She asked really
-        great questions that forced me to think about why I was responding the
-        way I did - that inductive reasoning piece. She was really great at
-        listening and then following up with further questions. She was really
-        good at encouraging questions, taking them seriously, responding to
-        them, and making sure we understood."
-          author="Heidi Kreis, Research and
-        Strategic Lead, Forget the Funnel"
-        />
+       
         <QuoteBlock
           quote="Alli never lets a comment go by
         unquestioned. Sometimes we use filler words to just get to the end of
@@ -231,6 +221,17 @@ export default function IntroToJTBD() {
             Book an intro call with me here to get started
           </Text>
         </Link>
+        <QuoteBlock
+          quote="Alli was also super good at encouraging and helping me
+        feel successful learning and applying something new. She asked really
+        great questions that forced me to think about why I was responding the
+        way I did - that inductive reasoning piece. She was really great at
+        listening and then following up with further questions. She was really
+        good at encouraging questions, taking them seriously, responding to
+        them, and making sure we understood."
+          author="Heidi Kreis, Research and
+        Strategic Lead, Forget the Funnel"
+        />
         <QuoteBlock
           quote="We created a culture where citations really matter where having the raw voice of customer data really matters. We've created agents who care very much about really truly understanding the customer's position and representing the customer. And that's been huge for us. It's the best we can do, perhaps even better than having the customer actually in the room with us."
           author="Jordan Skole, VP Product Engineering, Autobooks"
