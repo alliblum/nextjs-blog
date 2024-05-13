@@ -1,1 +1,13 @@
-{}
+{
+  "attachmentFolderPath": "public/images",
+  "userIgnoreFilters": [
+    "components/",
+    "lib/",
+    "node_modules/",
+    "pages/",
+    "types/",
+    "styles/",
+    "//",
+    "components/mdx/"
+  ]
+}
