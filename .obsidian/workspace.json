@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/presenting-jtbd.mdx",
+                "file": "posts/customer-consensus.mdx",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/presenting-jtbd.mdx",
+                "file": "posts/customer-consensus.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/presenting-jtbd.mdx",
+                "file": "posts/customer-consensus.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/presenting-jtbd.mdx"
+                "file": "posts/customer-consensus.mdx"
               }
             }
           }
@@ -150,8 +150,9 @@
   },
   "active": "995503d275dbf41b",
   "lastOpenFiles": [
-    "posts/yooo.mdx",
+    "posts/jtbd-as-team-alignment.mdx",
     "posts/presenting-jtbd.mdx",
+    "posts/yooo.mdx",
     "posts/yooo.md",
     "posts/alsdijfalskdjflaksjdf.mdx",
     "posts/posty-post.mdx",
