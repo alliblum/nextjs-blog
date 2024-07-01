@@ -17,7 +17,99 @@ export default function WorkWithMe() {
   return (
     <Layout home>
       <Stack spacing={5}>
-        <Heading size="xl">
+        <Heading fontStyle="italic" size="md">
+          Get the data you need to align around a single shared understanding of
+          your customer
+        </Heading>
+        <Heading fontStyle="italic" size="md">
+          And get the buy-in you to mobilize those insights to every department
+          that touches a customer interaction
+        </Heading>
+        <Heading>What kind of meetings do you want to be in next year?</Heading>
+        <Text>Do you want to be in ones like you are in now?</Text>
+        <Text>
+          Where people dismiss your project because they “don’t like it”?
+        </Text>
+        <Text>
+          Where people ask for your help at the last minute to market a new
+          feature that literally no one has said they want?
+        </Text>
+        <Text>
+          Where half the people in the room have one ICP in mind, half the
+          people have a different ICP in mind, and half don’t even know what an
+          ICP is or that having an ICP would pour literal gasoline on their
+          growth projects?
+        </Text>
+        <Text>
+          Where no one is grasping your pitch to do JTBD research or incorporate
+          the research you already have into product and marketing decisions?
+        </Text>
+        <Text>
+          Where you agree to work on whatever cockamamy idea some ding dong
+          cooked up because they heard someone on a podcast explain how it
+          worked in a completely different type of business?
+        </Text>
+        <Text>
+          Where you leave these zoom meetings only to find yourself sitting
+          there, pondering the gap between your Obvious Brilliance and potential
+          for leading a blockbuster team at an even bigger blockbuster company?
+        </Text>
+        <Heading>Or do you want to be in a different kind of meeting?</Heading>
+        <Text>
+          Do you want to be in ones where you actually get buy-in for your VOC
+          projects, without fighting tooth and nail with the entire org?
+        </Text>
+        <Text>
+          Actually, forget about "buy-in" -- do you want to be in prioritization
+          meetings where everyone else is using VOC just like you are, showing
+          up with a deck of juicy qualitative data with their numbers before a
+          single project gets assigned to this quarter’s roadmap?
+        </Text>
+        <Text>
+          Do you want to be in pairing sessions where you're not only in flow
+          with your counterparts in sales, product, marketing, or engineering,
+          collaborating joyfully with your colleagues, Yes-anding your way to
+          higher activation and retention numbers?
+        </Text>
+        <Text>
+          Or how about a executive meeting preso called “Job 2 activation
+          project” where everyone in the room knows in detail *exactly* what
+          circumstances a Job 2 user is in when they start searching for your
+          product *before* they start giving baseless feedback that proves how
+          out of touch they are?
+        </Text>
+        <Text>
+          An executive planning session where you and your counterparts in
+          product and marketing are talking about how to execute against a
+          shared campaign, without bickering about who’s doing what?
+        </Text>
+        <Text>
+          An ops meeting called “Plan new VOC intake pipe” because you are
+          drowning in so much voice of customer data building on your initial
+          JTBD research and spread across teams, email, meetings, confluence,
+          hubspot, and powerpoint that now your biggest problem is getting the
+          right data, not losing track of insights?
+        </Text>
+        <Heading>
+          I help leaders like you get the customer insights you need to have
+          most of meetings go like the ones in that second group.{' '}
+        </Heading>
+        <Heading size="lg">
+          And just as important: I also help you with the change management
+          you'll inevitably do if you're bringing insights to a team or company
+          that doesn't have or use them.
+        </Heading>
+        <Text>
+          Because it's hard enough to get buy-in on *doing* customer research.
+        </Text>
+        <Text>It's even harder to get buy-in on using them.</Text>
+        <Text>
+          And if you don't have a change management plan in place before you
+          start your research, you can forget about other people using insights
+          in their decision-making.
+        </Text>
+
+        {/* <Heading size="xl">
           Innovation, Growth, and Leadership Strategy for Scale-ups
         </Heading>
         <Text>
@@ -48,28 +140,26 @@ export default function WorkWithMe() {
         <Text>
           I work with companies as a solo consultant under the umbrella of my
           consulting brand, Hypothesis Department.
-        </Text>
-
+        </Text> */}
         <Box py={5}>
           <Link href="https://savvycal.com/alli/c0518466">
             <Text color="purple.600" as="strong">
-              Click to schedule time with me to talk about your business
+              Click to schedule time with me to talk about what's going on your
+              world and how I can help you get more buy-in on your customer
+              insight strategy
             </Text>
           </Link>
         </Box>
-
         {/* <Heading>
           Get aligned and stay aligned as your company goes from startup to
           scale-up -- without compromising your vision
         </Heading> */}
-
         {/* <Text>
           I've observed the projects and frameworks outlined below to be among
           the most effective starting lines for our work together. I'd love to
           hear what's going on in your business to find the right place to begin
           our work.
         </Text> */}
-
         {/* <Offer
           title="Innovation Strategy & Prototyping"
           subtitle="DESCRIBE IT"
@@ -77,7 +167,6 @@ export default function WorkWithMe() {
           path="/work-with-me/innovation"
           linkText="Learn more about Innovation Strategy & Prototyping"
         /> */}
-
         <Offer
           title="Workshop: Is JTBD right for me?"
           subtitle="A half-day workshop to give you and your team a taste of Jobs To Be Done"
@@ -85,15 +174,23 @@ export default function WorkWithMe() {
           path="/work-with-me/intro-to-jtbd"
           linkText="Click to learn more"
         />
-
         <Offer
+          title="R&D Consulting: Find your ICP"
+          subtitle="A deep intensive analysis of the qualities that differentiate an average customer from an ideal one."
+          description="We'll blend a mix of qualitative and quantitative data plus your team's unique unfair advantages to build a dynamic ICP and a plan to mobilize it across your organization."
+        />
+        <Offer
+          title="Insights Mobilization Pairing"
+          subtitle="Team and 1:1 Coaching"
+          description="We'll work together to mobilize your JTBD research and strategy across the org"
+        />
+        {/* <Offer
           title="Break through growth plateaus"
           subtitle="Jobs To Be Done + Change Management for Scale-Ups"
           description="Let's find the root cause of your growth plateau, get the insights to break through it, and decide what projects set you up for long term scaleable, predictable growth."
           path="/work-with-me/growth"
           linkText="Click to learn more"
-        />
-
+        /> */}
         {/* <Offer
           title="Commander's Intent"
           subtitle="One-on-one coaching for visionary founders"
@@ -148,7 +245,7 @@ export default function WorkWithMe() {
           opportunities arise."
         />
         <Spacer /> */}
-        <Offer
+        {/* <Offer
           title="Fractional Head of Product, Growth, Strategy, Innovation, and/or Operations"
           subtitle="AKA, an advisor who does stuff."
           description="I'll join you as an embedded member of your leadership team to find 
@@ -156,7 +253,7 @@ export default function WorkWithMe() {
           to execute them and increase your acquisition, activation, and retention metrics.
           We'll build the systems and processes to stay aligned as you grow and scale. 
           I work with a very limited number of teams in this capacity. I am a multidisciplinary cross functional Jack of All Trades - the title will give us a way to position me to your team but the work will be the same regardless."
-        ></Offer>
+        ></Offer> */}
         <Spacer />
         {/* <Offer
           title="Diagnostic Assessment"
