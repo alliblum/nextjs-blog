@@ -11,11 +11,9 @@
             "id": "995503d275dbf41b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-uri-view",
               "state": {
-                "file": "posts/alsdijfalskdjflaksjdf.mdx",
-                "mode": "source",
-                "source": false
+                "path": "https://www.make.md/static/latest.md"
               }
             }
           }
@@ -64,8 +62,17 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "1236aec90355f1aa",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -85,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/alsdijfalskdjflaksjdf.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +108,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/alsdijfalskdjflaksjdf.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +129,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "posts/alsdijfalskdjflaksjdf.mdx"
-              }
+              "state": {}
             }
           }
         ]
@@ -144,12 +147,12 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "publish:Publish changes...": false,
       "vscode-editor:Create Code File": false
     }
   },
   "active": "995503d275dbf41b",
   "lastOpenFiles": [
+    "Tags",
     "posts/alsdijfalskdjflaksjdf.md",
     "posts/alsdijfalskdjflaksjdf.mdx",
     "Untitled",
