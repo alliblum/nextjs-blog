@@ -90,14 +90,14 @@ export default function WorkWithMe() {
           hubspot, and powerpoint that now your biggest problem is getting the
           right data, not losing track of insights?
         </Text>
-        <Heading>
-          I help leaders like you get the customer insights you need to have
-          most of meetings go like the ones in that second group.{' '}
-        </Heading>
         <Heading size="lg">
-          And just as important: I also help you with the change management
-          you'll inevitably do if you're bringing insights to a team or company
-          that doesn't have or use them.
+          I help leaders like you get the customer insights you need to have get
+          everyone to agree on who your customer is.{' '}
+        </Heading>
+        <Heading size="md">
+          And just as important: I help you get the change management skills you
+          need to bring insights to a team that doesn't use them, even if you've
+          already tried and failed.
         </Heading>
         <Text>
           Because it's hard enough to get buy-in on *doing* customer research.
