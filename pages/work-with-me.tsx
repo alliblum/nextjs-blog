@@ -182,7 +182,7 @@ export default function WorkWithMe() {
         <Offer
           title="Insights Mobilization Pairing"
           subtitle="Team and 1:1 Coaching"
-          description="We'll work together to mobilize your JTBD research and strategy across the org"
+          description="We'll meet to develop and ship a strategy to mobilize your JTBD research so you can put an end to watching your numbers go down because someone in another department doesn't share your POV on who your customer is."
         />
         {/* <Offer
           title="Break through growth plateaus"

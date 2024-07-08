@@ -126,7 +126,7 @@ export default function Home({
           src="/media/logobar.png"
           alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
         />
-        <Heading size="lg">
+        {/* <Heading size="lg">
           Part of what makes me unique: I'm a Jill of All Trades
         </Heading>
         <Text>
@@ -247,19 +247,18 @@ export default function Home({
           cultivating and shedding these objectives, pursuing and reaching these
           goals, I found myself in a similar position to where I started, asking
           one guiding question:{' '}
-        </Text>
+        </Text> */}
         <Heading size="lg">
           How do you mobilize insights to drive strategy across an organization?
         </Heading>
         <Text>
-          Now, that's the guiding question for how I engage with leaders like
-          you.
+          That's the guiding question for how I engage with leaders like you.
         </Text>
         <Text>
-          Now, I help people who sit in one of the seats I sat in, knowing there
-          is a way to pull more data into your decision-making, knowing there is
-          a way to get your team aligned around a vision, knowing that other
-          teams do this, but somehow, yours can't.
+          I help people who sit in one of the seats I sat in, knowing there is a
+          way to pull more data into your decision-making, knowing there is a
+          way to get your team aligned around a vision, knowing that other teams
+          do this, but somehow, yours can't.
         </Text>
         <Text>Not yet, anyway.</Text>
         {/* 
