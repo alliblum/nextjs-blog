@@ -1,5 +1,6 @@
 import { QuoteBlock } from 'components/mdx'
 import Layout from 'components/layout'
+import EmailForm from 'components/email-form'
 // import ReactHtmlParser from 'react-html-parser'
 
 // import CustomHTMLComponent from './CustomHTMLComponent'
@@ -250,7 +251,8 @@ export default function EmailDripBuyInMindset() {
             Thinking that buy-in is about what you get instead of what you give
           </ListItem>
         </OrderedList>
-        <Box></Box>
+
+        <EmailForm />
       </Stack>
     </Layout>
   )
