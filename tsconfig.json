@@ -27,6 +27,7 @@
     "**/*.tsx",
     "pages/mdx.mdx",
     "next.config.js",
+    "pages/email-form.tsx",
     "pages/jtbd-practitioners.mdx", // "pages/my-mdx-page",
     "next.config.js" // "pages/jtbd-practitioners.tsx"
   ],
