@@ -1,10 +1,6 @@
 import { QuoteBlock } from 'components/mdx'
 import Layout from 'components/layout'
 import EmailForm from 'components/email-form'
-// import ReactHtmlParser from 'react-html-parser'
-
-// import CustomHTMLComponent from './CustomHTMLComponent'
-// import { defineCustomElements } from 'react-custom-element'
 
 import {
   Box,
@@ -19,32 +15,6 @@ import {
   List,
   OrderedList,
 } from '@chakra-ui/react'
-
-// const CustomHTMLComponent = () => {
-//   const htmlContent = (
-//     <div>
-//       <form
-//         action="https://buttondown.email/api/emails/embed-subscribe/alli"
-//         method="post"
-//         target="popupwindow"
-//         onSubmit="window.open('https://buttondown.email/alli', 'popupwindow')"
-//         class="embeddable-buttondown-form"
-//       >
-//         <label for="bd-email">Enter your email</label>
-//         <input type="email" name="email" id="bd-email" />
-
-//         <input type="submit" value="Subscribe" />
-//         <p>
-//           <a href="https://buttondown.email/refer/alli" target="_blank">
-//             Powered by Buttondown.
-//           </a>
-//         </p>
-//       </form>
-//     </div>
-//   )
-//   return <div>{ReactHtmlParser(htmlContent)}</div>
-// }
-// ;<Box></Box>
 
 export default function EmailDripBuyInMindset() {
   return (
@@ -251,7 +221,6 @@ export default function EmailDripBuyInMindset() {
             Thinking that buy-in is about what you get instead of what you give
           </ListItem>
         </OrderedList>
-
         <EmailForm />
       </Stack>
     </Layout>
