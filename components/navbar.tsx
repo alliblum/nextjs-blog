@@ -10,6 +10,7 @@ export const NavBar = () => {
       <Box>
         <Stack direction="row" spacing={4}>
           <Link href="/work-with-me">Work With Me</Link>
+          <Spacer />
           <Link href="/research-buy-in">Get Buy-In on VOC</Link>
           {/* <Link href="/about">About</Link> */}
         </Stack>

@@ -22,7 +22,7 @@ export default function EmailDripBuyInMindset() {
       <Stack spacing={5}>
         <Heading size="xl">
           You might think the only way to get buy-in on Jobs To Be Done is to
-          quit your job/fire your clients and find a team that “gets it”
+          quit your job or fire your clients and find a team that “gets it”
         </Heading>
         <Text>
           But if you believe that your colleagues are (for the most part) smart
