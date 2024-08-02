@@ -221,6 +221,10 @@ export default function EmailDripBuyInMindset() {
             Thinking that buy-in is about what you get instead of what you give
           </ListItem>
         </OrderedList>
+        <Heading size="lg">
+          Sign up for emails learn how to get out of your own way and start
+          getting more people excited about VOC
+        </Heading>
         <EmailForm />
       </Stack>
     </Layout>
