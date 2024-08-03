@@ -14,6 +14,8 @@ import {
   List,
 } from '@chakra-ui/react'
 
+import HeidiKreis from 'components/testimonials/heidi-kreis'
+
 export default function IntroToJTBD() {
   return (
     <Layout home>
@@ -232,6 +234,7 @@ export default function IntroToJTBD() {
           author="Heidi Kreis, Research and
         Strategic Lead, Forget the Funnel"
         />
+        <HeidiKreis />
         <QuoteBlock
           quote="We created a culture where citations really matter where having the raw voice of customer data really matters. We've created agents who care very much about really truly understanding the customer's position and representing the customer. And that's been huge for us. It's the best we can do, perhaps even better than having the customer actually in the room with us."
           author="Jordan Skole, VP Product Engineering, Autobooks"
