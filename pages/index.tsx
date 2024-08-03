@@ -22,13 +22,15 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import NextLink from 'next/link'
-// import EmailForm from 'components/email-form'
-// import Image from 'next/image'
+import { redirect } from 'next/navigation'
 
 import { TbBulb } from 'react-icons/tb'
 
+import { usePathname } from 'next/navigation'
+// import Link from 'next/link'
+import { useRouter } from 'next/router'
+
 import { GetStaticProps } from 'next'
-// import { Box, Heading, Text, Spacer } from '@chakra-ui/react'
 // import theme from './_app'
 
 export async function getStaticProps() {
@@ -49,6 +51,7 @@ export default function Home({
     id: string
   }[]
 }) {
+  const router = useRouter()
   return (
     <Layout home>
       <Head>
@@ -76,7 +79,7 @@ export default function Home({
           For a while I grumbled and blamed everyone else for not seeing my
           brilliance.
         </Text>
-        <Text>"Their loss! Guess they just don't like making money!</Text>
+        <Text>"Their loss! Guess they just don't like making money."</Text>
         <Text>
           But after a while I started to see that grumbling didn't help me. And
           I decided to do something about it. I decided to figure out how to get
@@ -117,23 +120,17 @@ export default function Home({
             controversial ones{' '}
           </ListItem>
         </UnorderedList>
-        <Heading size="md">
-          Now I help software product, marketing, sales, and even engineering
-          leaders get the insights to make decisions and the buy-in to get them
-          done
-        </Heading>
+
         <Image
           py={5}
           src="/media/logobar.png"
           alt="image of logos Alli has worked with, including MURAL, Atlassian, Stunning, EnjoyHQ, Codecademy, Output, Userlist, TinySeed, and Autobooks."
         />
-
-        <Heading size="lg">
-          How do you mobilize insights across an organization?
+        <Heading size="md">
+          Now I help software product, marketing, sales, and engineering leaders
+          mobilize customer insights across your org
         </Heading>
-        <Text>
-          That's the guiding question for how I engage with leaders like you.
-        </Text>
+
         <Text>
           I help people who sit in one of the seats I sat in, knowing there is a
           way to pull more data into your decision-making, knowing there is a
@@ -141,6 +138,15 @@ export default function Home({
           do this, but somehow, yours can't.
         </Text>
         <Text>Not yet, anyway.</Text>
+        <Button
+          variant="solid"
+          colorScheme={'purple'}
+          borderWidth={2}
+          p={6}
+          onClick={() => router.push('/research-buy-in')}
+        >
+          Start getting buy-in on VOC
+        </Button>
       </Stack>
     </Layout>
   )
