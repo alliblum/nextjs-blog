@@ -2,6 +2,8 @@ import { QuoteBlock } from 'components/mdx'
 import Layout from 'components/layout'
 import EmailForm from 'components/email-form'
 
+import Image from 'next/image'
+
 import {
   Box,
   Text,
@@ -37,8 +39,8 @@ export default function EmailDripBuyInMindset() {
           right, could get your company meaningful outcomes.
         </Text>
         <Text>
-          You don’t have to leave your company. You just need to try change
-          management.{' '}
+          You don’t have to leave your company. You need to change your
+          approach.{' '}
         </Text>
         <Text>Here's how I know:</Text>
         <Text>
@@ -73,16 +75,16 @@ export default function EmailDripBuyInMindset() {
           department. After my presentation, I still found myself pushing a
           boulder up a hill pitching product features no one wanted.
         </Text>
+
         <Text>
-          <Text>
-            The soul-crushing blow of doing all that work, getting all that
-            data, only for nothing to change.
-          </Text>
-          [meme]
-          <Text>At first I grumbled. Ooooooh how I grumbled.</Text>
-          <Text>"No one is listening to me."</Text>
-          "These ding dongs just don't get it."
+          The soul-crushing blow of doing all that work, getting all that data,
+          only for nothing to change.
         </Text>
+
+        <Text>At first I grumbled. Ooooooh how I grumbled.</Text>
+        <Text>"No one is listening to me."</Text>
+        <Text>"These ding dongs just don't get it."</Text>
+
         <Text>
           "Man, maybe this research isn't as important as I thought, maybe I got
           bad advice."
@@ -118,14 +120,12 @@ export default function EmailDripBuyInMindset() {
 
         <Text>
           Is it more likely that every person I work with is a doofus who
-          doesn’t get it and everyone other teamspeople arework with is
-          naturally good at using VOC?
+          doesn’t get it and other teams are naturally good at using VOC?
         </Text>
 
         <Text>
           Or is it more likely that most teams have some people who understand
-          qualitative data and other people who don’t understand its
-          valuequalitative data?{' '}
+          qualitative data and other people who don’t understand its value?
         </Text>
 
         <Text>Is it more likely that everyone around me is a dumb dumb? </Text>
@@ -138,7 +138,6 @@ export default function EmailDripBuyInMindset() {
 
         <Text>Until one day I couldn’t ignore it:</Text>
 
-        <Text>[gif or something] It’s me… Hi…. I’m the problem it’s me.</Text>
         <Heading size="lg">
           The only common variable in my failed attempts to get buy-in on
           research was me.
@@ -149,14 +148,14 @@ export default function EmailDripBuyInMindset() {
         </Text>
 
         <Text>
-          I realized that everything about my approach (and everyone trying to
-          get buy-in) was wrong.
+          I realized that everything about how researchers/product people/growth
+          folks approach buy-in was wrong.
         </Text>
 
-        <Text>
-          And then wWhen I finally realized the right way to go about getting
+        <Heading size="lg">
+          And then when I finally realized the right way to go about getting
           buy-in, everything changed.
-        </Text>
+        </Heading>
 
         <Text>
           I figured out how to get product and marketing to stop silently
@@ -218,7 +217,7 @@ export default function EmailDripBuyInMindset() {
             organizational politics
           </ListItem>
           <ListItem>
-            Thinking that buy-in is about what you get instead of what you give
+            Not understanding your colleagues level of awareness
           </ListItem>
         </OrderedList>
         <Heading size="lg">
