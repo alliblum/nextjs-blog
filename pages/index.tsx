@@ -141,7 +141,6 @@ export default function Home({
         <Button
           variant="solid"
           colorScheme={'purple'}
-          borderWidth={2}
           p={6}
           onClick={() => router.push('/research-buy-in')}
         >

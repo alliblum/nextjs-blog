@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react'
 
 import HeidiKreis from 'components/testimonials/heidi-kreis'
-import JordanSkole from 'components/testimonials/jordan-skole'
+import JordanSkole from 'components/testimonials/jordan-skole-1'
 import TJMcGinnity from 'components/testimonials/tj-mcginnity'
 
 export default function IntroToJTBD() {
