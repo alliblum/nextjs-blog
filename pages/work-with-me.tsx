@@ -12,6 +12,9 @@ import {
   ListItem,
   Center,
 } from '@chakra-ui/react'
+import JordanSkole2 from 'components/testimonials/jordan-skole-2'
+import AsiaOrangio from 'components/testimonials/asia-orangio'
+import ClaireSuellentrop from 'components/testimonials/claire-suellentrop'
 
 export default function WorkWithMe() {
   return (
@@ -141,15 +144,14 @@ export default function WorkWithMe() {
           I work with companies as a solo consultant under the umbrella of my
           consulting brand, Hypothesis Department.
         </Text> */}
-        <Box py={5}>
+
+        <Center my="10">
           <Link href="https://savvycal.com/alli/c0518466">
-            <Text color="purple.600" as="strong">
-              Click to schedule time with me to talk about what's going on your
-              world and how I can help you get more buy-in on your customer
-              insight strategy
-            </Text>
+            <Heading size="lg" color="purple.600" as="strong">
+              Book an intro call
+            </Heading>
           </Link>
-        </Box>
+        </Center>
         {/* <Heading>
           Get aligned and stay aligned as your company goes from startup to
           scale-up -- without compromising your vision
@@ -263,39 +265,11 @@ export default function WorkWithMe() {
           linkText="Click to book a working session"
         /> */}
         <Spacer />
-        <QuoteBlock
-          quote="If you want to set your company up to succeed in the long term,
-              if you are having a hard time finding the balance between
-              long-term strategy and short-term tactical, as well as getting
-              your team to move that way to see that too, you work with Alli.</br></br>
-          If you want to create an environment where you can trust your
-              employees to make decisions that support the long term objective
-              and deliver the most value you possibly can for your customers,
-              you work with Alli. </br></br>
-          So if you want to figure out how to speak to your employees
-              better, if you want to understand what your employees are going
-              through, if you feel like you're having a hard time understanding,
-              if you feel like you keep saying the same thing over and over and
-              over again, and not being heard, and if you don't want to be
-              completely stressed going through through this phase of growth... </br></br>
-          ...You work with Alli.</br></br>"
-          author="-Jordan Skole, VP Product Engineering at Autobooks"
-        />
+        <JordanSkole2 />
         <Spacer />
-        <QuoteBlock
-          quote="I was crafting the strategy and plan for my client to achieve their growth goals, but as a strategist, I could tell that something was missing or off. It was like there was a missing puzzle piece that I couldn't quite identify or articulate. I was also having a hard time extracting the information I needed from the CEO and founder to help us fit the pieces together to chart our best path forward. 
-
-</br></br>Our session with Alli was the breakthrough I was looking for. Not only did she pull out so much more insight around what we needed to be successful, but she revealed some assumptions and requirements that weren't as clear or completely unknown before the session. The first big a-ha moment was that we had an opportunity to realign the client's efforts with the founder's vision. 
-
-</br></br>And the second a-ha moment is that without Alli's thorough questioning and unpacking process, we wouldn't have arrived at our conclusions about what to do next (and I would have still been left scratching my head wondering what I was missing)."
-          author="-Asia Orangio, Founder, DemandMaven"
-        />
+        <AsiaOrangio />
         <Spacer />
-        <QuoteBlock
-          quote="The experience of working with Alli is like collaborating with a
-              trusted friend."
-          author="-Claire Suellentrop, COO, Elevate"
-        />
+        <ClaireSuellentrop />
       </Stack>
     </Layout>
   )

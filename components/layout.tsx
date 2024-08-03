@@ -17,8 +17,8 @@ export default function Layout({
 {
   children: React.ReactNode
   home?: boolean
-  consulting?: boolean
-  about?: boolean
+  // consulting?: boolean
+  // about?: boolean
 }) {
   return (
     <div className={styles.container}>
@@ -26,7 +26,7 @@ export default function Layout({
         <link rel="icon" href="favicon.ico" />
         <meta
           name="description"
-          content="Leadership, Growth, & Innovation for Scale-ups"
+          content="Mobilize customer insights across your organization"
         />
       </Head>
       <section>

@@ -23,7 +23,7 @@
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^10.0.1",
-    "next": "^14.2.4",
+    "next": "^14.2.5",
     "next-connect": "^1.0.0-next.4",
     "next-mdx-remote": "^4.4.1",
     "react": "^18.3.1",
