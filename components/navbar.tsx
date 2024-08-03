@@ -6,12 +6,14 @@ export const NavBar = () => {
   return (
     <Flex mx={2} my={10} justify="spacebetween" align="center">
       <Headshot />
-      <Spacer />
-      <Box>
-        <Stack direction="row" spacing={4}>
+
+      <Box pl={8}>
+        <Stack as="strong" textAlign="right" direction="column" spacing={4}>
+          <Link href="/research-buy-in">
+            Free Email Course: Get Buy-In on VOC
+          </Link>
           <Link href="/work-with-me">Work With Me</Link>
-          <Spacer />
-          <Link href="/research-buy-in">Get Buy-In on VOC</Link>
+
           {/* <Link href="/about">About</Link> */}
         </Stack>
       </Box>
