@@ -15,6 +15,8 @@ import {
 } from '@chakra-ui/react'
 
 import HeidiKreis from 'components/testimonials/heidi-kreis'
+import JordanSkole from 'components/testimonials/jordan-skole'
+import TJMcGinnity from 'components/testimonials/tj-mcginnity'
 
 export default function IntroToJTBD() {
   return (
@@ -74,13 +76,15 @@ export default function IntroToJTBD() {
             JTBD project?
           </ListItem>
         </UnorderedList>
-        <Heading size="xl">
+        <Heading size="lg">
           This workshop gives your team a taste of JTBD so you can decide if
           investing in a full JTBD Growth & Change project is the right choice
           to break through your growth plateau{' '}
         </Heading>
-        <Heading size="md"></Heading>
-        <Heading size="lg">How it works:</Heading>
+        <Heading size="lg">
+          How we get you and your team leveled up on Jobs To Be Done in a single
+          day:
+        </Heading>
         <Text>
           {' '}
           First you and I will meet to talk about your business. You'll tell me
@@ -112,32 +116,7 @@ export default function IntroToJTBD() {
           areas of your business, including product, marketing, product
           marketing, customer success, positioning, messaging, and more.{' '}
         </Text>
-        <QuoteBlock
-          quote="I'd read 'Competing Against Luck' and watched some videos on the Rewired
-        Group website. I knew it was a framework to understand people's
-        struggles and create a product + product experience that helped resolve
-        their struggle. A lot more! I sort of understood the theory conceptually
-        before but now I can tell you how to apply it - how interviews are
-        conducted, how jobs are determined (tracking themes in push, pull,
-        habits, anxieties), and how to use those jobs to address people's
-        concerns and help them solve their problems."
-          author="Heidi Kreis, Research and
-        Strategic Lead, Forget the Funnel"
-        />
-        <QuoteBlock
-          quote="Before this training, I had heard the term Jobs to Be Done mentioned by
-        Product Teams but not much more than that. Now I understand how to use
-        VOC to drive our go-to-market strategy. My favorite part was when we
-        were able to interact within the group to go over interviews. It is
-        always fun to hear different perceptions based on the roles they have
-        done in the past/current. It was one of the best 'virtual' trainings I
-        have been through. Even though I definitely prefer an in person
-        environment but this kept me engaged through out the week. The energy
-        and passion made it easy to participate!"
-          author="TJ McGinnity, VP Customer
-        Success Operations, MoveDocs"
-        />
-        <Heading size="md">
+        <Heading size="lg">
           {' '}
           You'll go from wondering if JTBD is right for you to:
         </Heading>
@@ -182,6 +161,42 @@ export default function IntroToJTBD() {
             (but you'll be well on your way to becoming one)
           </ListItem>
         </UnorderedList>{' '}
+        <Heading size="md">So if you:</Heading>
+        <UnorderedList>
+          <ListItem>
+            Are thinking about JTBD but not ready to commit to a full project
+          </ListItem>
+          <ListItem>
+            Need a way to get your team to see and feel for themselves how
+            impactful a JTBD project could be{' '}
+          </ListItem>
+          <ListItem>
+            Want to see what all the fuss is about with some real live customer
+            data
+          </ListItem>
+          <ListItem>Have at least 100 active paying customers</ListItem>
+        </UnorderedList>
+        <Center my="10">
+          <Link href="https://savvycal.com/alli/c0518466">
+            <Heading size="lg" color="purple.600" as="strong">
+              Book an intro call
+            </Heading>
+          </Link>
+        </Center>
+        <HeidiKreis />
+        <TJMcGinnity />
+        <JordanSkole />
+        {/* <QuoteBlock
+          quote="During the training I learned that JTBD is a lot more
+        objective than I thought. I learned how the interviews are conducted and
+        the process it takes to turn those interviews into copy and other
+        marketing resources. I was able to learn about some of the more common
+        challenges that businesses run into. What I learned here helps me better
+        understand our mission and who we serve. It gave me a ton of insights
+        and improved confidence into how we deliver our messaging."
+          author="Levi Yeck,
+        Director of Sales, Autobooks"
+        /> */}
         {/* <QuoteBlock
           quote="I had heard the term 'Job' thrown around but I never really knew
         exactly what that meant. I had watched a new hire video on Jobs and had
@@ -204,26 +219,7 @@ export default function IntroToJTBD() {
         training."
           author="Levi Yeck, Director of Sales, Autobooks"
         />{' '} */}
-        <Heading size="md">So if you are:</Heading>
-        <UnorderedList>
-          <ListItem>
-            Thinking about JTBD but not ready to commit to a full project
-          </ListItem>
-          <ListItem>
-            Needing a way to get your team to see and feel for themselves how
-            impactful a JTBD project could be{' '}
-          </ListItem>
-          <ListItem>
-            Wanting to see what all the fuss is about with some real live
-            customer data
-          </ListItem>
-        </UnorderedList>
-        <Link href="https://savvycal.com/alli/c0518466">
-          <Text color="purple.600" as="strong">
-            Book an intro call with me here to get started
-          </Text>
-        </Link>
-        <QuoteBlock
+        {/* <QuoteBlock
           quote="Alli was also super good at encouraging and helping me
         feel successful learning and applying something new. She asked really
         great questions that forced me to think about why I was responding the
@@ -233,22 +229,6 @@ export default function IntroToJTBD() {
         them, and making sure we understood."
           author="Heidi Kreis, Research and
         Strategic Lead, Forget the Funnel"
-        />
-        <HeidiKreis />
-        <QuoteBlock
-          quote="We created a culture where citations really matter where having the raw voice of customer data really matters. We've created agents who care very much about really truly understanding the customer's position and representing the customer. And that's been huge for us. It's the best we can do, perhaps even better than having the customer actually in the room with us."
-          author="Jordan Skole, VP Product Engineering, Autobooks"
-        />
-        {/* <QuoteBlock
-          quote="During the training I learned that JTBD is a lot more
-        objective than I thought. I learned how the interviews are conducted and
-        the process it takes to turn those interviews into copy and other
-        marketing resources. I was able to learn about some of the more common
-        challenges that businesses run into. What I learned here helps me better
-        understand our mission and who we serve. It gave me a ton of insights
-        and improved confidence into how we deliver our messaging."
-          author="Levi Yeck,
-        Director of Sales, Autobooks"
         /> */}
       </Stack>
     </Layout>
