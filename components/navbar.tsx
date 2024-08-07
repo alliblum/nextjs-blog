@@ -101,20 +101,11 @@ export default function WithSubnavigation() {
           justify={{ base: 'center', md: 'start' }}
           align="center"
         >
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}
-          >
-            <Headshot />
-          </Text>
+          <Headshot />
+
           <Spacer />
           <DesktopNav />
         </Flex>
-        {/* <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-            
-          </Flex>
-        </Flex> */}
 
         <Stack
           flex={{ base: 1, md: 0 }}
@@ -319,41 +310,42 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
-    children: [
-      {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
-      },
-      {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
+    label: 'Work With Me',
+    href: '/work-with-me',
+    // children: [
+    //   {
+    //     label: 'Explore Design Work',
+    //     subLabel: 'Trending Design to inspire you',
+    //     href: '#',
+    //   },
+    //   {
+    //     label: 'New & Noteworthy',
+    //     subLabel: 'Up-and-coming Designers',
+    //     href: '#',
+    //   },
+    // ],
   },
+  // {
+  //   label: 'Find Work',
+  //   children: [
+  //     {
+  //       label: 'Job Board',
+  //       subLabel: 'Find your dream design job',
+  //       href: '#',
+  //     },
+  //     {
+  //       label: 'Freelance Projects',
+  //       subLabel: 'An exclusive list for contract work',
+  //       href: '#',
+  //     },
+  //   ],
+  // },
   {
-    label: 'Find Work',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
+    label: 'Free Email Course: Get Buy-in on VOC',
+    href: '/research-buy-in',
   },
-  {
-    label: 'Learn Design',
-    href: '#',
-  },
-  {
-    label: 'Hire Designers',
-    href: '#',
-  },
+  // {
+  //   label: 'Hire Designers',
+  //   href: '#',
+  // },
 ]
