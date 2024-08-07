@@ -63,9 +63,9 @@ export default function Home({
           I used to be terrible at getting buy-in for customer research.
         </Heading>
         <Text>
-          I remember walking into my downtown loft converted warehouse office
-          with a huge smile on my face. With the tenor of someone who was about
-          to change the entire company’s growth trajectory, I’d boast:
+          I remember walking into my downtown converted-loft office with a huge
+          smile on my face. With the tenor of someone who was about to change
+          the entire company’s growth trajectory, I’d boast:
         </Text>
         <Text>
           "Hi! I'm Alli and we don't understand customers as well as we should!
@@ -81,9 +81,11 @@ export default function Home({
         </Text>
         <Text>"Their loss! Guess they just don't like making money."</Text>
         <Text>
-          But after a while I started to see that grumbling didn't help me. And
-          I decided to do something about it. I decided to figure out how to get
-          good a getting research AND at getting other people to see its value.
+          But soon I started to see that grumbling didn't help me.{' '}
+        </Text>{' '}
+        <Text>
+          Instead of blaming my colleagues for not seeing the value of research,
+          I decided to get really good at showing its value.
         </Text>
         <Text>And since I made that shift, I have:</Text>
         <UnorderedList>
@@ -93,23 +95,21 @@ export default function Home({
           </ListItem>
           <ListItem>
             Coached over 50 people on how to set up their qualitative research
-            repositories AND get other team members actually using the data
+            repositories AND gotten other team members actually using the data
             stored inside
           </ListItem>
-          I’ve used research to drive growth while working in product, growth,
           <ListItem>
             Launched a 0-1 product in a highly regulated industry in the face of
             deep internal resistance from folks who said that these customers
             "preferred spreadsheets" and "would never use an app"
           </ListItem>
           <ListItem>
-            Sourced and applied VOC data for projects led sales, product,
-            marketing, customer success, and even engineering teams.
+            Sourced and applied VOC data for projects on sales, product,
+            marketing, customer success, and even engineering teams
           </ListItem>
           <ListItem>
             Learned ways of playing organizational politics that are nothing
-            like the "manipulate and screw people over" games I used to fear and
-            more like a game of "making friends and helping people"
+            like the "manipulate and screw people over" games I used to fear
           </ListItem>
           <ListItem>
             Helped teams avert multi-million dollar mistakes in a single meeting
@@ -120,7 +120,6 @@ export default function Home({
             controversial ones{' '}
           </ListItem>
         </UnorderedList>
-
         <Image
           py={5}
           src="/media/logobar.png"
@@ -128,14 +127,13 @@ export default function Home({
         />
         <Heading size="md">
           Now I help software product, marketing, sales, and engineering leaders
-          mobilize customer insights across your org
+          like you mobilize customer insights across your org
         </Heading>
-
         <Text>
-          I help people who sit in one of the seats I sat in, knowing there is a
-          way to pull more data into your decision-making, knowing there is a
-          way to get your team aligned around a vision, knowing that other teams
-          do this, but somehow, yours can't.
+          I help people who sit in one of the seats I sat in. Who know there is
+          a way to pull more data into your decision-making. Who know there is a
+          way to get your team aligned around a vision. Who know that other
+          teams do this, but somehow, yours can't.
         </Text>
         <Text>Not yet, anyway.</Text>
         <Button
@@ -144,7 +142,7 @@ export default function Home({
           p={6}
           onClick={() => router.push('/research-buy-in')}
         >
-          Start getting buy-in on VOC
+          Let me teach you how to get buy-in on VOC
         </Button>
       </Stack>
     </Layout>
