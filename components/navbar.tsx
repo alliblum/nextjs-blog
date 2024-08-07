@@ -6,8 +6,8 @@ export const NavBar = () => {
   return (
     <Flex mx={2} my={10} justify="spacebetween" align="center">
       <Headshot />
-
-      <Box pl={8}>
+      <Spacer />
+      <Box>
         <Stack as="strong" textAlign="right" direction="column" spacing={4}>
           <Link href="/research-buy-in">
             Free Email Course: Get Buy-In on VOC
@@ -20,3 +20,11 @@ export const NavBar = () => {
     </Flex>
   )
 }
+
+export const MobileNavBar = () => {
+  return (
+    <Stack p={4} display={{ md: 'none' }}>
+      {NAV_ITEMS.map((navItem) => (
+      <MobileNavItem key={navItem.label} {...navItem}/>))}
+      </Stack>
+  )
