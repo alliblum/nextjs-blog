@@ -55,9 +55,17 @@ export default function Appearances() {
                   height={400}
                 />
               </Center>
-              <Button colorScheme="purple" size="md" mx={40} my={5}>
+              <Center my={5}>
+                <Link href="https://marketingpowerups.com/podcast/alli-blum-jtbd/">
+                  <Heading size="lg" color="purple.600" as="strong">
+                    Listen now
+                  </Heading>
+                </Link>
+              </Center>
+
+              {/* <Button colorScheme="purple" size="md" mx={40} my={5}>
                 Listen now
-              </Button>
+              </Button> */}
             </Stack>
           </CardBody>
         </Card>
