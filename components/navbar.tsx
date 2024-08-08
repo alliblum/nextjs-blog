@@ -86,7 +86,7 @@ export default function WithSubnavigation() {
           align="bottom"
         >
           <Stack>
-            <Box pb={2}>
+            <Box>
               <Headshot />
             </Box>
             <Box>
