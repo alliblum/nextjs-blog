@@ -104,7 +104,9 @@ export default function WithSubnavigation() {
           <Headshot />
 
           <Spacer />
-          <DesktopNav />
+          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <DesktopNav />
+          </Flex>
         </Flex>
 
         <Stack
