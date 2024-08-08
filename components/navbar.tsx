@@ -83,7 +83,9 @@ export default function WithSubnavigation() {
           justify={{ base: 'center', md: 'start' }}
           align="center"
         >
-          <Headshot />
+          <Stack direction="column" spacing={4}>
+            <Headshot />
+          </Stack>
 
           <Spacer />
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
