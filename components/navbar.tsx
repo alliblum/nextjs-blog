@@ -79,24 +79,6 @@ export default function WithSubnavigation() {
         align={'center'}
       >
         <Flex
-          flex={{ base: 1, md: 'auto' }}
-          ml={{ base: -2 }}
-          display={{ base: 'flex', md: 'none' }}
-        >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? (
-                <TbX width={3} height={3} />
-              ) : (
-                <TbBaselineDensityMedium width={5} height={5} />
-              )
-            }
-            variant={'ghost'}
-            aria-label={'Toggle Navigation'}
-          />
-        </Flex>
-        <Flex
           flex={{ base: 1 }}
           justify={{ base: 'center', md: 'start' }}
           align="center"
@@ -104,7 +86,27 @@ export default function WithSubnavigation() {
           <Headshot />
 
           <Spacer />
-          <DesktopNav />
+          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <DesktopNav />
+          </Flex>
+          <Flex
+            flex={{ base: 1, md: 'auto' }}
+            ml={{ base: -2 }}
+            display={{ base: 'flex', md: 'none' }}
+          >
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <TbX width={3} height={3} />
+                ) : (
+                  <TbBaselineDensityMedium width={5} height={5} />
+                )
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            />
+          </Flex>
         </Flex>
 
         <Stack
