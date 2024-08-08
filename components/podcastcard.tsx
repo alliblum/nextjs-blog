@@ -37,7 +37,7 @@ export interface PodcastCardProps {
 
 export const PodcastCard: React.FC<PodcastCardProps> = (props) => {
   return (
-    <Card>
+    <Card mb={5}>
       <CardBody>
         <Stack>
           <Heading size="md">{props.NameAndHost}</Heading>
