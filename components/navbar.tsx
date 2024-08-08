@@ -207,13 +207,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+      _hover={{ bg: useColorModeValue('purple.50', 'gray.900') }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
+            _groupHover={{ color: 'purple.400' }}
             fontWeight={500}
           >
             {label}
@@ -229,7 +229,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={'center'}
           flex={1}
         >
-          <Icon color={'pink.400'} w={5} h={5} as={TbArrowBadgeRight} />
+          <Icon color={'purple.400'} w={5} h={5} as={TbArrowBadgeRight} />
         </Flex>
       </Stack>
     </Box>
@@ -312,42 +312,21 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
+    label: 'About',
+    children: [
+      {
+        label: 'Appearances',
+        subLabel: 'Speaking engagements and podcast guest appearances',
+        href: '/about/appearances',
+      },
+    ],
+  },
+  {
     label: 'Work With Me',
     href: '/work-with-me',
-    // children: [
-    //   {
-    //     label: 'Explore Design Work',
-    //     subLabel: 'Trending Design to inspire you',
-    //     href: '#',
-    //   },
-    //   {
-    //     label: 'New & Noteworthy',
-    //     subLabel: 'Up-and-coming Designers',
-    //     href: '#',
-    //   },
-    // ],
   },
-  // {
-  //   label: 'Find Work',
-  //   children: [
-  //     {
-  //       label: 'Job Board',
-  //       subLabel: 'Find your dream design job',
-  //       href: '#',
-  //     },
-  //     {
-  //       label: 'Freelance Projects',
-  //       subLabel: 'An exclusive list for contract work',
-  //       href: '#',
-  //     },
-  //   ],
-  // },
   {
     label: 'Free Email Course: Get Buy-in on VOC',
     href: '/research-buy-in',
   },
-  // {
-  //   label: 'Hire Designers',
-  //   href: '#',
-  // },
 ]

@@ -31,7 +31,7 @@ const QuoteBlock: React.FC<QuoteBlockProps> = (props) => {
     // <ChakraProvider theme={theme}>
     <Box bg="purple.100" p={5} borderRadius="md">
       <Stack>
-        <Text as="i" dangerouslySetInnerHTML={{ __html: props.quote }} />
+        {/* <Text as="i" dangerouslySetInnerHTML={{ __html: props.quote }} /> */}
 
         <Text as="strong">{props?.author}</Text>
       </Stack>
