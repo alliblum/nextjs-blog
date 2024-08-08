@@ -39,6 +39,7 @@ import {
   useBreakpointValue,
   useDisclosure,
   Spacer,
+  Center,
 } from '@chakra-ui/react'
 // import {
 //   HamburgerIcon,
@@ -77,13 +78,27 @@ export default function WithSubnavigation() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}
+        // position={'fixed'}
       >
         <Flex
           flex={{ base: 1 }}
           justify={{ base: 'center', md: 'start' }}
-          align="center"
+          align="bottom"
         >
-          <Headshot />
+          <Stack>
+            <Box pb={2}>
+              <Headshot />
+            </Box>
+            <Box>
+              <Text fontWeight={600}>ALLI BLUM</Text>
+              <Text fontStyle="italic" fontSize="sm">
+                I help you find &{' '}
+              </Text>
+              <Text fontStyle="italic" fontSize="sm">
+                mobilize your ICP
+              </Text>
+            </Box>
+          </Stack>
 
           <Spacer />
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
