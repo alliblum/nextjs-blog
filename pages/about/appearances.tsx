@@ -34,6 +34,10 @@ export default function Appearances() {
           What a great privilege to join smart folks to talk about mobilizing
           customer insights
         </Heading>
+        <Text>
+          I hope you have as much fun listening to these episodes as I had
+          recording them.
+        </Text>
         <PodcastCard
           NameAndHost="Marketing Powerups with Ramli John"
           EpisodeTitle="Alli Blum's 3 tips to get buy-in for the JTBD framework."
