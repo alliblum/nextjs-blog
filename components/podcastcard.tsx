@@ -29,7 +29,7 @@ export interface PodcastCardProps {
   NameAndHost: string
   EpisodeTitle: string
   EpisodeDescription: string
-  EpisodeArt: { src: string; alt: string; width: number; height: number }
+  EpisodeArt?: { src: string; alt: string; width: number; height: number }
   EpisodeLink: string
 }
 

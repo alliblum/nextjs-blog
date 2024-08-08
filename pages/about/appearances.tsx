@@ -44,24 +44,24 @@ export default function Appearances() {
           EpisodeDescription="I joined host Ramli John to talk about ways you can lay the
             foundation for getting buy-in on doing and applying Jobs To Be
             Done research before you even ask."
-          EpisodeArt={{
-            src: '/images/podcasts/Podcast.MarketingPowerups.png',
-            alt: 'Screenshot of 4 power-ups on getting buy-in on JTBD',
-            width: 600,
-            height: 400,
-          }}
+          //   EpisodeArt={{
+          //     src: '/images/podcasts/Podcast.MarketingPowerups.png',
+          //     alt: 'Screenshot of 4 power-ups on getting buy-in on JTBD',
+          //     width: 600,
+          //     height: 400,
+          //   }}
           EpisodeLink="https://marketingpowerups.com/podcast/alli-blum-jtbd/"
         />
         <PodcastCard
           NameAndHost="Databox 'Metrics & Chill' podcast with Jeremiah Rizzo"
           EpisodeTitle="Implementing an Outcomes-Led Strategy (w/ Alli Blum, Hypothesis Department)"
           EpisodeDescription="I joined host Jeremiah Rizzo to talk about how I define 'Outcomes Led Growth' and how your leadership style can influence your team's ability to execute this strategy."
-          EpisodeArt={{
-            src: '/images/podcasts/Podcast.MetricsAndChill.png',
-            alt: 'Screenshot of a Databox podcast episode bar with logo and play icon',
-            width: 600,
-            height: 400,
-          }}
+          //   EpisodeArt={{
+          //     src: '/images/podcasts/Podcast.MetricsAndChill.png',
+          //     alt: 'Screenshot of a Databox podcast episode bar with logo and play icon',
+          //     width: 600,
+          //     height: 400,
+          //   }}
           EpisodeLink="https://databox.com/implementing-outcomes-led-strategy"
         />
       </Stack>
