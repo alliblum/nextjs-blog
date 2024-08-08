@@ -9,6 +9,7 @@ import {
   Text,
   Heading,
   Spacer,
+  Button,
   Card,
   CardHeader,
   CardBody,
@@ -21,6 +22,8 @@ import {
   List,
   OrderedList,
 } from '@chakra-ui/react'
+import { max } from 'date-fns'
+import { inherits } from 'util'
 
 export default function Appearances() {
   return (
@@ -33,18 +36,28 @@ export default function Appearances() {
         <Card>
           <CardBody>
             <Stack>
-              <Heading size="sm">
+              <Heading size="md">
                 Marketing Powerups hosted by Ramli John
               </Heading>
-              <Text>
+              <Text fontStyle="italic">
                 Alli Blum's 3 tips to get buy-in for the JTBD framework.
               </Text>
-              <Image
-                src="/images/Podcast.MarketingPowerup"
-                alt="Screenshot of 4 power-ups on getting buy-in on JTBD"
-                width={400}
-                height={400}
-              />
+              <Text>
+                I joined host Ramli John to talk about ways you can lay the
+                foundation for getting buy-in on doing and applying Jobs To Be
+                Done research before you even ask.{' '}
+              </Text>
+              <Center>
+                <Image
+                  src="/images/podcasts/Podcast.MarketingPowerups.png"
+                  alt="Screenshot of 4 power-ups on getting buy-in on JTBD"
+                  width={600}
+                  height={400}
+                />
+              </Center>
+              <Button colorScheme="purple" size="md" mx={40} my={5}>
+                Listen now
+              </Button>
             </Stack>
           </CardBody>
         </Card>
