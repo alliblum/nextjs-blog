@@ -29,7 +29,7 @@ export interface PodcastCardProps {
   NameAndHost: string
   EpisodeTitle: string
   EpisodeDescription: string
-  EpisodeArt?: { src: string; alt: string; width: number; height: number }
+
   EpisodeLink: string
 }
 
@@ -43,14 +43,7 @@ export const PodcastCard: React.FC<PodcastCardProps> = (props) => {
           <Heading size="md">{props.NameAndHost}</Heading>
           <Text fontStyle="italic">{props.EpisodeTitle}</Text>
           <Text>{props.EpisodeDescription}</Text>
-          <Center>
-            <Image
-              src={props?.EpisodeArt.src}
-              alt={props?.EpisodeArt.alt}
-              width={props?.EpisodeArt.width}
-              height={props?.EpisodeArt.height}
-            />
-          </Center>
+
           <Center my={5}>
             <Link href={props.EpisodeLink}>
               <Button colorScheme="purple" size="lg" px={10}>
