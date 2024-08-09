@@ -45,10 +45,10 @@ export const PodcastCard: React.FC<PodcastCardProps> = (props) => {
           <Text>{props.EpisodeDescription}</Text>
           <Center>
             <Image
-              src={props.EpisodeArt.src}
-              alt={props.EpisodeArt.alt}
-              width={props.EpisodeArt.width}
-              height={props.EpisodeArt.height}
+              src={props?.EpisodeArt.src}
+              alt={props?.EpisodeArt.alt}
+              width={props?.EpisodeArt.width}
+              height={props?.EpisodeArt.height}
             />
           </Center>
           <Center my={5}>
