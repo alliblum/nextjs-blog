@@ -87,20 +87,17 @@ export default function WithSubnavigation() {
           justify={{ base: 'center', md: 'start' }}
           align="bottom"
         >
-          <Stack direction="row">
-            <Box>
+          <Flex
+            display={{ base: 'none', md: 'flex' }}
+            flex={{ base: 1 }}
+            justify={{ base: 'center', md: 'start' }}
+            align="bottom"
+          >
+            <Stack>
               <Headshot />
-            </Box>
-            <Box mt={2}>
               <Text fontWeight={600}>ALLI BLUM</Text>
-              <Text fontStyle="italic" fontSize="sm">
-                I help you find &{' '}
-              </Text>
-              <Text fontStyle="italic" fontSize="sm">
-                mobilize your ICP
-              </Text>
-            </Box>
-          </Stack>
+            </Stack>
+          </Flex>
 
           <Spacer />
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
