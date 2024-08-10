@@ -25,6 +25,7 @@ import {
 } from '@chakra-ui/react'
 import { max } from 'date-fns'
 import { inherits } from 'util'
+import App from 'pages/_app'
 
 export default function Appearances() {
   return (
@@ -51,6 +52,11 @@ export default function Appearances() {
           Title="Implementing an Outcomes-Led Strategy (w/ Alli Blum, Hypothesis Department)"
           Description="I joined host Jeremiah Rizzo to talk about how I define 'Outcomes Led Growth' and how your leadership style can influence your team's ability to execute this strategy."
           Link="https://databox.com/implementing-outcomes-led-strategy"
+        />
+        <AppearanceCard
+          NameAndHost="Copyhackers Copy School Professional with Joanna Wiebe"
+          Title="How to Research Your ICP"
+          Description="I did my technical training with Joanna Wiebe many years ago and was absolutely delighted to be invited back to share a lesson on how to research your ICP with an up and cohort of conversion copywriters."
         />
       </Stack>
     </Layout>

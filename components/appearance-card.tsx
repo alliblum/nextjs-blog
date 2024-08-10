@@ -29,8 +29,8 @@ export interface AppearanceCardProps {
   NameAndHost: string
   Title: string
   Description: string
-
-  Link: string
+  ButtonText?: string
+  Link?: string
 }
 
 // export const theme = extendTheme({})
@@ -44,13 +44,15 @@ export const AppearanceCard: React.FC<AppearanceCardProps> = (props) => {
           <Text fontStyle="italic">{props.Title}</Text>
           <Text>{props.Description}</Text>
 
-          <Center my={5}>
-            <Link href={props.Link}>
-              <Button colorScheme="purple" size="lg" px={10}>
-                Listen now
-              </Button>
-            </Link>
-          </Center>
+          {props.Link && (
+            <Center my={5}>
+              <Link href={props.Link}>
+                <Button colorScheme="purple" size="lg" px={10}>
+                  {props.ButtonText || 'Listen now'}
+                </Button>
+              </Link>
+            </Center>
+          )}
         </Stack>
       </CardBody>
     </Card>
