@@ -78,6 +78,8 @@ export default function WithSubnavigation() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}
+        // as="header"
+        // w="100%"
         // position={'fixed'}
       >
         <Flex
@@ -85,11 +87,11 @@ export default function WithSubnavigation() {
           justify={{ base: 'center', md: 'start' }}
           align="bottom"
         >
-          <Stack>
+          <Stack direction="row">
             <Box>
               <Headshot />
             </Box>
-            <Box>
+            <Box mt={2}>
               <Text fontWeight={600}>ALLI BLUM</Text>
               <Text fontStyle="italic" fontSize="sm">
                 I help you find &{' '}
