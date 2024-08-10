@@ -65,14 +65,28 @@ export default function Appearances() {
           Link="https://userlist.com/podcast/switch-interviews-strategic-context-with-alli-blum/"
         />
         <AppearanceCard
-          NameAndHost="MicroConf 2019"
+          NameAndHost="MicroConf"
           Title="The Root of the Retention Problem: How to Get Qualitative Data You Need to Stop Churn"
           Description="An oldie but a goodie: covering the basics of voice of customer data, how to get it, and what to do with it once you have it."
           Link="https://microconf.com/speakers/alli-blum"
           ButtonText="Watch Now"
         />
         <AppearanceCard
-          NameAndHost="MicroConf 2018"
+          NameAndHost="EnjoyHQ webinar hosted by Sofia Quintero"
+          Title="The Secrets to Successful Repository Adoption"
+          Description="I worked with Sofia to help over 50 teams mobilize their qualitative reserach repository across their organization. In this webinar I shared some of the best buy-in techniques I learned along the way. "
+          Link="https://www.youtube.com/watch?v=16wVU5cTbpI"
+          ButtonText="Watch Now"
+        />
+        <AppearanceCard
+          NameAndHost="Forget the Funnel with Georgiana Laudi and Claire Suellentrop"
+          Title="How SaaS Marketers Can Get Buy-In on Qualitative Research Projects"
+          Description="How to reframe research to overcome stakeholder objections to VOC - and build a buy-in machine so you don't need to fight for it again."
+          Link="https://forgetthefunnel.com/resources/getting-saas-customer-research-buy-in"
+          ButtonText="Watch Now"
+        />
+        <AppearanceCard
+          NameAndHost="MicroConf"
           Title="Putting the onboarding cart before the product horse"
           Description="An oldie but a goodie: This is one of my favorite talks about how thinking about onboarding is a proxy for thinking about product, even if you're just getting started."
           Link="https://microconf.com/speakers/alli-blum"
