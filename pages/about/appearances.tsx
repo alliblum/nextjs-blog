@@ -1,7 +1,7 @@
 import { QuoteBlock } from 'components/mdx'
 import Layout from 'components/layout'
 import EmailForm from 'components/email-form'
-import PodcastCard from 'components/podcastcard'
+import PodcastCard, { AppearanceCard } from 'components/appearance-card'
 
 import Image from 'next/image'
 
@@ -38,19 +38,19 @@ export default function Appearances() {
           I hope you have as much fun listening to these episodes as I had
           recording them.
         </Text>
-        <PodcastCard
+        <AppearanceCard
           NameAndHost="Marketing Powerups with Ramli John"
-          EpisodeTitle="Alli Blum's 3 tips to get buy-in for the JTBD framework."
-          EpisodeDescription="I joined host Ramli John to talk about ways you can lay the
+          Title="Alli Blum's 3 tips to get buy-in for the JTBD framework."
+          Description="I joined host Ramli John to talk about ways you can lay the
             foundation for getting buy-in on doing and applying Jobs To Be
             Done research before you even ask."
-          EpisodeLink="https://marketingpowerups.com/podcast/alli-blum-jtbd/"
+          Link="https://marketingpowerups.com/podcast/alli-blum-jtbd/"
         />
-        <PodcastCard
+        <AppearanceCard
           NameAndHost="Databox 'Metrics & Chill' podcast with Jeremiah Rizzo"
-          EpisodeTitle="Implementing an Outcomes-Led Strategy (w/ Alli Blum, Hypothesis Department)"
-          EpisodeDescription="I joined host Jeremiah Rizzo to talk about how I define 'Outcomes Led Growth' and how your leadership style can influence your team's ability to execute this strategy."
-          EpisodeLink="https://databox.com/implementing-outcomes-led-strategy"
+          Title="Implementing an Outcomes-Led Strategy (w/ Alli Blum, Hypothesis Department)"
+          Description="I joined host Jeremiah Rizzo to talk about how I define 'Outcomes Led Growth' and how your leadership style can influence your team's ability to execute this strategy."
+          Link="https://databox.com/implementing-outcomes-led-strategy"
         />
       </Stack>
     </Layout>

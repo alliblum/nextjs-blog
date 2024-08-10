@@ -25,27 +25,27 @@ import {
 import { max } from 'date-fns'
 import { inherits } from 'util'
 
-export interface PodcastCardProps {
+export interface AppearanceCardProps {
   NameAndHost: string
-  EpisodeTitle: string
-  EpisodeDescription: string
+  Title: string
+  Description: string
 
-  EpisodeLink: string
+  Link: string
 }
 
 // export const theme = extendTheme({})
 
-export const PodcastCard: React.FC<PodcastCardProps> = (props) => {
+export const AppearanceCard: React.FC<AppearanceCardProps> = (props) => {
   return (
     <Card m={5}>
       <CardBody>
         <Stack>
           <Heading size="md">{props.NameAndHost}</Heading>
-          <Text fontStyle="italic">{props.EpisodeTitle}</Text>
-          <Text>{props.EpisodeDescription}</Text>
+          <Text fontStyle="italic">{props.Title}</Text>
+          <Text>{props.Description}</Text>
 
           <Center my={5}>
-            <Link href={props.EpisodeLink}>
+            <Link href={props.Link}>
               <Button colorScheme="purple" size="lg" px={10}>
                 Listen now
               </Button>
@@ -57,4 +57,4 @@ export const PodcastCard: React.FC<PodcastCardProps> = (props) => {
   )
 }
 
-export default PodcastCard
+export default AppearanceCard
