@@ -46,7 +46,7 @@ export const AppearanceCard: React.FC<AppearanceCardProps> = (props) => {
 
           {props.Link && (
             <Center my={5}>
-              <Link href={props.Link}>
+              <Link target="_blank" href={props.Link}>
                 <Button colorScheme="purple" size="lg" px={10}>
                   {props.ButtonText || 'Listen now'}
                 </Button>
