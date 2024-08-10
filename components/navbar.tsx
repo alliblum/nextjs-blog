@@ -87,17 +87,17 @@ export default function WithSubnavigation() {
           justify={{ base: 'center', md: 'start' }}
           align="bottom"
         >
-          <Flex
-            display={{ base: 'none', md: 'flex' }}
-            flex={{ base: 1 }}
-            justify={{ base: 'center', md: 'start' }}
-            align="bottom"
-          >
-            <Stack>
+          <Stack>
+            <Flex
+              display={{ base: 'none', md: 'flex' }}
+              // flex={{ base: 1 }}
+              // justify={{ base: 'center', md: 'start' }}
+              // align="bottom"
+            >
               <Headshot />
-              <Text fontWeight={600}>ALLI BLUM</Text>
-            </Stack>
-          </Flex>
+            </Flex>
+            <Text fontWeight={600}>ALLI BLUM</Text>
+          </Stack>
 
           <Spacer />
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
