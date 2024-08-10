@@ -56,7 +56,27 @@ export default function Appearances() {
         <AppearanceCard
           NameAndHost="Copyhackers Copy School Professional with Joanna Wiebe"
           Title="How to Research Your ICP"
-          Description="I did my technical training with Joanna Wiebe many years ago and was absolutely delighted to be invited back to share a lesson on how to research your ICP with an up and cohort of conversion copywriters."
+          Description="I did my technical training with Joanna Wiebe many years ago. I was absolutely delighted to be invited back to share a lesson on how to research your ICP with an up and cohort of conversion copywriters."
+        />
+        <AppearanceCard
+          NameAndHost='"Better Done Than Perfect" with Jane Portman'
+          Title="Switch Interviews and Strategic Context with Alli Blum"
+          Description="Jane and I had a wide-reaching conversation on how to apply Jobs To Be Done interviews to SaaS onboarding."
+          Link="https://userlist.com/podcast/switch-interviews-strategic-context-with-alli-blum/"
+        />
+        <AppearanceCard
+          NameAndHost="MicroConf 2019"
+          Title="The Root of the Retention Problem: How to Get Qualitative Data You Need to Stop Churn"
+          Description="An oldie but a goodie: covering the basics of voice of customer data, how to get it, and what to do with it once you have it."
+          Link="https://microconf.com/speakers/alli-blum"
+          ButtonText="Watch Now"
+        />
+        <AppearanceCard
+          NameAndHost="MicroConf 2018"
+          Title="Putting the onboarding cart before the product horse"
+          Description="An oldie but a goodie: This is one of my favorite talks about how thinking about onboarding is a proxy for thinking about product, even if you're just getting started."
+          Link="https://microconf.com/speakers/alli-blum"
+          ButtonText="Watch Now"
         />
       </Stack>
     </Layout>
