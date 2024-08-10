@@ -1,6 +1,6 @@
 // import { Headshot } from './headshot'
 // import { Box, Flex, HStack, Spacer, Stack } from '@chakra-ui/react'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 // export const NavBar = () => {
 //   return (
@@ -53,6 +53,7 @@ import {
   TbX,
   TbArrowBadgeRight,
   TbArrowBadgeDown,
+  TbBox,
 } from 'react-icons/tb'
 
 export const NavBar = () => {
@@ -67,46 +68,40 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box>
-      <Flex
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
-        minH={'60px'}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        // borderBottom={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'}
-        // as="header"
-        // w="100%"
-        // position={'fixed'}
-      >
-        <Flex
-          flex={{ base: 1 }}
-          justify={{ base: 'center', md: 'start' }}
-          align="bottom"
-        >
-          <Stack>
-            <Flex
-              display={{ base: 'none', md: 'flex' }}
-              // flex={{ base: 1 }}
-              // justify={{ base: 'center', md: 'start' }}
-              // align="bottom"
-            >
-              <Headshot />
-            </Flex>
-            <Text fontWeight={600}>ALLI BLUM</Text>
-          </Stack>
-
-          <Spacer />
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+    // <Box>
+    <Box
+      bg={useColorModeValue('white', 'gray.800')}
+      color={useColorModeValue('gray.600', 'white')}
+      minH={'60px'}
+      mt={-12}
+      pt={{ base: 6 }}
+      pb={{ base: 3 }}
+      px={{ base: 6 }}
+      borderBottom={1}
+      borderStyle={'solid'}
+      borderColor={useColorModeValue('gray.200', 'gray.900')}
+      // align={'center'}
+      // as="header"
+      w="100%"
+      position="fixed"
+    >
+      <Flex>
+        <Box>
+          <Link href="/">
+            <Text as="span" fontWeight="600">
+              ALLI BLUM
+            </Text>
+          </Link>
+        </Box>
+        <Spacer />
+        <Box>
+          <Box display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
-          </Flex>
-          <Flex
+          </Box>
+          <Box
             flex={{ base: 1, md: 'auto' }}
-            ml={{ base: -2 }}
             display={{ base: 'flex', md: 'none' }}
+            mt={-2}
           >
             <IconButton
               onClick={onToggle}
@@ -120,16 +115,67 @@ export default function WithSubnavigation() {
               variant={'ghost'}
               aria-label={'Toggle Navigation'}
             />
-          </Flex>
-        </Flex>
+          </Box>
+        </Box>
+      </Flex>
 
-        <Stack
+      {/* <Flex
+          flex={{ base: 1 }}
+          justify={{ base: 'center', md: 'start' }}
+          align="bottom"
+        > */}
+      {/* <Flex
+            // display={{ base: 'flex', md: 'none' }}
+            flex={{ base: 1 }}
+            justify={{ base: 'inline', md: 'start' }}
+            // position="relative"
+            // alignContent={{ base: 'initial', md: 'center' }}
+            // align="bottom"
+          > */}
+      {/* <Link href="/">
+              <Text as="span" fontWeight="600">
+                ALLI BLUM
+              </Text>
+            </Link>
+          </Flex> */}
+
+      {/* <Spacer />
+          <Flex
+            display={{ base: 'none', md: 'contents' }}
+            justify={{ md: 'right' }}
+          >
+            <DesktopNav />
+          </Flex> */}
+
+      {/* <Flex
+            justify={{ base: 'right' }}
+            // align={{ base: 'right', md: 'bottom' }}
+            flex={{ base: 1, md: 'auto' }}
+            ml={{ base: -2 }}
+            display={{ base: 'flex', md: 'none' }}
+          > */}
+      {/* <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <TbX width={3} height={3} />
+                ) : (
+                  <TbBaselineDensityMedium width={5} height={5} />
+                )
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            /> */}
+      {/* </Flex>
+        </Flex> */}
+
+      {/* <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}
-        >
-          {/* <Button
+        > */}
+      {/* <Button
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
@@ -138,7 +184,7 @@ export default function WithSubnavigation() {
           >
             Sign In
           </Button> */}
-          {/* <Button
+      {/* <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -152,8 +198,8 @@ export default function WithSubnavigation() {
           >
             Sign Up
           </Button> */}
-        </Stack>
-      </Flex>
+      {/* </Stack> */}
+      {/* </Box> */}
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
