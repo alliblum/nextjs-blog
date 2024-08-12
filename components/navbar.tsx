@@ -1,6 +1,6 @@
 // import { Headshot } from './headshot'
 // import { Box, Flex, HStack, Spacer, Stack } from '@chakra-ui/react'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 // export const NavBar = () => {
 //   return (
@@ -53,6 +53,7 @@ import {
   TbX,
   TbArrowBadgeRight,
   TbArrowBadgeDown,
+  TbBox,
 } from 'react-icons/tb'
 
 export const NavBar = () => {
@@ -65,51 +66,36 @@ export const NavBar = () => {
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
-
   return (
-    <Box>
-      <Flex
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
-        minH={'60px'}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        // borderBottom={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'}
-        // as="header"
-        // w="100%"
-        // position={'fixed'}
-      >
-        <Flex
-          flex={{ base: 1 }}
-          justify={{ base: 'center', md: 'start' }}
-          align="bottom"
-        >
-          <Stack direction="row">
-            <Box>
-              <Headshot />
-            </Box>
-            <Box mt={2}>
-              <Text fontWeight={600}>ALLI BLUM</Text>
-              <Text fontStyle="italic" fontSize="sm">
-                I help you find &{' '}
-              </Text>
-              <Text fontStyle="italic" fontSize="sm">
-                mobilize your ICP
-              </Text>
-            </Box>
-          </Stack>
+    <Box
+      mx={2}
+      my={10}
+      bg={useColorModeValue('white', 'gray.800')}
+      color={useColorModeValue('gray.600', 'white')}
+      minH={'60px'}
+      borderBottom={{ base: '1px', md: 'none' }}
+      borderStyle={'solid'}
+      borderColor={useColorModeValue('gray.200', 'gray.900')}
+      as="header"
 
-          <Spacer />
+      // // justify="spacebetween"
+      // `align="center"
+    >
+      <Flex display={{ base: 'flex', md: 'flex' }} px={0}>
+        <Link href="/">
+          <Text as="span" fontWeight="600">
+            ALLI BLUM
+          </Text>
+        </Link>
+        <Spacer />
+        <Flex>
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
           </Flex>
           <Flex
             flex={{ base: 1, md: 'auto' }}
-            ml={{ base: -2 }}
             display={{ base: 'flex', md: 'none' }}
+            mt={-2}
           >
             <IconButton
               onClick={onToggle}
@@ -125,14 +111,217 @@ export default function WithSubnavigation() {
             />
           </Flex>
         </Flex>
+      </Flex>
+      <Collapse in={isOpen} animateOpacity>
+        <MobileNav />
+      </Collapse>
+    </Box>
+  )
+}
 
-        <Stack
+// export default function WithSubnavigation() {
+//   const { isOpen, onToggle } = useDisclosure()
+
+//   return (
+//     <Box width="100%">
+//       <Flex
+//         bg={useColorModeValue('white', 'gray.800')}
+//         color={useColorModeValue('gray.600', 'white')}
+//         minH={'60px'}
+//         py={{ base: 2 }}
+//         px={{ base: 4 }}
+//         mt={-12}
+//         // pt={{ base: '6', md: 'none' }}
+//         // pb={{ base: '3', md: 'none' }}
+//         // px={{ base: '6', md: 'none' }}
+//         justifyContent={'space-between'}
+//         borderBottom={1}
+//         borderStyle={'solid'}
+//         borderColor={useColorModeValue('gray.200', 'gray.900')}
+//         align={'center'}
+//         as="header"
+//         width="100%"
+//         position="fixed"
+//         wrap="wrap"
+//       >
+//         <Flex display={{ base: 'none', md: 'flex' }} px={0}>
+//           <Link href="/">
+//             <Text as="span" fontWeight="600">
+//               ALLI BLUM
+//             </Text>
+//           </Link>
+
+//           <Spacer />
+
+//           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+//             <DesktopNav />
+//           </Flex>
+//         </Flex>
+
+//         <Flex display={{ base: 'flex', md: 'none' }} px={0}>
+//           {/* <Flex>
+//             <Link href="/">
+//               <Text as="span" fontWeight="600">
+//                 ALLI BLUM
+//               </Text>
+//             </Link> */}
+//           {/* <Spacer />{' '} */}
+//           <IconButton
+//             mt={-2}
+//             onClick={onToggle}
+//             icon={
+//               isOpen ? (
+//                 <TbX width={3} height={3} />
+//               ) : (
+//                 <TbBaselineDensityMedium width={5} height={5} />
+//               )
+//             }
+//             variant={'ghost'}
+//             aria-label={'Toggle Navigation'}
+//           />
+//           {/* </Flex> */}
+//         </Flex>
+//       </Flex>
+
+//       <Collapse in={isOpen} animateOpacity>
+//         <MobileNav />
+//       </Collapse>
+//     </Box>
+//   )
+// }
+
+// {
+/* <Flex
+            flex={{ base: 1, md: 'auto' }}
+            display={{ base: 'flex', md: 'none' }}
+            mt={-2}
+          >
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <TbX width={3} height={3} />
+                ) : (
+                  <TbBaselineDensityMedium width={5} height={5} />
+                )
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            />
+          </Flex>
+        </Box>
+      </Flex> */
+
+{
+  /* <Flex >
+        <Box>
+          <Link href="/">
+            <Text as="span" fontWeight="600">
+              ALLI BLUM
+            </Text>
+          </Link>
+        </Box>
+        <Spacer />
+        <Box>
+          <Flex display={{ base: 'none', md: 'flex' }} px={0}>
+            <DesktopNav />
+          </Flex>
+          <Flex
+            flex={{ base: 1, md: 'auto' }}
+            display={{ base: 'flex', md: 'none' }}
+            mt={-2}
+          >
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <TbX width={3} height={3} />
+                ) : (
+                  <TbBaselineDensityMedium width={5} height={5} />
+                )
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            />
+          </Flex>
+        </Box>
+      </Flex> */
+}
+
+{
+  /* <Flex
+          flex={{ base: 1 }}
+          justify={{ base: 'center', md: 'start' }}
+          align="bottom"
+        > */
+}
+{
+  /* <Flex
+            // display={{ base: 'flex', md: 'none' }}
+            flex={{ base: 1 }}
+            justify={{ base: 'inline', md: 'start' }}
+            // position="relative"
+            // alignContent={{ base: 'initial', md: 'center' }}
+            // align="bottom"
+          > */
+}
+{
+  /* <Link href="/">
+              <Text as="span" fontWeight="600">
+                ALLI BLUM
+              </Text>
+            </Link>
+          </Flex> */
+}
+
+{
+  /* <Spacer />
+          <Flex
+            display={{ base: 'none', md: 'contents' }}
+            justify={{ md: 'right' }}
+          >
+            <DesktopNav />
+          </Flex> */
+}
+
+{
+  /* <Flex
+            justify={{ base: 'right' }}
+            // align={{ base: 'right', md: 'bottom' }}
+            flex={{ base: 1, md: 'auto' }}
+            ml={{ base: -2 }}
+            display={{ base: 'flex', md: 'none' }}
+          > */
+}
+{
+  /* <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <TbX width={3} height={3} />
+                ) : (
+                  <TbBaselineDensityMedium width={5} height={5} />
+                )
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            /> */
+}
+{
+  /* </Flex>
+        </Flex> */
+}
+
+{
+  /* <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}
-        >
-          {/* <Button
+        > */
+}
+{
+  /* <Button
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
@@ -140,8 +329,10 @@ export default function WithSubnavigation() {
             href={'#'}
           >
             Sign In
-          </Button> */}
-          {/* <Button
+          </Button> */
+}
+{
+  /* <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -154,15 +345,10 @@ export default function WithSubnavigation() {
             }}
           >
             Sign Up
-          </Button> */}
-        </Stack>
-      </Flex>
-
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
-    </Box>
-  )
+          </Button> */
+}
+{
+  /* </Stack> */
 }
 
 const DesktopNav = () => {
@@ -282,21 +468,23 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           textDecoration: 'none',
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue('gray.600', 'gray.200')}
-        >
-          {label}
-        </Text>
-        {children && (
-          <Icon
-            as={TbArrowBadgeDown}
-            transition={'all .25s ease-in-out'}
-            transform={isOpen ? 'rotate(180deg)' : ''}
-            w={6}
-            h={6}
-          />
-        )}
+        <Stack direction="row">
+          <Text
+            fontWeight={600}
+            color={useColorModeValue('gray.600', 'gray.200')}
+          >
+            {label}
+          </Text>
+          {children && (
+            <Icon
+              as={TbArrowBadgeDown}
+              transition={'all .25s ease-in-out'}
+              transform={isOpen ? 'rotate(180deg)' : ''}
+              w={6}
+              h={6}
+            />
+          )}
+        </Stack>
       </Box>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>

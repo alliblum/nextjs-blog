@@ -35,7 +35,7 @@ export default function Layout({
       <Center>
         <Box
           as="main"
-          // mt={20}
+          // mt={10}
           width={{
             base: '90%', // 0-48em
             sm: '400px',
