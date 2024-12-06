@@ -23,7 +23,11 @@ module.exports = (phase, { defaultConfig }) => {
   }
 
   // Configure pageExtensions to include md and mdx
-  config.pageExtensions = ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+  // config.pageExtensions = ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+
+  module.exports = {
+    pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
+  }
 
   return withMDX(config)
 }
