@@ -185,10 +185,7 @@ export default function SingleUserInterview() {
           p="10"
         >
           <Link href="https://app.paperbell.com/checkout/packages/104213">
-            <Text>
-              For founders located in a timezone <Text></Text>outside the
-              contiguous US
-            </Text>
+            <Text>Book a time with me</Text>
           </Link>
         </Button>
       </Stack>
