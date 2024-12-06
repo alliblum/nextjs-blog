@@ -1,4 +1,4 @@
-import { QuoteBlock } from 'components/mdx'
+// import { QuoteBlock } from 'components/mdx'
 import Layout from 'components/layout'
 
 import {

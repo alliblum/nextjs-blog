@@ -28,6 +28,13 @@ module.exports = (phase, { defaultConfig }) => {
   return withMDX(config)
 }
 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* config options here */
+}
+
+module.exports = nextConfig
+
 // // import * as NextMdx from '@next/mdx'
 
 // const withMDX = NextMdx.default({
