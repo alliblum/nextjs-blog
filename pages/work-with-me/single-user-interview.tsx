@@ -185,7 +185,7 @@ export default function SingleUserInterview() {
           p="10"
         >
           <Link href="https://app.paperbell.com/checkout/packages/104213">
-            <Text>Book a time with me</Text>
+            <Text>Book an intro call with me</Text>
           </Link>
         </Button>
       </Stack>
